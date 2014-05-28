@@ -1,21 +1,4 @@
-// responsive example, edit or remove
 
-// $breaksmall: 500px
-
-// $breaklarge: 1180px
-
-// =r($media)
-// 	@if $media == pda
-// 		// narrower than $width
-// 		@media only screen and (max-width: $breaksmall)
-// 			@content
-// 	@else if $media == wide
-// 		// wider than $width
-// 		@media only screen and (min-width: $breaklarge)
-// 			@content
-
-// responsive example, edit or remove
-// just write +r(w1280)
 $min1920: 1920px
 $w1280: 1280px
 $w1270: 1270px
@@ -113,8 +96,8 @@ $w320: 320px
 =font($alias, $name)
 	@font-face
 		font-family: $alias
-		src: url("fonts/" + $name + ".eot")
-		src: url("fonts/" + $name + ".eot?#iefix") format("embedded-opentype"), url("fonts/" + $name + ".woff") format("woff"), url("fonts/" + $name + ".ttf") format("truetype")
+		src: url("../fonts/" + $name + ".eot")
+		src: url("../fonts/" + $name + ".eot?#iefix") format("embedded-opentype"), url("../fonts/" + $name + ".woff") format("woff"), url("../fonts/" + $name + ".ttf") format("truetype")
 		font-weight: normal
 		font-style: normal
 
@@ -138,7 +121,7 @@ $w320: 320px
 	-ms-transition: $what
 	transition: $what
 
-=tr($what)
+=tr($what: all .2s linear)
 	+transition($what)
 
 =hide-text

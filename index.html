@@ -3,17 +3,92 @@
 <head>
 	<meta charset="utf-8">
 	<title>Template</title>
-	<meta name="viewport" content="initial-scale=1"/>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<meta name="viewport">
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
 
 <!-- BEGIN  out-->
 <div class="out">
-
+	<div class="header">
+		<div class="header__top">
+			<div class="l-center">
+				<div class="header__user">
+					<div class="extend-item js-extend-item">
+						<a href="#" class="extend-item__link js-extend-item-link">Афанасий никитин <i class="fa fa-sort-desc"></i></a>
+						<ul class="extend-item__list js-extend-item-list">
+							<li>
+								<a href="#">
+									<span class="extend-item__icon">
+										<span class="badge badge_bonus"><i class="fa fa-star"></i></span>
+									</span>
+									<span class="extend-item__text">
+										У вас 44 бонусных пункта <span>как использовать бонусы?</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="extend-item__icon">
+										<i class="fa fa-tags"></i>
+									</span>
+									<span class="extend-item__text">Мои заказы</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="extend-item__icon">
+										<i class="fa fa-cog"></i>
+									</span>
+									<span class="extend-item__text">Настройки аккаунта</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header__login">
+					<a href="#">Выйти <i class="fa fa-sign-out"></i></a>
+				</div>
+				<div class="header__lang">
+					<div class="extend-item js-extend-item">
+						<a href="#" class="extend-item__link js-extend-item-link">По-русски <i class="fa fa-sort-desc"></i></a>
+						<ul class="extend-item__list js-extend-item-list">
+							<li><a href="#">По-русски</a></li>
+							<li><a href="#">По-русски</a></li>
+							<li><a href="#">По-русски</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="header__main">
+			<div class="l-center">
+				<a href="#" class="header__logo">
+					<strong>foodzy</strong>
+					система доставки
+				</a>
+				<div class="header__city">
+					<a href="#" class="header__city-btn">
+						<span>ваш город: </span>
+						<i class="fa fa-location-arrow"></i>
+					</a>		
+					<div class="header__input">
+						<input type="text" placeholder="Выберите город">
+					</div>
+				</div>
+				<div class="header__search">	
+					<div class="header__input">
+						<input type="text" placeholder="блюдо или ресторан...">
+						<button class="fa fa-search"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <!-- END out-->
 
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
-</html>
+</html> 

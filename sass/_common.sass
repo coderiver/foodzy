@@ -1,49 +1,190 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever
-//          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
-// ### animation example
-//     +include keyframes(rotate)
-//        from
-//           +rotate(0)
-//        to
-//           +rotate(360)
-// ## animation usage
-//     body:hover
-// 	    +animation(rotate 200s linear infinite)
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in)
-// ## gradient example
-//     +background-image(linear-gradient(#232323, #5c5c5c));
-//     +g(#232323, #5c5c5c);
-//	   horizontal
-//     +gh(#232323, #5c5c5c);
-// ## making bw-images
-//     img
-//			@extend %gray
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +min-screen(320)
-//			display: none
-// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-// ## fonts 
-// Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
-// =book
-// 	font-family: "book",arial,sans-serif 
-	
-body
-	font-size: 12px 
-	font-family: Arial, sans-serif 
-	line-height: 1.4
++font(roboto-regular, roboto-regular)  
++font(roboto-medium, roboto-medium)  
++font(roboto-bold, roboto-bold)  
++font(roboto-italic, roboto-italic)  
++font(lobster, lobster)  
+=fr
+	font-family: "roboto-regular", Arial, sans-serif 
+=fm
+	font-family: "roboto-medium", Arial, sans-serif
+=fb
+	font-family: "roboto-bold", Arial, sans-serif 
+=fi
+	font-family: "roboto-italic", Arial, sans-serif 
+=flob
+	font-family: "lobster", Arial, sans-serif 
+$light: #f2f2f2
+$dark: #3d3d3d
+$title: #4c4c4b
+$gray: #757575
+$red: #da2400
+$yellow: #ffc600
+$border: #d7d7d7
+$green: #7ab900
+html
+	+scrollbar
+		width: 5px
+		height: 5px
+		+border-radius(2px)
+		background: #ededed
+	+scrollbar-thumb
+		background: #c9c9c9
+		+border-radius(2px)
+	+scrollbar-track-piece     
+		width: 5px 
+		+border-radius(2px)
+	+selection
+		background: rgba(0,0,0,.1) 
+body   
+	min-width: 1110px
+	+fr
+	font-size: 13px
+	line-height: 1.2
+	color: $dark
+input, textarea
+	+box
+	color: #4a4a4a 
+	+fr
+	font-size: 13px 
+a
+	color: $red 
+	text-decoration: none
+	// &:hover
+	// 	text-decoration: none
 
+.l-center
+	margin: 0 auto  
+	padding: 0 12px 
+	width: 1000px
+.wrap
+	+clr
+.wrapper
+	overflow: hidden
+.out
+	position: relative
+	margin: 0 0 -425px
+	min-height: 100%
+	height: auto !important
+	height: 100%	  
+.push
+	clear: both
+	height: 425px
 
-// common blocks      
+.header
+	position: relative
+.header__top
+	+clr
+	text-align: right
+	background: $dark url(../img/dark-bg.png) 0 0 repeat 
+	a
+		color: #fff 
+	.extend-item
+		display: inline-block
+		vertical-align: middle
+.header__login,
+.header__user,
+.header__lang,
+	display: inline-block
+	vertical-align: middle
+.header__login
+	margin: 0 36px 0 40px
+.header__user
+	.extend-item__list
+		width: 347px
+.header__lang
+	width: 155px
+	text-align: center
+	height: 32px
+	border-left: 1px solid #474747 
+	+box-shadow(-1px 0 0 #000)
+	.extend-item
+		display: inline-block
+		margin-top: 6px
+	.extend-item__list
+		width: 150px
+
+.header__main
+	padding: 0 0 7px 
+	background: #fcfcfc
+	+box-shadow(0 1px 9px rgba(0,0,0,.89))
+	.l-center
+		+clr
+.header__logo
+	float: left
+	width: 143px
+	text-align: center
+	color: #4c4c4c
+	font-size: 13px 
+	strong
+		display: block
+		color: $red
+		font-size: 46px
+		+flob 
+.header__city
+	position: relative 
+	float: left
+	margin: 19px 0 0 40px
+	padding-left: 20px
+	width: 342px
+	+box
+	.header__input
+		input
+			padding-left: 120px
+			border-radius: 0 20px 20px 0
+.header__city-btn
+	position: absolute
+	left: 0
+	top: 0
+	bottom: 0
+	width: 128px 
+	line-height: 35px
+	background: #4c4c4c 
+	text-align: center
+	border-radius: 20px 0 0 20px  
+	span,.fa
+		display: inline-block
+		vertical-align: middle
+		color: #fff
+		line-height: 1.2
+	span
+		border-bottom: 1px dotted 
+	.fa
+		position: relative
+		top: 2px
+		margin-left: 12px
+		font-size: 1.4em
+	&:hover
+		span
+			border-bottom-color: transparent 
+.header__input
+	input
+		display: block
+		padding: 0 20px 
+		width: 100%
+		height: 40px
+		font-size: 16px
+		+fb
+		+box
+		color: #4a4a4a 
+		border-radius: 20px
+		background-color: #f2f2f2
+		+box-shadow(0 1px 0 #fff, inset 0 1px 3px rgba(0,0,0,.5))
+		+placeholder
+			color: #808080 
+		&:focus
+			background: #fafafa 
+.header__search
+	position: relative
+	margin: 19px 0 0 36px
+	float: left
+	width: 254px
+	input
+		padding-right: 35px
+	.fa
+		position: absolute
+		top: 50%
+		right: 16px
+		margin-top: -9px
+		font-size: 1.4em
+		background: none
+		color: #5c5c5c 

@@ -1,0 +1,75 @@
+.extend-item
+	position: relative
+	&.is-active
+		.extend-item__list
+			opacity: 1
+			visibility: visible
+
+.extend-item__link
+	display: inline-block
+	border-bottom: 1px dashed 
+	position: relative
+	line-height: 1.2
+	vertical-align: middle
+	.fa
+		position: absolute
+		top: -2px
+		right: -14px 
+.extend-item__list
+	position: absolute
+	z-index: 100
+	top: 100%
+	right: -45px
+	margin-top: 15px
+	text-align: left
+	+box-shadow(0 0 8px rgba(#000, .8))
+	background: #fff
+	border-radius: 10px 
+	line-height: 1.2
+	font-size: 15px
+	visibility: hidden
+	opacity: 0
+	+tr    
+	+fm    
+	&:before
+		content: ""
+		position: absolute
+		top: -12px
+		right: 28px
+		+s(arr1) 
+	li
+		border-top: 1px dashed $border 
+		&:first-child
+			border-top: 0
+	a
+		display: block
+		padding: 9px 24px 11px
+		color: $dark 
+		+tr
+		&:hover
+			color: $red 
+	.fa
+		font-size: 1.4em
+	.fa-star
+		font-size: 1em 
+.extend-item__icon,
+.extend-item__text
+	display: inline-block
+	vertical-align: middle
+.extend-item__text
+	span
+		display: block
+		color: $red 
+.extend-item__icon
+	width: 40px
+.badge
+	display: inline-block
+	text-align: center
+	line-height: 24px
+	width: 24px
+	height: 24px
+	border-radius: 50%
+.badge_bonus
+	background: $yellow
+	i
+		color: #fff 
