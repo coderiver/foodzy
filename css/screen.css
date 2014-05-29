@@ -185,6 +185,10 @@ a { color: #da2400; text-decoration: none; }
 .btn_detail:active .fa { left: 5px; }
 
 .checkbox { position: relative; display: inline-block; }
+.checkbox input { position: relative; z-index: 2; display: inline-block; vertical-align: middle; width: 16px; height: 16px; }
+.checkbox em { position: absolute; left: 0; top: 0; width: 16px; height: 16px; font-size: 14px; background: #f2f2f2; -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.23); -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.23); box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.23); font-style: normal; }
+.checkbox em i { color: #da2400; }
+.checkbox span { display: inline-block; vertical-align: middle; }
 
 .categ-section { border-bottom: 1px solid #d7d7d7; padding: 25px 0 35px; background: white; }
 .categ-section .title { margin: 0; }
