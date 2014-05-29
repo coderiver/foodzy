@@ -73,3 +73,26 @@
 	background: $yellow
 	i
 		color: #fff 
+
+.btn
+	display: inline-block
+	padding: 9px 17px 
+	border-radius: 16px
+	background: $red
+	color: #fff
+	font-size: 13px
+	+fb 
+	+tr(opacity .2s linear)
+	&:hover
+		opacity: .8
+	&:active
+		position: relative
+		top: 1px 
+.btn_detail
+	.fa
+		position: relative
+		margin-left: 22px
+	&:active
+		.fa
+			left: 5px
+	

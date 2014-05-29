@@ -18,6 +18,7 @@ $dark: #3d3d3d
 $title: #4c4c4b
 $gray: #757575
 $red: #da2400
+$red_d: #a51b00
 $yellow: #ffc600
 $border: #d7d7d7
 $green: #7ab900
@@ -26,9 +27,9 @@ html
 		width: 5px
 		height: 5px
 		+border-radius(2px)
-		background: #ededed
+		background: $border
 	+scrollbar-thumb
-		background: #c9c9c9
+		background: $dark
 		+border-radius(2px)
 	+scrollbar-track-piece     
 		width: 5px 
@@ -41,6 +42,7 @@ body
 	font-size: 13px
 	line-height: 1.2
 	color: $dark
+	background: $light url(../img/light-bg.png) 0 0 repeat 
 input, textarea
 	+box
 	color: #4a4a4a 
@@ -62,13 +64,19 @@ a
 	overflow: hidden
 .out
 	position: relative
-	margin: 0 0 -425px
+	margin: 0 0 -232px
 	min-height: 100%
 	height: auto !important
 	height: 100%	  
 .push
 	clear: both
-	height: 425px
+	height: 232px
+	
+.title
+	+flob
+	color: $title
+	font-size: 36px
+	text-align: center
 
 .header
 	position: relative
@@ -111,13 +119,16 @@ a
 		+clr
 .header__logo
 	float: left
-	width: 143px
+	margin-left: 22px
+	width: 137px
 	text-align: center
 	color: #4c4c4c
 	font-size: 13px 
 	strong
 		display: block
+		margin-bottom: 2px
 		color: $red
+		letter-spacing: -1px 
 		font-size: 46px
 		+flob 
 .header__city
@@ -136,8 +147,10 @@ a
 	left: 0
 	top: 0
 	bottom: 0
+	padding-left: 7px
+	+box
 	width: 128px 
-	line-height: 35px
+	line-height: 37px
 	background: #4c4c4c 
 	text-align: center
 	border-radius: 20px 0 0 20px  
@@ -188,3 +201,118 @@ a
 		font-size: 1.4em
 		background: none
 		color: #5c5c5c 
+.header__cart
+	float: right
+	margin: 18px 0 0 0 
+.cart-btn
+	position: relative
+	display: block
+	padding-left: 60px
+	width: 135px
+	height: 40px
+	line-height: 38px
+	background: #e9e9e9
+	border-radius: 20px
+	overflow: hidden
+	+box
+	+box-shadow(0 1px 3px rgba(0,0,0,.71))
+	+tr(background .2s linear)
+	&:hover
+		background: #e5e5e5 
+	&:active
+		+box-shadow(none)
+.cart-btn__icon
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	width: 47px
+	text-align: center
+	background: $red
+	+box-shadow(1px 0 0 #f3f3f3) 
+	.fa
+		color: #fff
+		font-size: 1.7em 
+		vertical-align: middle
+.cart-btn__in
+	display: inline-block
+	vertical-align: middle
+	line-height: 1.2
+	color: #4c4c4c
+	font-size: 13px
+	text-shadow: 0 1px 0 #fff
+	span
+		+fb
+		display: block
+		
+.footer
+	position: relative
+	min-height: 232px
+	color: #fff 
+	text-shadow: 0 -1px 0 #000
+	background: $dark url(../img/dark-bg.png) 0 0 repeat 
+	a
+		color: #fff 
+.footer__top
+	margin-bottom: 17px
+	padding: 35px 15px 0 
+	+clr
+.footer__feedback
+	float: left
+	width: 188px
+	a
+		color: $red_d   
+		&:hover
+			text-decoration: underline
+	li
+		margin-bottom: 5px
+.footer__feedback-title
+	margin-bottom: 17px
+	font-size: 21px
+	+fb
+	color: #c2c2c2 
+.footer__col
+	float: left
+	+box
+	padding: 3px 10px 15px 40px
+	border-left: 1px solid #000
+	+box-shadow(inset 1px 0 0 rgba(255,255,255,.13))
+
+.footer__nav
+	padding-left: 48px
+	width: 294px
+	li
+		margin-bottom: 5px
+	a
+		+tr
+		&:hover
+			color: $red
+.footer__about
+	float: left
+	width: 480px
+	color: #c2c2c2 
+	line-height: 1.32
+.footer__soc
+	margin: 22px 0 0 
+	font-size: 0
+	a
+		display: inline-block
+		margin-right: 30px
+		vertical-align: top
+		text-align: center
+		font-size: 13px
+		+tr
+		&:hover
+			color: $red 
+	.fa
+		font-size: 30px
+	span
+		display: block
+.footer__meta
+	padding-left: 15px
+	a
+		color: $red_d
+		&:hover
+			text-decoration: underline
+	span
+		margin-right: 20px

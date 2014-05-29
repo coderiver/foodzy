@@ -37,16 +37,32 @@ head.ready(function() {
 	});
 
 
-	// $('.js-slider-banner').slick({
-	// 	slidesToShow: 1,
-	// 	infinite: false,
-	// 	speed: 300,
-	// 	touchMove: true,
-	// 	arrows: true,
-	// 	onInit: function(){
-	// 		$(".slider-banner").addClass("is-ready");
-	// 	}
-	// });
+	$('.js-slider-offers').slick({
+		slidesToShow: 1,
+		infinite: true,
+		speed: 300,
+		touchMove: true,
+		arrows: true,
+		dots: true,
+		autoplay: true,
+  		autoplaySpeed: 5000,
+		onInit: function(){
+			//$(".slider-banner").addClass("is-ready");
+		}
+	});
+	$('.js-promo-slider').slick({
+		slidesToShow: 1,
+		infinite: true,
+		speed: 300,
+		touchMove: true,
+		//arrows: true,
+		dots: true,
+		autoplay: true,
+  		autoplaySpeed: 5000,
+		onInit: function(){
+			$(".slider").addClass("is-ready");
+		}
+	});
 	
 	function ui_slider_range() {
 		$(".js-ui-slider-range").each(function(){

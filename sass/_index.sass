@@ -1,2 +1,227 @@
-// Normally mainpage styles
- 
+.categ-section
+	border-bottom: 1px solid $border 
+	padding: 25px 0 35px
+	background: #fff 
+	.title
+		margin: 0
+.categ-wrap
+	margin-bottom: 13px
+	padding: 0 0 17px 
+	border-bottom: 1px dashed $border 
+	font-size: 0
+	&:last-child
+		border-bottom: 0
+.categ
+	display: inline-block
+	vertical-align: top
+	width: 16.5%
+	text-align: center
+	&:first-child
+		width: 17.5%
+	&.is-active
+		.categ__name
+			background: $red 
+			color: #fff 
+		&:hover
+			.categ__name
+				color: #fff
+	&:hover
+		.categ__name
+			color: $red 
+		img
+			+animation(rotate .2s ceaser($easeInOutBack))
+.categ__img
+	position: relative
+	margin-bottom: 5px
+	height: 116px
+	a
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+.categ__name
+	display: inline-block
+	padding: 0 25px 
+	height: 28px
+	line-height: 28px
+	border-radius: 14px
+	color: $dark
+	font-size: 15px
+	+fm
+	+tr
+	&:hover
+		color: $red 
+	
++keyframes(rotate)
+	0%
+		+rotate(0)
+	33%
+		+rotate(10)
+	66%
+		+rotate(-10)
+	100%
+		+rotate(0)
+
+.offer-section
+	margin-bottom: 32px
+	padding-top: 40px
+	.title
+		margin-bottom: 37px
+	.slick-slide
+		+clr
+	.slick-dots
+		position: relative
+		top: -3px
+.offer
+	margin: 3px 3px 23px 20px 
+	float: left
+	padding: 13px 
+	width: 485px
+	height: 221px
+	background: #fff 
+	+box  
+	border-radius: 20px
+	+box-shadow(0 0 5px rgba(#000,.5))
+	+tr    
+	&:hover
+		+box-shadow(0 0 5px rgba(#000,.1))
+	&:first-child,
+	&:nth-child(3)
+		margin-left: 3px
+.offer__img
+	float: left
+	margin-right: 17px
+	width: 187px
+	height: 187px
+	text-align: center
+	line-height: 187px
+	overflow: hidden
+	img
+		vertical-align: middle
+.offer__main
+	overflow: hidden
+	padding-top: 8px
+.offer__title
+	margin-bottom: 9px
+	font-size: 18px
+	+fb
+	white-space: nowrap
+	overflow: hidden 
+	text-overflow: ellipsis 
+.offer__info
+	margin-bottom: 14px
+	height: 77px
+	overflow: hidden
+	border-bottom: 1px dashed $border 
+.offer__owner
+	margin: 14px 0 5px
+	a
+		+fb
+		color: $red 
+		&:hover
+			text-decoration: underline
+.offer__meta
+	color: #757575
+	+fi 
+.offer__btn
+	margin-top: 18px
+	text-align: right
+	
+.slider
+	height: 366px
+	overflow: hidden
+	background: url(../img/slider-bg.jpg) 50% 0 repeat-x 
+	.l-center
+		position: relative
+		visibility: hidden
+	&.is-ready
+		.l-center
+			visibility: visible
+	.slick-slide
+		height: 366px
+		&.slick-active
+			.slider__info
+				top: 0
+				left: 0
+				bottom: 0
+				opacity: 1
+				visibility: visible
+				//+tr(all 1s ceaser($easeInOutBack))
+			.slider__img
+				right: 0
+				top: 0
+				bottom: 0
+				opacity: 1
+				visibility: visible
+				//+tr(all 1s ceaser($easeInOutBack))
+	.slick-dots
+		position: absolute
+		left: 50%
+		margin-left: -512px
+		bottom: 24px 
+		width: 390px
+		text-align: center
+		button
+			opacity 0.53  
+			background: #fff
+			+box-shadow(none)  
+		.slick-active
+			button
+				opacity: 1
+				background: #fff 
+.slider__first
+	.slider__info
+		top: -1000px
+		left: -2000px
+		bottom: 0
+	.slider__img
+		top: -1000
+		left: auto
+		right: -2000px
+.slider__second
+	.slider__info
+		top: auto
+		bottom: -1000px
+		left: -2000px
+	.slider__img
+		top: auto
+		left: auto
+		right: -2000px 
+.slider__info
+	position: absolute
+	z-index: 2
+	padding: 85px 0 0 
+	width: 460px
+	text-align: center
+	color: #fff 
+	opacity: 0
+	visibility: hidden
+	+tr(all 1s ceaser($easeInOutBack))
+	.btn
+		padding: 14px 46px 
+		border-radius: 25px
+		font-size: 16px  
+.slider__img
+	position: absolute
+	opacity: 0
+	visibility: hidden
+	+tr(all 1s ceaser($easeInOutBack))
+.slider__title
+	margin-bottom: 17px
+	font-size: 54px
+	+flob  
+.slider__text
+	margin-bottom: 34px
+	font-size: 16px
+	+fm
+.slider__img_pizza
+	img
+		position: relative
+		top: -69px
+		right: -145px
+.slider__img_burger  
+	font-size: 0
+	img
+		position: relative
+		top: 83px
+		right: 85px
