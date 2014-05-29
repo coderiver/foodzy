@@ -114,7 +114,7 @@ a
 .header__main
 	padding: 0 0 7px 
 	background: #fcfcfc
-	+box-shadow(0 1px 9px rgba(0,0,0,.89))
+	+box-shadow(0 1px 9px rgba(0,0,0,.5))
 	.l-center
 		+clr
 .header__logo
@@ -218,7 +218,9 @@ a
 	+box-shadow(0 1px 3px rgba(0,0,0,.71))
 	+tr(background .2s linear)
 	&:hover
-		background: #e5e5e5 
+		background: $border
+		.cart-btn__icon
+			background: $red_d  
 	&:active
 		+box-shadow(none)
 .cart-btn__icon
@@ -229,6 +231,7 @@ a
 	width: 47px
 	text-align: center
 	background: $red
+	+tr
 	+box-shadow(1px 0 0 #f3f3f3) 
 	.fa
 		color: #fff

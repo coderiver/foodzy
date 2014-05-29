@@ -1,0 +1,33 @@
+.sidebar
+	background: #fff 
+.sidebar__in
+	border-left: 1px solid $border
+	border-right: 1px solid $border
+	padding: 21px 0 
+	+box-shadow(inset 0 0 0 1px #fbfbfb)
+.sidebar__item
+	padding: 0 15px 
+.sidebar__search
+	position: relative
+	input
+		display: block
+		padding: 0 30px 0 15px 
+		width: 100%
+		height: 30px
+		+box
+		background: #f5f5f5
+		border-radius: 20px
+		+box-shadow(0 1px 0 #fff, inset 0 1px 2px rgba(0,0,0,.27))
+		+placeholder
+			color: #808080 
+		&:focus
+			background: #fafafa 
+	.fa-search
+		background: none
+		position: absolute
+		top: 50%
+		right: 13px
+		color: $dark 
+		margin-top: -6px
+.sidebar__filter
+	padding: 0 22px 

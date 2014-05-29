@@ -18,18 +18,10 @@
 	text-align: center
 	&:first-child
 		width: 17.5%
-	&.is-active
-		.categ__name
-			background: $red 
-			color: #fff 
-		&:hover
-			.categ__name
-				color: #fff
 	&:hover
 		.categ__name
-			color: $red 
-		img
-			+animation(rotate .2s ceaser($easeInOutBack))
+			background: $red 
+			color: #fff  
 .categ__img
 	position: relative
 	margin-bottom: 5px
@@ -41,26 +33,16 @@
 		right: 0
 .categ__name
 	display: inline-block
-	padding: 0 25px 
-	height: 28px
-	line-height: 28px
+	padding: 4px 25px 6px
 	border-radius: 14px
 	color: $dark
 	font-size: 15px
 	+fm
 	+tr
 	&:hover
-		color: $red 
+		background: $red 
+		color: #fff 
 	
-+keyframes(rotate)
-	0%
-		+rotate(0)
-	33%
-		+rotate(10)
-	66%
-		+rotate(-10)
-	100%
-		+rotate(0)
 
 .offer-section
 	margin-bottom: 32px
@@ -157,8 +139,8 @@
 	.slick-dots
 		position: absolute
 		left: 50%
-		margin-left: -512px
-		bottom: 24px 
+		margin-left: -480px
+		bottom: 24px  
 		width: 390px
 		text-align: center
 		button
@@ -169,26 +151,43 @@
 			button
 				opacity: 1
 				background: #fff 
-.slider__first
-	.slider__info
-		top: -1000px
-		left: -2000px
-		bottom: 0
-	.slider__img
-		top: -1000
-		left: auto
-		right: -2000px
-.slider__second
-	.slider__info
-		top: auto
-		bottom: -1000px
-		left: -2000px
-	.slider__img
-		top: auto
-		left: auto
-		right: -2000px 
+// .slider__first
+// 	.slider__info
+// 		top: -1000px
+// 		left: -2000px
+// 		bottom: 0
+// 	.slider__img
+// 		top: -1000
+// 		left: auto
+// 		right: -2000px
+// .slider__second
+// 	.slider__info
+		
+// 	.slider__img
+		
+// .slider__third
+// 	.slider__info
+// 		top: -1000px
+// 		left: -2000px
+// 		bottom: 0
+// 	.slider__img
+// 		top: -1000
+// 		left: auto
+// 		right: -2000px
+// .slider__fourth
+// 	.slider__info
+// 		top: auto
+// 		bottom: -1000px
+// 		left: -2000px
+// 	.slider__img
+// 		top: auto
+// 		left: auto
+// 		right: -2000px 
 .slider__info
 	position: absolute
+	top: auto
+	bottom: -1000px
+	left: -2000px
 	z-index: 2
 	padding: 85px 0 0 
 	width: 460px
@@ -203,6 +202,9 @@
 		font-size: 16px  
 .slider__img
 	position: absolute
+	top: auto
+	left: auto
+	right: -2000px 
 	opacity: 0
 	visibility: hidden
 	+tr(all 1s ceaser($easeInOutBack))
