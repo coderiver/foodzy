@@ -285,6 +285,28 @@
 	.btn-order
 		position: relative
 		z-index: 2
+.item-popup		
+	position: fixed
+	//position: absolute
+	top: 100px
+	bottom: 0
+	left: 500px
+	z-index: 200
+	background: #fff   
+	+tr(box-shadow .2s linear)
+	border-radius: 15px
+	+box-shadow(0 0 8px rgba(#000,.5))
+	.item
+		height: 400px
+		&:hover
+			.item__in
+				+box-shadow(none)
+				width: 237px
+.item-popup_simple
+	width: 237px
+	height: 401px
+	+clr
+
 .btn-order
 	position: relative
 	display: block

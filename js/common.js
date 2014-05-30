@@ -107,6 +107,7 @@ head.ready(function() {
 		number.each(function(){
 			var max_number = +($(this).attr("data-max-number"));
 			var input = $(this).find("input");
+			var digit = $(this).find(".js-choose-digit");
 			var plus = $(this).find(".js-plus");
 			var minus = $(this).find(".js-minus");
 			plus.on("click", function(){
@@ -117,6 +118,7 @@ head.ready(function() {
 				else {
 					val += 1;
 					input.val(val);
+					digit.text(val);
 				}
 			});
 			minus.on("click", function(){
@@ -124,6 +126,7 @@ head.ready(function() {
 				if (val > 1) {
 					val -= 1;
 					input.val(val);
+					digit.text(val);
 				}
 				else {
 					return false;
