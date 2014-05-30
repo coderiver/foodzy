@@ -69,10 +69,14 @@
 	width: 24px
 	height: 24px
 	border-radius: 50%
+	.fa
+		color: #fff
 .badge_bonus
 	background: $yellow
-	i
-		color: #fff 
+.badge_gift
+	background: $red 
+.badge_new
+	background: $green 
 
 .btn
 	display: inline-block
@@ -96,17 +100,14 @@
 		.fa
 			left: 5px
 	
+.checkbox-wrap
+	margin-bottom: 17px
 .checkbox
 	position: relative
+	padding-left: 27px
 	display: inline-block
-	input
-		position: relative
-		z-index: 2
-		display: inline-block
-		vertical-align: middle
-		width: 16px
-		height: 16px
-	em
+	vertical-align: middle
+	.fa-check
 		position: absolute
 		left: 0
 		top: 0
@@ -114,10 +115,98 @@
 		height: 16px
 		font-size: 14px
 		background: #f2f2f2
+		border-radius: 2px
 		+box-shadow(inset 0 1px 4px rgba(0,0,0,.23))
 		font-style: normal
-		i
+		&:before
+			display: none
+			margin: 1px 0 0 1px 
 			color: $red 
-	span
-		display: inline-block
-		vertical-align: middle
+.checkbox__input
+	position: absolute
+	left: 0
+	top: 0
+	width: 16px
+	height: 16px
+	opacity: 0
+	&:checked
+		+ .fa-check
+			&:before
+				display: inline-block
+.checkbox__text
+	display: inline-block
+	vertical-align: middle
+	.fa
+		margin-right: 7px
+	.fa-gift
+		color: $red
+	.fa-star
+		color: $yellow 
+		
+.tab
+	display: table
+	margin-bottom: -1px
+	border: 1px solid $border
+	width: 100%
+	+box
+	overflow: hidden
+	table-layout: fixed
+	border-radius: 20px 20px 0 0
+	li
+		display: table-cell
+		text-align: center
+		border-left: 1px solid $border
+		&:first-child  
+			border: 0
+		&.is-active
+			a
+				background: #fff 
+				color: $dark 
+	a
+		display: block
+		padding: 19px 10px 
+		font-size: 16px
+		+fb
+		color: $gray
+		background: $light
+		+tr
+		&:hover
+			background: $border
+	
+.box
+	border: 1px solid $border
+	background: #fff
+	border-radius: 20px 
+	
+.tooltip
+	display: none
+	position: absolute
+	top: auto
+	padding-bottom: 15px
+	width: 148px
+	margin-left: -62px
+	text-align: center
+	z-index: 1000
+.tooltip__in
+	position: relative
+	display: inline-block
+	padding: 11px 16px
+	font-size: 13px
+	+box
+	text-align: left
+	line-height: 12px
+	background: #fff 
+	border-radius: 10px
+	background: rgba(255,255,255,.95)
+	+box-shadow(0 0 6px rgba(#000, .6))
+	&:after
+		content: ""
+		position: absolute
+		bottom: -14px
+		left: 50%
+		margin-left: -7px
+		+s(arr2)
+
+
+.btn-close
+	+s(close) 

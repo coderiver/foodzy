@@ -11,7 +11,7 @@
 
 <!-- BEGIN  out-->
 <div class="out">
-	<header class="header">
+	<header class="header js-full-cart">
 		<div class="header__top">
 			<div class="l-center">
 				<div class="header__user">
@@ -89,9 +89,10 @@
 							<i class="fa fa-shopping-cart"></i>
 						</span>
 						<span class="cart-btn__in">
-							<span>Корзина</span>
+							<span>Корзина </span>
 							26,50 €
 						</span>
+						<span class="cart-btn__text">Оформить заказ</span>
 					</a>
 				</div>
 			</div>
@@ -111,16 +112,490 @@
 						<div class="sidebar__filter">
 							<div class="checkbox-wrap">
 								<label class="checkbox">
-									<input type="checkbox">
-									<em><i class="fa fa-check"></i></em>  
-									<i class="fa fa-gift"></i>
+									<input class="checkbox__input" type="checkbox">
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										<i class="fa fa-gift"></i>
+										Еда со скидкой
+									</span>
+								</label>
+							</div>
+							<div class="checkbox-wrap">
+								<label class="checkbox">
+									<input class="checkbox__input" type="checkbox">
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										<i class="fa fa-star"></i>
+										Еда за баллы
+									</span>
 								</label>
 							</div>
 						</div>
+						<ul class="sidebar__nav">
+							<li><a href="#">Бургеры</a></li>
+							<li><a href="#">Закуски</a></li>
+							<li class="is-active">
+								<a href="#">Блюда из курицы <i class="fa fa-angle-up"></i></a>
+								<ul>
+									<li><a href="#">Врапы из курицы</a></li>
+									<li><a href="#">Закуски из курицы</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Супы</a></li>
+							<li><a href="#">Салаты</a></li>
+							<li><a href="#">Паста</a></li>
+							<li><a href="#">Напитки</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>	
-			<div class="l-col2"></div>	
+			<div class="l-col2">
+				<div class="place-wrap">	
+					<div class="place">
+						<div class="place__img">
+							<a href="#"><img src="img/rest1.png" alt="img"></a>
+						</div>
+						<div class="place__main">
+							<div class="place__head">
+								<div class="place__name"><a href="#">Crab's Burger</a></div>
+								<div class="place__options">
+									<div class="place__add">
+										<i class="fa fa-credit-card"></i>Оплата картой
+									</div>
+									<div class="place__add">
+										<i class="fa fa-male"></i>Только takeaway
+									</div>
+									<div class="place__badges">
+										<span class="badge badge_new js-tooltip-key" data-title="Новый ресторан"><i class="fa fa-gift"></i></span>
+										<span class="badge badge_gift js-tooltip-key" data-title="В этом ресторане действуют акции"><i class="fa fa-gift"></i></span>
+										<span class="badge badge_bonus js-tooltip-key" data-title="В этом ресторане можно приобрести еду за баллы"><i class="fa fa-star"></i></span>
+									</div>
+								</div>
+								<div class="place__kitchen">америкаснкая кухня, мексиканская кухня</div>
+							</div>
+							<div class="place__rules">
+								<div class="place__rules-item">
+									<strong>Бесплатная <br> доставка</strong>
+								</div>
+								<div class="place__rules-item">
+									<span>Среднее время <br> доставки</span>
+									<strong>60 мин.</strong>
+								</div>
+								<div class="place__rules-item">
+									<span>Минимальная <br> стоимость заказа</span>
+									<strong>3 €</strong>
+								</div>
+							</div>
+							<div class="place__info">
+								C 22:30 до 8:00 минимальная сумма заказа - 10 евро, наценка к заказу - 20%. Минимальная сумма заказа на расстояние от 7 км. за пределы Таллинна- 20 Евро.
+							</div>
+						</div>
+					</div>
+					<div class="compaign-items">
+						<div class="title">
+							<i class="fa fa-gift"></i>Кампании в ресторане:</div>
+						<div class="compaign">
+							<div class="compaign__img">
+								<a href="#"><img src="http://lorempixel.com/64/64/food" alt=""></a>
+							</div>
+							<div class="compaign__main">
+								<a class="compaign__title" href="#">
+									Бесплатный сендвич
+								</a>
+								<div class="wrap">
+									<div class="compaign__text">Всем новым клиентам, 	совершившим заказ до 15 июня дарим сендвич.
+									</div>
+									<div class="compaign__meta">
+										<div class="compaign__left">Осталось <span>5 дней!</span></div>
+										<div class="compaign__date">кампания действует до 20.05.2014
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="compaign">
+							<div class="compaign__img">
+								<a href="#"><i class="fa fa-gift"></i></a>
+							</div>
+							<div class="compaign__main">
+								<a class="compaign__title" href="#">
+									Скидка на меню
+								</a>
+								<div class="wrap">
+									<div class="compaign__text">Всем новым В этом ресторане действует <strong>скидка 30%</strong> на все блюда в разделе “Бургеры”
+									</div>
+									<div class="compaign__meta">
+										<div class="compaign__left">
+											<a href="#"><i class="fa fa-gift"></i>Показать блюда со скидкой</a>
+										</div>
+										<div class="compaign__date">кампания действует до 20.05.2014
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="btn-close"></button>
+					</div>
+				</div>
+				<ul class="tab">
+					<li class="is-active"><a href="#">Меню</a></li>
+					<li><a href="#">Информация о ресторане</a></li>
+					<li><a href="#">Отзывы</a></li>
+				</ul>
+				<div class="tab-content box">
+					<div class="title">Бургеры</div>
+					<div class="items-wrap">
+						<div class="item has-bonus">
+							<div class="item__in">
+								<div class="item__main">
+									<a href="#" class="item__img">
+										<img src="img/item1.png" alt="img">
+									</a>
+									<strong class="item__name">Бруклин</strong>
+									<span class="item__meta">Вес: 350 г.</span>
+									<div class="item__price">
+										<a class="btn-order" href="#">
+											<div href="#" class="btn-order__main">
+												<span class="btn-order__price">9 €</span>
+												<span class="btn-order__text">Заказать</span>
+											</div>
+											<span class="btn-order__add">купите за 90 баллов</span>
+										</a>
+									</div>
+								</div>
+								<div class="item__descr">
+									<p>Настоящий классический америкаский бургер. Фанаты наверняка оценят его характерный вкус и текстуру.</p>
+									<p>Говяжья котлета, бекон, картофельные чипсы, лук, салат, капуста, копченый сыр, булочка на выбор, соус барбекю.</p>
+									<p>Булочка: на выбор. Вес может зависеть от выбранной булочки.</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item__in">
+								<div class="item__main">
+									<a href="#" class="item__img">
+										<img src="img/item2.png" alt="img">
+									</a>
+									<strong class="item__name">Бруклин</strong>
+									<span class="item__meta">Вес: 350 г.</span>
+									<div class="item__price">
+										<a class="btn-order" href="#">
+											<div href="#" class="btn-order__main">
+												<span class="btn-order__price">9 €</span>
+												<span class="btn-order__text">Заказать</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="item__descr">
+									<p>Настоящий классический америкаский бургер. Фанаты наверняка оценят его характерный вкус и текстуру.</p>
+									<p>Говяжья котлета, бекон, картофельные чипсы, лук, салат, капуста, копченый сыр, булочка на выбор, соус барбекю.</p>
+									<p>Булочка: на выбор. Вес может зависеть от выбранной булочки.</p>
+								</div>
+							</div>
+						</div>
+						<div class="item has-new-price">
+							<div class="item__in">
+								<div class="item__main">
+									<a href="#" class="item__img">
+										<img src="img/item3.png" alt="img">
+									</a>
+									<strong class="item__name">Бруклин</strong>
+									<span class="item__meta">Вес: 350 г.</span>
+									<div class="item__price">
+										<a class="btn-order" href="#">
+											<div href="#" class="btn-order__main">
+												<span class="btn-order__price">9 €</span>
+												<span class="btn-order__text">Заказать</span>
+											</div>
+											<span class="btn-order__add">старая цена 15 €</span>
+										</a>
+									</div>
+								</div>
+								<div class="item__descr">
+									<p>Настоящий классический америкаский бургер. Фанаты наверняка оценят его характерный вкус и текстуру.</p>
+									<p>Говяжья котлета, бекон, картофельные чипсы, лук, салат, капуста, копченый сыр, булочка на выбор, соус барбекю.</p>
+									<p>Булочка: на выбор. Вес может зависеть от выбранной булочки.</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item__in">
+								<div class="item__main">
+									<a href="#" class="item__img">
+										<img src="img/item4.png" alt="img">
+									</a>
+									<strong class="item__name">Бруклин</strong>
+									<span class="item__meta">Вес: 350 г.</span>
+									<div class="item__price">
+										<a class="btn-order" href="#">
+											<div href="#" class="btn-order__main">
+												<span class="btn-order__price">9 €</span>
+												<span class="btn-order__text">Заказать</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="item__descr">
+									<p>Настоящий классический америкаский бургер. Фанаты наверняка оценят его характерный вкус и текстуру.</p>
+									<p>Говяжья котлета, бекон, картофельные чипсы, лук, салат, капуста, копченый сыр, булочка на выбор, соус барбекю.</p>
+									<p>Булочка: на выбор. Вес может зависеть от выбранной булочки.</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item__in">
+								<div class="item__main">
+									<a href="#" class="item__img">
+										<img src="img/item5.png" alt="img">
+									</a>
+									<strong class="item__name">Бруклин</strong>
+									<span class="item__meta">Вес: 350 г.</span>
+									<div class="item__price">
+										<a class="btn-order" href="#">
+											<div href="#" class="btn-order__main">
+												<span class="btn-order__price">9 €</span>
+												<span class="btn-order__text">Заказать</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="item__descr">
+									<p>Настоящий классический америкаский бургер. Фанаты наверняка оценят его характерный вкус и текстуру.</p>
+									<p>Говяжья котлета, бекон, картофельные чипсы, лук, салат, капуста, копченый сыр, булочка на выбор, соус барбекю.</p>
+									<p>Булочка: на выбор. Вес может зависеть от выбранной булочки.</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item__in">
+								<div class="item__main">
+									<a href="#" class="item__img">
+										<img src="img/item6.png" alt="img">
+									</a>
+									<strong class="item__name">Бруклин</strong>
+									<span class="item__meta">Вес: 350 г.</span>
+									<div class="item__price">
+										<a class="btn-order" href="#">
+											<div href="#" class="btn-order__main">
+												<span class="btn-order__price" title="999 999 €">999 999 €</span>
+												<span class="btn-order__text">Заказать</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="item__descr">
+									<p>Настоящий классический америкаский бургер. Фанаты наверняка оценят его характерный вкус и текстуру.</p>
+									<p>Говяжья котлета, бекон, картофельные чипсы, лук, салат, капуста, копченый сыр, булочка на выбор, соус барбекю.</p>
+									<p>Булочка: на выбор. Вес может зависеть от выбранной булочки.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="title">Закуски</div>
+					<div class="subtitle"><span>Холодные закуски</span></div>
+					<div class="items-wrap">
+						<div class="item">
+							<div class="item__in">
+								<div class="item__main">
+									<a href="#" class="item__img">
+										<img src="img/item7.png" alt="img">
+									</a>
+									<strong class="item__name">Кесадия с курицей</strong>
+									<span class="item__meta">Вес: 350 г.</span>
+									<div class="item__price">
+										<a class="btn-order" href="#">
+											<div href="#" class="btn-order__main">
+												<span class="btn-order__price">9 €</span>
+												<span class="btn-order__text">Заказать</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="item__descr">
+									<p>Настоящий классический америкаский бургер. Фанаты наверняка оценят его характерный вкус и текстуру.</p>
+									<p>Говяжья котлета, бекон, картофельные чипсы, лук, салат, капуста, копченый сыр, булочка на выбор, соус барбекю.</p>
+									<p>Булочка: на выбор. Вес может зависеть от выбранной булочки.</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item__in">
+								<div class="item__main">
+									<a href="#" class="item__img">
+										<img src="img/item8.png" alt="img">
+									</a>
+									<strong class="item__name">Кесадия с креветками</strong>
+									<span class="item__meta">Вес: 350 г.</span>
+									<div class="item__price">
+										<a class="btn-order" href="#">
+											<div href="#" class="btn-order__main">
+												<span class="btn-order__price">9 €</span>
+												<span class="btn-order__text">Заказать</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="item__descr">
+									<p>Настоящий классический америкаский бургер. Фанаты наверняка оценят его характерный вкус и текстуру.</p>
+									<p>Говяжья котлета, бекон, картофельные чипсы, лук, салат, капуста, копченый сыр, булочка на выбор, соус барбекю.</p>
+									<p>Булочка: на выбор. Вес может зависеть от выбранной булочки.</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item__in">
+								<div class="item__main">
+									<a href="#" class="item__img">
+										<img src="img/item9.png" alt="img">
+									</a>
+									<strong class="item__name">Рап с куриным филе</strong>
+									<span class="item__meta">Вес: 350 г.</span>
+									<div class="item__price">
+										<a class="btn-order" href="#">
+											<div href="#" class="btn-order__main">
+												<span class="btn-order__price" title="999 999 €">999 999 €</span>
+												<span class="btn-order__text">Заказать</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="item__descr">
+									<p>Настоящий классический америкаский бургер. Фанаты наверняка оценят его характерный вкус и текстуру.</p>
+									<p>Говяжья котлета, бекон, картофельные чипсы, лук, салат, капуста, копченый сыр, булочка на выбор, соус барбекю.</p>
+									<p>Булочка: на выбор. Вес может зависеть от выбранной булочки.</p>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="subtitle"><span>Горячие закуски</span></div>
+					<div class="items-wrap">
+						<div class="item">
+							<div class="item__in">
+								<div class="item__main">
+									<a href="#" class="item__img">
+										<img src="img/item7.png" alt="img">
+									</a>
+									<strong class="item__name">Кесадия с курицей</strong>
+									<span class="item__meta">Вес: 350 г.</span>
+									<div class="item__price">
+										<a class="btn-order" href="#">
+											<div href="#" class="btn-order__main">
+												<span class="btn-order__price">9 €</span>
+												<span class="btn-order__text">Заказать</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="item__descr">
+									<p>Настоящий классический америкаский бургер. Фанаты наверняка оценят его характерный вкус и текстуру.</p>
+									<p>Говяжья котлета, бекон, картофельные чипсы, лук, салат, капуста, копченый сыр, булочка на выбор, соус барбекю.</p>
+									<p>Булочка: на выбор. Вес может зависеть от выбранной булочки.</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item__in">
+								<div class="item__main">
+									<a href="#" class="item__img">
+										<img src="img/item8.png" alt="img">
+									</a>
+									<strong class="item__name">Кесадия с креветками</strong>
+									<span class="item__meta">Вес: 350 г.</span>
+									<div class="item__price">
+										<a class="btn-order" href="#">
+											<div href="#" class="btn-order__main">
+												<span class="btn-order__price">9 €</span>
+												<span class="btn-order__text">Заказать</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="item__descr">
+									<p>Настоящий классический америкаский бургер. Фанаты наверняка оценят его характерный вкус и текстуру.</p>
+									<p>Говяжья котлета, бекон, картофельные чипсы, лук, салат, капуста, копченый сыр, булочка на выбор, соус барбекю.</p>
+									<p>Булочка: на выбор. Вес может зависеть от выбранной булочки.</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item__in">
+								<div class="item__main">
+									<a href="#" class="item__img">
+										<img src="img/item9.png" alt="img">
+									</a>
+									<strong class="item__name">Рап с куриным филе</strong>
+									<span class="item__meta">Вес: 350 г.</span>
+									<div class="item__price">
+										<a class="btn-order" href="#">
+											<div href="#" class="btn-order__main">
+												<span class="btn-order__price" title="999 999 €">999 999 €</span>
+												<span class="btn-order__text">Заказать</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="item__descr">
+									<p>Настоящий классический америкаский бургер. Фанаты наверняка оценят его характерный вкус и текстуру.</p>
+									<p>Говяжья котлета, бекон, картофельные чипсы, лук, салат, капуста, копченый сыр, булочка на выбор, соус барбекю.</p>
+									<p>Булочка: на выбор. Вес может зависеть от выбранной булочки.</p>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="title">Блюда из курицы</div>
+					<div class="items-wrap">
+						<div class="item">
+							<div class="item__in">
+								<div class="item__main">
+									<a href="#" class="item__img">
+										<img src="img/item10.png" alt="img">
+									</a>
+									<strong class="item__name">Кесадия с курицей</strong>
+									<span class="item__meta">Вес: 350 г.</span>
+									<div class="item__price">
+										<a class="btn-order" href="#">
+											<div href="#" class="btn-order__main">
+												<span class="btn-order__price">9 €</span>
+												<span class="btn-order__text">Заказать</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="item__descr">
+									<p>Настоящий классический америкаский бургер. Фанаты наверняка оценят его характерный вкус и текстуру.</p>
+									<p>Говяжья котлета, бекон, картофельные чипсы, лук, салат, капуста, копченый сыр, булочка на выбор, соус барбекю.</p>
+									<p>Булочка: на выбор. Вес может зависеть от выбранной булочки.</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item__in">
+								<div class="item__main">
+									<a href="#" class="item__img">
+										<img src="img/item11.png" alt="img">
+									</a>
+									<strong class="item__name">very long name very long name very long name</strong>
+									<span class="item__meta">Вес: 350 г.</span>
+									<div class="item__price">
+										<a class="btn-order" href="#">
+											<div href="#" class="btn-order__main">
+												<span class="btn-order__price">9 €</span>
+												<span class="btn-order__text">Заказать</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="item__descr">
+									<p>Настоящий классический америкаский бургер. Фанаты наверняка оценят его характерный вкус и текстуру.</p>
+									<p>Говяжья котлета, бекон, картофельные чипсы, лук, салат, капуста, копченый сыр, булочка на выбор, соус барбекю.</p>
+									<p>Булочка: на выбор. Вес может зависеть от выбранной булочки.</p>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>	
 		</div>
 	</div>
 	<div class="push"></div> 
