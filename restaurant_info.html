@@ -1,0 +1,909 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>restaurant info</title>
+	<meta name="viewport">
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out">
+	<header class="header js-full-cart">
+		<div class="header__top">
+			<div class="l-center">
+				<div class="header__user">
+					<div class="extend-item js-extend-item">
+						<a href="#" class="extend-item__link js-extend-item-link">Афанасий никитин <i class="fa fa-sort-desc"></i></a>
+						<ul class="extend-item__list js-extend-item-list">
+							<li>
+								<a href="#">
+									<span class="extend-item__icon">
+										<span class="badge badge_bonus"><i class="fa fa-star"></i></span>
+									</span>
+									<span class="extend-item__text">
+										У вас 44 бонусных пункта <span>как использовать бонусы?</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="extend-item__icon">
+										<i class="fa fa-tags"></i>
+									</span>
+									<span class="extend-item__text">Мои заказы</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="extend-item__icon">
+										<i class="fa fa-cog"></i>
+									</span>
+									<span class="extend-item__text">Настройки аккаунта</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header__login">
+					<a href="#">Выйти <i class="fa fa-sign-out"></i></a>
+				</div>
+				<div class="header__lang">
+					<div class="extend-item js-extend-item">
+						<a href="#" class="extend-item__link js-extend-item-link">По-русски <i class="fa fa-sort-desc"></i></a>
+						<ul class="extend-item__list js-extend-item-list">
+							<li><a href="#">По-русски</a></li>
+							<li><a href="#">По-русски</a></li>
+							<li><a href="#">По-русски</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="header__main">
+			<div class="l-center">
+				<a href="#" class="header__logo">
+					<strong>foodzy</strong>
+					система доставки
+				</a>
+				<div class="header__city">
+					<a href="#" class="header__city-btn">
+						<span>ваш город: </span>
+						<i class="fa fa-location-arrow"></i>
+					</a>		
+					<div class="header__input">
+						<input type="text" placeholder="Выберите город">
+					</div>
+				</div>
+				<div class="header__search">	
+					<div class="header__input">
+						<input type="text" placeholder="блюдо или ресторан...">
+						<button class="fa fa-search"></button>
+					</div>
+				</div>
+				<div class="header__cart">
+					<a href="#" class="cart-btn">
+						<span class="cart-btn__icon">
+							<i class="fa fa-shopping-cart"></i>
+						</span>
+						<span class="cart-btn__in">
+							<span>Корзина </span>
+							26,50 €
+						</span>
+						<span class="cart-btn__text">Оформить заказ</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="l-center">
+		<div class="l-cols">
+			<div class="l-col1">	
+				<div class="sidebar js-sidebar">
+					<div class="sidebar__in">
+						<div class="sidebar__wrap">
+							<div class="sidebar__item">
+								<div class="sidebar__search">
+									<input type="text" placeholder="быстрый поиск блюда">
+									<button class="fa fa-search"></button>
+								</div>
+							</div>
+							<div class="sidebar__filter">
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											<i class="fa fa-gift"></i>
+											Еда со скидкой
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											<i class="fa fa-star"></i>
+											Еда за баллы
+										</span>
+									</label>
+								</div>
+							</div>
+							<ul class="sidebar__nav js-sidebar-nav">
+								<li><a href="js-categ1">Бургеры</a></li>
+								<li>
+									<a href="js-categ2">Закуски <i class="fa fa-angle-up"></i><i class="fa fa-angle-down"></i></a>
+									<ul>
+										<li><a href="js-categ21">Холодные закуски</a></li>
+										<li><a href="js-categ22">Горячие закуски</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="js-categ3">Блюда из курицы <i class="fa fa-angle-up"></i><i class="fa fa-angle-down"></i></a>
+									<ul>
+										<li><a href="js-categ31">Врапы из курицы</a></li>
+										<li><a href="js-categ32">Закуски из курицы</a></li>
+									</ul>
+								</li>
+								<li><a href="js-categ4">Супы</a></li>
+								<li><a href="js-categ5">Салаты</a></li>
+								<li><a href="js-categ6">Паста</a></li>
+								<li><a href="js-categ7">Напитки</a></li>
+							</ul>
+						</div>
+					</div>
+					<i class="sidebar-target"></i>
+				</div>
+			</div>	
+			<div class="l-col2">
+				<div class="place-wrap">	
+					<div class="place">
+						<div class="place__img">
+							<a href="#"><img src="img/rest1.png" alt="img"></a>
+						</div>
+						<div class="place__main">
+							<div class="place__head">
+								<div class="place__name"><a href="#">Crab's Burger</a></div>
+								<div class="place__options">
+									<div class="place__add">
+										<i class="fa fa-credit-card"></i>Оплата картой
+									</div>
+									<div class="place__add">
+										<i class="fa fa-male"></i>Только takeaway
+									</div>
+									<div class="place__badges">
+										<span class="badge badge_new js-tooltip-key" data-title="Новый ресторан"><i class="fa fa-sun-o"></i></span>
+										<a href="#" class="badge badge_gift js-tooltip-key js-compaign-key" data-title="В этом ресторане действуют акции"><i class="fa fa-gift"></i></a>
+										<span class="badge badge_bonus js-tooltip-key" data-title="В этом ресторане можно приобрести еду за баллы"><i class="fa fa-star"></i></span>
+									</div>
+								</div>
+								<div class="place__kitchen">америкаснкая кухня, мексиканская кухня</div>
+							</div>
+							<div class="place__rules">
+								<div class="place__rules-item">
+									<strong>Бесплатная <br> доставка</strong>
+								</div>
+								<div class="place__rules-item">
+									<span>Среднее время <br> доставки</span>
+									<strong>60 мин.</strong>
+								</div>
+								<div class="place__rules-item">
+									<span>Минимальная <br> стоимость заказа</span>
+									<strong>3 €</strong>
+								</div>
+							</div>
+							<div class="place__info">
+								C 22:30 до 8:00 минимальная сумма заказа - 10 евро, наценка к заказу - 20%. Минимальная сумма заказа на расстояние от 7 км. за пределы Таллинна- 20 Евро.
+							</div>
+						</div>
+					</div>
+					<div class="compaign-items js-compaigns">
+						<div class="title">
+							<i class="fa fa-gift"></i>Кампании в ресторане:</div>
+						<div class="compaign">
+							<div class="compaign__img">
+								<a href="#"><img src="http://lorempixel.com/64/64/food" alt=""></a>
+							</div>
+							<div class="compaign__main">
+								<a class="compaign__title" href="#">
+									Бесплатный сендвич
+								</a>
+								<div class="wrap">
+									<div class="compaign__text">Всем новым клиентам, 	совершившим заказ до 15 июня дарим сендвич.
+									</div>
+									<div class="compaign__meta">
+										<div class="compaign__left">Осталось <span>5 дней!</span></div>
+										<div class="compaign__date">кампания действует до 20.05.2014
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="compaign">
+							<div class="compaign__img">
+								<a href="#"><i class="fa fa-gift"></i></a>
+							</div>
+							<div class="compaign__main">
+								<a class="compaign__title" href="#">
+									Скидка на меню
+								</a>
+								<div class="wrap">
+									<div class="compaign__text">Всем новым В этом ресторане действует <strong>скидка 30%</strong> на все блюда в разделе “Бургеры”
+									</div>
+									<div class="compaign__meta">
+										<div class="compaign__left">
+											<a href="#"><i class="fa fa-gift"></i>Показать блюда со скидкой</a>
+										</div>
+										<div class="compaign__date">кампания действует до 20.05.2014
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="btn-close js-compaigns-close"></button>
+					</div>
+				</div>
+				<ul class="tab">
+					<li><a href="#">Меню</a></li>
+					<li class="is-active"><a href="#">Информация о ресторане</a></li>
+					<li><a href="#">Отзывы</a></li>
+				</ul>
+				<div class="tab-content box">
+					<div class="article">
+						<p>Доставка пиццы в офис порадует вас в рабочий час, а десерт усластит ваше рабочее время. «Сити Пицца» позволяет легко и быстро сделать заказ через интернет и выбрать, что пожелает душа из большого ассортимента.</p>
+						<p>Это возможность получить наслаждение от разнообразной вкуснейшей <a href="#">пиццы</a> в любом удобном для вас месте и времени!</p>
+					</div>
+					<div class="contacts-wrap">
+						<div class="contact">
+							<div class="contact__title">Доставка по районам:</div>
+							<ul>
+								<li>Tallinn:
+									<ul>			
+							   			<li>Lasnamae <span>5 €</span></li>
+							   			<li>Pirita <span>7 €</span></li>
+							   			<li>Kesklinn <span>10 €</span></li>
+							   		</ul>
+							   	</li>
+								<li>Maardu <span>15 €</span></li>
+								<li>Viimsi <span>25 €</span></li>
+							</ul>
+						<em>Среднее время доставки может быть изменено в зависимости от загруженности ресторана.</em>
+						</div>
+						<div class="contact">
+							<div class="contact__title">Контакты ресторана:</div>
+							<div class="contact__item">
+								<strong>Адрес:</strong>
+								<p>Masina 22, Tallinn, 10144 <br>Harjumaa, Estonia</p>
+							</div>
+							<div class="contact__item">
+								<strong>Телефон:</strong>
+								<p>+372 55 666 767 <br>+372 68 957 982</p>
+							</div>
+							<div class="contact__item">
+								<strong>e-mail:</strong>
+								<p><a href="mailto:info@crabsburger.ee">info@crabsburger.ee</a></p>
+							</div>
+						</div>
+						<div class="contact">
+							<div class="contact__title">Время работы:</div>
+							<div class="contact__item">
+								<strong>Ресторан открыт:</strong>
+								<p>Пн - Пт. 10:00 - 22:00</p>
+							</div>
+							<div class="contact__item">
+								<strong>Прием заказов:</strong>
+								<p>Пн - Пт. 10:00 - 18:00</p>
+							</div>
+							<div class="contact__item">
+								<strong>Takeaway:</strong>
+								<p>Пн - Пт. 10:00 - 20:00</p>
+							</div>
+						</div>
+					</div>
+					<div id="map-canvas" class="google-map"></div>
+					<script>
+					  	function initialize() {
+						    var mapOptions = {
+						      	zoom: 18,
+						      	center: new google.maps.LatLng(59.436920, 24.743405),
+						      	disableDefaultUI: false,
+						      	scrollwheel: true,
+						     	zoomControl: true,
+						    	zoomControlOptions: {
+						        	style: google.maps.ZoomControlStyle.DEFAULT
+						      	},
+						      	mapTypeId: google.maps.MapTypeId.ROADMAP
+						    }
+						    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+						    //var image = 'img/marker.png';
+						    var myLatLng1 = new google.maps.LatLng(59.436920, 24.743405);
+						    var marker1 = new google.maps.Marker({
+							      position: myLatLng1,
+							      map: map,
+							      title: 'Uluru (Ayers Rock)', 
+							      //icon: image
+							});
+						    var contentString1 =	'<div style="width:200px;height: 80px">'
+									+'<p>115 E.23rd Street </p>'
+									+'<p>3rd. Floor </p>'
+									+'<p>New York, NY</p>'
+									+'<p>10010</p>'+
+								'</div>';
+						  	var infowindow1 = new google.maps.InfoWindow({
+							    content: contentString1
+							});
+							google.maps.event.addListener(marker1, 'click', function(){
+							    infowindow1.open(map,marker1);
+							    infowindow2.open(map,marker2);
+							});
+							//infowindow1.open(map,marker1);
+							//infowindow2.open(map,marker2);
+
+						}
+					  	// Asynchronous Loading
+						function loadScript() {
+						  var script = document.createElement('script');
+						  script.type = 'text/javascript';
+						  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+						      'callback=initialize';
+						  document.body.appendChild(script);
+						}
+						window.onload = loadScript;
+					</script>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="push"></div> 
+	<div class="item-popup item-popup_simple js-item-popup js-item-popup-1">
+		<div class="item">
+			<div class="item__in">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item1.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="choose js-choose" data-max-number="50">
+						<div class="choose__main"><span class="js-choose-digit">1</span> шт.</div>
+						<input type="hidden" value="1">
+						<button class="fa fa-plus-circle js-plus"></button>
+	                    <button class="fa fa-minus-circle js-minus"></button>
+	                </div>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+						<a class="btn-order-bonus" href="#">
+							купить за 90 баллов
+						</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<button class="btn-close js-item-popup-close"></button>
+	</div>
+	<div class="item-popup item-popup_width js-item-popup js-item-popup-2">
+		<div class="item">
+			<div class="item__in">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item2.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="choose js-choose" data-max-number="50">
+						<div class="choose__main"><span class="js-choose-digit">1</span> шт.</div>
+						<input type="hidden" value="1">
+						<button class="fa fa-plus-circle js-plus"></button>
+	                    <button class="fa fa-minus-circle js-minus"></button>
+	                </div>
+	                <div class="item__add-info">Добавки: 2,4 €</div>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+						<a class="btn-order-bonus" href="#">
+							купить за 90 баллов
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item-same">
+			<div class="title">Сопутствующие блюда:</div>
+			<div class="item">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item4.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item5.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="btn-close js-item-popup-close"></button>
+	</div>
+	<div class="item-popup item-popup_width js-item-popup js-item-popup-3">
+		<div class="item">
+			<div class="item__in">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item2.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="choose js-choose" data-max-number="50">
+						<div class="choose__main"><span class="js-choose-digit">1</span> шт.</div>
+						<input type="hidden" value="1">
+						<button class="fa fa-plus-circle js-plus"></button>
+	                    <button class="fa fa-minus-circle js-minus"></button>
+	                </div>
+	                <div class="item__add-info">Добавки: 2,4 €</div>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+						<a class="btn-order-bonus" href="#">
+							купить за 90 баллов
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item-opt">
+			<div class="item-opt__categ">Выберите булочку:</div>
+			<div class="item-opt__list">
+				<div class="item-opt__cols">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1" checked>
+							<span>Белая булочка</span> 
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Белая буолчка с кунжутом</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Чиабатта с оливками</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Чиабатта ржаная</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Чиабатта с паприкой</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Чиабатта классическая</span>
+						</label>
+					</div>
+				</div>
+				<div class="item-opt__categ">Добавки:</div>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox" checked>
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с плесенью
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с дырками
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox" checked>
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Жареный панированый лук
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Бекон 
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Зелень
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Салат
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с плесенью
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с дырками
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Жареный панированый лук
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Бекон 
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Зелень
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Салат
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+			</div>
+		</div>
+		<button class="btn-close js-item-popup-close"></button>
+	</div>
+	<div class="item-popup item-popup_width item_height js-item-popup js-item-popup-4">
+		<div class="item">
+			<div class="item__in">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item4.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="choose js-choose" data-max-number="50">
+						<div class="choose__main"><span class="js-choose-digit">1</span> шт.</div>
+						<input type="hidden" value="1">
+						<button class="fa fa-plus-circle js-plus"></button>
+	                    <button class="fa fa-minus-circle js-minus"></button>
+	                </div>
+	                <div class="item__add-info">Добавки: 2,4 €</div>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+						<a class="btn-order-bonus" href="#">
+							купить за 90 баллов
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item-opt">
+			<div class="item-opt__categ">Выберите булочку:</div>
+			<div class="item-opt__list">
+				<div class="item-opt__cols">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2" checked>
+							<span>Белая булочка</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Белая буолчка с кунжутом</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Чиабатта с оливками</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Чиабатта ржаная</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Чиабатта с паприкой</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Чиабатта классическая</span>
+						</label>
+					</div>
+				</div>
+				<div class="item-opt__categ">Добавки:</div>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox" checked>
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с плесенью
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с дырками
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox" checked>
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Жареный панированый лук
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Бекон 
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Зелень
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Салат
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с плесенью
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с дырками
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Жареный панированый лук
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Бекон 
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Зелень
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Салат
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+			</div>
+		</div>
+		<div class="item-same-extend">
+			<div class="title">Сопутствующие блюда:</div>
+			<div class="item">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item4.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item5.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item6.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="btn-close js-item-popup-close"></button>
+	</div>
+</div>
+<!-- END out-->
+<footer class="footer">
+	<div class="l-center">
+		<div class="footer__top">
+			<div class="footer__feedback">
+				<div class="footer__feedback-title">Поддержка</div>
+				<ul>
+					<li>Вопросы и ответы</li>
+					<li>+372 66 777 888</li>
+					<li>+372 66 999 262</li>
+					<li><a href="mailto:info@fudzy.ee">info@fudzy.ee</a></li>
+				</ul>
+			</div>
+			<div class="footer__nav footer__col">
+				<ul>
+					<li><a href="#">Условия использования сайта</a></li>
+					<li><a href="#">Ресторанам</a></li>
+					<li><a href="#">Агентам</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="footer__about footer__col">
+				fudzy— это сервис, объединивший сотни служб доставки пиццы, суши, еды и продуктов в Единую Систему Заказов. <br>
+				Цель проекта — обеспечить своим пользователям наилучшие условия для быстрого, удобного и выгодного осуществления заказов.
+				<div class="footer__soc">
+					<a href="#">
+						<i class="fa fa-facebook"></i>
+						<span>Facebook</span>
+					</a>
+					<a href="#">
+						<i class="fa fa-instagram"></i>
+						<span>Instagram</span>
+					</a>
+					<a href="#">
+						<i class="fa fa-comments"></i>
+						<span>Блог</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer__meta"><span>© fudzy 2014</span> Designed by <a href="#">Aprol Designs</a></div>
+	</div>
+</footer>
+
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html> 

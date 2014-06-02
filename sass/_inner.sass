@@ -1,3 +1,13 @@
+.article
+	font-size: 13px
+	color: $dark
+	p
+		margin-bottom: 10px
+	a
+		+tr
+		&:hover
+			color: $red_d
+			text-decoration: underline 
 .place-wrap
 	margin-bottom: 13px
 	.place
@@ -176,6 +186,10 @@
 	border-radius: 0 0 20px 20px
 	.title
 		margin: 13px 0
+	.article
+		margin-bottom: 25px
+		border-bottom: 1px dashed $border 
+		padding: 0 20px 5px 
 .items-wrap
 	+clr
 	padding: 8px 
@@ -355,3 +369,60 @@
 	background: $yellow    
 	border-radius: 13px
 	color: $dark 
+	
+.contacts-wrap
+	padding: 0 0 0 19px 
+	+clr
+.contact
+	float: left
+	margin: 0 0 18px 28px  
+	width: 216px
+	&:first-child
+		margin-left: 0
+	em
+		font-style: normal
+		+fi
+		color: $gray 
+	ul
+		margin-bottom: 9px
+		li
+			position: relative
+			margin-bottom: 5px
+			padding-left: 13px
+			+fb
+			&:before
+				content: ""
+				position: absolute
+				top: 5px
+				left: 0
+				width: 4px
+				height: 4px
+				background: $dark
+				border-radius: 50% 
+			ul
+				margin: 5px 0 10px
+			li
+				padding-left: 9px
+				+fi	
+				&:before
+					display: none
+.contact__title
+	margin-bottom: 16px
+	border-bottom: 1px solid $border 
+	padding-bottom: 10px
+	font-size: 15px
+	+fb
+.contact__item
+	margin-bottom: 17px
+	+fi
+	strong
+		display: block
+		margin-bottom: 5px
+		+fb
+		font-weight: normal
+		
+.google-map
+	border-top: 1px dashed $border 
+	height: 500px
+	overflow: hidden
+	border-radius: 0 0 20px 20px

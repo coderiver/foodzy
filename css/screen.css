@@ -324,6 +324,11 @@ a { color: #da2400; text-decoration: none; }
 .slider__img_burger { font-size: 0; }
 .slider__img_burger img { position: relative; top: 83px; right: 85px; }
 
+.article { font-size: 13px; color: #3d3d3d; }
+.article p { margin-bottom: 10px; }
+.article a { -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.article a:hover { color: #a51b00; text-decoration: underline; }
+
 .place-wrap { margin-bottom: 13px; }
 .place-wrap .place { position: relative; z-index: 2; }
 .place-wrap .compaign-items { position: relative; margin-top: -2px; }
@@ -395,6 +400,7 @@ a { color: #da2400; text-decoration: none; }
 
 .tab-content { padding-top: 29px; border-radius: 0 0 20px 20px; }
 .tab-content .title { margin: 13px 0; }
+.tab-content .article { margin-bottom: 25px; border-bottom: 1px dashed #d7d7d7; padding: 0 20px 5px; }
 
 .items-wrap { *zoom: 1; padding: 8px; }
 .items-wrap:after { content: " "; display: table; clear: both; }
@@ -441,6 +447,26 @@ a { color: #da2400; text-decoration: none; }
 .btn-order__add { position: absolute; z-index: 1; left: 1px; bottom: -24px; right: 1px; font-size: 12px; height: 40px; line-height: 53px; color: #3d3d3d; border-radius: 0 0 20px 20px; font-family: "roboto-regular", Arial, sans-serif; }
 
 .btn-order-bonus { display: block; margin: 6px 0; padding: 6px; font-size: 12px; text-align: center; background: #ffc600; border-radius: 13px; color: #3d3d3d; }
+
+.contacts-wrap { padding: 0 0 0 19px; *zoom: 1; }
+.contacts-wrap:after { content: " "; display: table; clear: both; }
+
+.contact { float: left; margin: 0 0 18px 28px; width: 216px; }
+.contact:first-child { margin-left: 0; }
+.contact em { font-style: normal; font-family: "roboto-italic", Arial, sans-serif; color: #757575; }
+.contact ul { margin-bottom: 9px; }
+.contact ul li { position: relative; margin-bottom: 5px; padding-left: 13px; font-family: "roboto-bold", Arial, sans-serif; }
+.contact ul li:before { content: ""; position: absolute; top: 5px; left: 0; width: 4px; height: 4px; background: #3d3d3d; border-radius: 50%; }
+.contact ul li ul { margin: 5px 0 10px; }
+.contact ul li li { padding-left: 9px; font-family: "roboto-italic", Arial, sans-serif; }
+.contact ul li li:before { display: none; }
+
+.contact__title { margin-bottom: 16px; border-bottom: 1px solid #d7d7d7; padding-bottom: 10px; font-size: 15px; font-family: "roboto-bold", Arial, sans-serif; }
+
+.contact__item { margin-bottom: 17px; font-family: "roboto-italic", Arial, sans-serif; }
+.contact__item strong { display: block; margin-bottom: 5px; font-family: "roboto-bold", Arial, sans-serif; font-weight: normal; }
+
+.google-map { border-top: 1px dashed #d7d7d7; height: 500px; overflow: hidden; border-radius: 0 0 20px 20px; }
 
 .sidebar { position: relative; width: 242px; }
 
