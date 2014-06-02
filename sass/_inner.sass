@@ -40,7 +40,16 @@
 	float: left
 	margin-right: 18px
 	width: 90px
+	height: 100%
 	overflow: hidden
+.place__rate
+	position: absolute
+	bottom: 16px
+	left: 20px
+	width: 90px
+	text-align: center
+	.rate
+		margin-top: 5px
 .place__main
 	overflow: hidden
 .place__head
@@ -426,3 +435,54 @@
 	height: 500px
 	overflow: hidden
 	border-radius: 0 0 20px 20px
+	
+.add-comment
+	padding: 10px 20px 14px
+	border-bottom: 1px dashed $border
+.add-comment__head   
+	+clr
+	margin-bottom: 9px
+.add-comment__title
+	float: left
+	margin-top: 7px
+	font-size: 15px
+	+fb
+.add-comment__like
+	float: right
+	text-align: right
+.add-comment__body
+	text-align: center
+	.input_textarea
+		min-height: 120px
+		text-align: left
+	.btn
+		margin-top: 13px
+
+.comments-wrap
+	padding: 20px 
+.comments-info
+	margin-bottom: 28px
+	font-size: 15px
+	+fm
+.comments-all-link
+	display: inline-block
+	margin-right: 4px
+	border-bottom: 1px dashed 
+	color: $gray 
+.comment
+	margin-top: 34px
+	.fa
+		font-size: 15px
+		margin-right: 4px
+	.fa-thumbs-up
+		color: $yellow 
+	.fa-thumbs-down
+		color: $red
+.comment__head
+	margin-bottom: 8px
+.comment__author
+	+fm
+	font-size: 15px
+.comment__meta
+	+fi
+	color: $gray 

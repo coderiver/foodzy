@@ -295,3 +295,62 @@
 			border-radius: 50%
 			background: #d92300
 			 
+.rate
+	position: relative
+	height: 8px
+	overflow: hidden
+	border-radius: 10px
+	background: $red 
+	span
+		position: absolute
+		left: 0
+		top: 0
+		bottom: 0
+		background: $yellow 
+.comment-counter
+	font-size: 14px
+	color: $dark
+	+fb
+	.fa
+		margin-right: 3px
+		
+.btn-like
+	display: inline-block
+	padding: 0 21px 0 17px 
+	height: 33px
+	line-height: 33px
+	background: #fafafa
+	border-radius: 20px
+	+fm
+	font-size: 15px
+	color: $dark 
+	&.is-active
+		+box-shadow(0 1px 0 #dfdfdf, inset 0 1px 2px rgba(0,0,0,.36))
+	.fa
+		margin-right: 2px
+	.fa-thumbs-up
+		color: $yellow
+	.fa-thumbs-down
+		color: $red 
+		
+.input
+	display: block
+	border: 1px solid $border
+	padding: 0 20px 
+	width: 100%
+	height: 47px
+	border-radius: 15px
+	+box
+	+tr(border .2s linear)
+	+placeholder
+		font-style: normal
+		+fi
+		color: $gray 
+	&:hover,
+	&:focus
+		border-color: $gray 
+.input_textarea
+	padding: 11px 20px
+	max-height: 206px
+	resize: none  
+	
