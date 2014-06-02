@@ -40,6 +40,7 @@ body.has-fixed-header .header { padding-top: 64px; }
 body.has-fixed-header .header__main { position: fixed; z-index: 500; top: 0; left: 0; right: 0; }
 body.has-fixed-header .header__city, body.has-fixed-header .header__search, body.has-fixed-header .cart-btn__icon, body.has-fixed-header .cart-btn__in { display: none; }
 body.has-fixed-header .cart-btn { padding-left: 0; background: #da2400; text-align: center; }
+body.has-fixed-header .cart-btn:hover { background: #a51b00; }
 body.has-fixed-header .cart-btn__text { display: block; }
 body.has-fixed-header.has-fixed-sidebar .sidebar__in { top: 79px; }
 body.has-fixed-sidebar .sidebar__in { position: fixed; top: 0; width: 242px; }
@@ -207,7 +208,7 @@ a { color: #da2400; text-decoration: none; }
 
 .checkbox-wrap { margin-bottom: 17px; }
 
-.checkbox { position: relative; padding-left: 27px; display: inline-block; vertical-align: middle; }
+.checkbox { position: relative; padding-left: 27px; display: inline-block; vertical-align: middle; cursor: pointer; }
 .checkbox .fa-check { position: absolute; left: 0; top: 0; width: 16px; height: 16px; font-size: 14px; background: #f2f2f2; border-radius: 2px; -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.23); -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.23); box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.23); font-style: normal; }
 .checkbox .fa-check:before { display: none; margin: 1px 0 0 1px; color: #da2400; }
 
@@ -249,7 +250,7 @@ a { color: #da2400; text-decoration: none; }
 
 .radio-wrap { margin-bottom: 5px; }
 
-.radio { display: inline-block; position: relative; min-height: 20px; }
+.radio { display: inline-block; position: relative; min-height: 20px; cursor: pointer; }
 .radio input { position: absolute; left: 0; top: 2px; z-index: 2; width: 14px; height: 14px; opacity: 0; }
 .radio input:checked + span:after { display: block; }
 .radio span { display: inline-block; vertical-align: middle; position: relative; padding-left: 25px; }
