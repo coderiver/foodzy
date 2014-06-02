@@ -115,7 +115,6 @@
 			font-size: 26px
 			color: $red 
 	.btn-close
-		position: absolute
 		top: 10px
 		right: 10px
 .compaign
@@ -179,25 +178,26 @@
 .items-wrap
 	+clr
 	padding: 8px 
+	.item
+		&:nth-child(3n+3)
+			&:hover
+				.item__in
+					right: 0
+					left: auto
+				.item__main
+					position: relative
+					left: 231px
+				.item__descr
+					position: relative
+					left: -237px
+					border-right: 1px dashed $border
+					border-left: 0 
 .item
 	position: relative
 	z-index: 1
 	float: left
 	width: 240px
 	height: 318px
-	&:nth-child(3n+3)
-		&:hover
-			.item__in
-				right: 0
-				left: auto
-			.item__main
-				position: relative
-				left: 231px
-			.item__descr
-				position: relative
-				left: -237px
-				border-right: 1px dashed $border
-				border-left: 0 
 	&:hover
 		z-index: 2
 		.item__in
@@ -285,27 +285,6 @@
 	.btn-order
 		position: relative
 		z-index: 2
-.item-popup		
-	position: fixed
-	//position: absolute
-	top: 100px
-	bottom: 0
-	left: 500px
-	z-index: 200
-	background: #fff   
-	+tr(box-shadow .2s linear)
-	border-radius: 15px
-	+box-shadow(0 0 8px rgba(#000,.5))
-	.item
-		height: 400px
-		&:hover
-			.item__in
-				+box-shadow(none)
-				width: 237px
-.item-popup_simple
-	width: 237px
-	height: 401px
-	+clr
 
 .btn-order
 	position: relative
@@ -363,3 +342,13 @@
 	color: $dark 
 	border-radius: 0 0 20px 20px 
 	+fr
+
+.btn-order-bonus
+	display: block
+	margin: 6px 0 
+	padding: 6px
+	font-size: 12px
+	text-align: center 
+	background: $yellow    
+	border-radius: 13px
+	color: $dark 

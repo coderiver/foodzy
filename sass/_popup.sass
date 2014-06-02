@@ -1,0 +1,113 @@
+.item-popup		
+	position: absolute
+	display: none
+	overflow: hidden
+	z-index: 200
+	background: #fff   
+	+tr(box-shadow .2s linear)
+	border-radius: 15px
+	+box-shadow(0 0 8px rgba(#000,.5))
+	.item
+		height: 400px
+		&:hover
+			.item__in
+				+box-shadow(none)
+				width: 237px
+	.btn-close
+		right: 14px
+		top: 11px
+.item-popup_simple
+	width: 237px
+	height: 400px
+	+clr
+.item-popup_width
+	width: 720px
+	height: 422px
+	+clr
+	.item
+		float: left
+		height: 100%
+		background: #fff 
+.item_height
+	height: 785px
+	.item,
+	.item-opt
+		position: relative
+		height: 421px
+		z-index: 10
+		background: #fff 
+.item-same
+	position: relative
+	padding: 40px 0 10px 
+	overflow: hidden
+	+box
+	height: 100%
+	border-left: 1px dashed #bcbcbc 
+	&:before
+		content: ""
+		position: absolute
+		left: -12px
+		top: 10px
+		bottom: 10px  
+		z-index: 11
+		width: 10px
+		border-radius: 100%
+		+box-shadow(0 0 10px #000)
+	.title
+		font-size: 26px
+	.item
+		height: auto
+		width: 239px
+.item-opt
+	overflow: hidden
+	padding: 24px 30px 
+	height: 100%
+	+box
+	border-left: 1px dashed #bcbcbc 
+.item-opt__list
+	padding-right: 28px
+	height: 332px
+	overflow-x: hidden
+	overflow-y: auto
+	+box
+	+scrollbar
+		width: 6px
+		height: 6px
+		+border-radius(4px)
+		background: #c4c4c4
+	+scrollbar-thumb
+		background: $red
+		+border-radius(4px)
+	+scrollbar-track-piece     
+		width: 6px 
+		+border-radius(4px)
+.item-opt__categ
+	margin-bottom: 21px
+	font-size: 18px
+	+fb
+.item-opt__cols
+	margin-bottom: 30px
+	+column-count(2)
+	+column-gap(15px)
+.item-same-extend
+	position: relative
+	z-index: 1
+	padding: 25px 0 0 
+	clear: both
+	+clr
+	border-top: 1px solid $border 
+	&:before
+		content: ""
+		position: absolute
+		left: 20px
+		right: 20px
+		top: -12px
+		z-index: 11
+		height: 10px
+		border-radius: 100%
+		+box-shadow(0 0 10px rgba(#000,.8))
+	.title
+		font-size: 26px
+	.item
+		height: auto
+		
