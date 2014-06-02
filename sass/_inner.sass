@@ -187,7 +187,7 @@
 					left: auto
 				.item__main
 					position: relative
-					left: 231px
+					left: 234px
 				.item__descr
 					position: relative
 					left: -237px
@@ -202,11 +202,12 @@
 	&:hover
 		z-index: 2
 		.item__in
-			width: 471px
+			//width: 471px
 			+box-shadow(0 0 8px rgba(#000,.5))
 		.item__descr
 			visibility: visible
 			opacity: 1
+			display: inline-block
 	&.has-bonus
 		.btn-order__add
 			background: $yellow 
@@ -225,7 +226,7 @@
 	top: 0
 	bottom: 0
 	left: 0
-	width: 237px
+	//width: 237px
 	background: #fff 
 	+tr(box-shadow .2s linear)
 	border-radius: 15px
@@ -252,6 +253,7 @@
 	font-size: 13px
 	white-space: normal
 	visibility: hidden
+	display: none
 	opacity: 0
 	+tr  
 	p
