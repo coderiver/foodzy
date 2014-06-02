@@ -253,7 +253,7 @@ head.ready(function() {
 
     	$('html, body').animate({
             scrollTop: top
-        }, 1000, 'easeOutBounce');
+        }, 200);
         return false;
     });
     $(".js-sidebar-nav ul a").on("click",function(){
@@ -270,7 +270,7 @@ head.ready(function() {
 
     	$('html, body').animate({
             scrollTop: top
-        }, 1000, 'easeOutBounce');
+        }, 200);
         return false;
     });
 
