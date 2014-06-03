@@ -32,10 +32,21 @@
 	padding: 15px 14px 15px 19px 
 	background: #fff
 	border-radius: 15px
+	min-height: 135px
 	+clr
 	+tr  
 	&:hover
 		+box-shadow(0 0 8px rgba(#000,.2))
+	&.is-inactive
+		.place__img,
+		.place__head,
+		.place__rules,
+		.place__rate
+			opacity: .51
+			pointer-events: none  
+		.place__name
+			a
+				color: $dark 
 .place__img
 	float: left
 	margin-right: 18px
@@ -117,7 +128,21 @@
 	background: $light
 	border: 1px solid #bbb
 	border-radius: 10px
-	
+.place__open
+	+fb
+	span
+		color: $red 
+	.fa
+		margin-right: 5px
+		font-size: 16px
+.places-filter
+	margin: 20px 0 16px 
+	+clr
+	.place-legend
+		float: right	
+		margin-top: 5px	
+
+
 .compaign-items
 	position: relative
 	margin: 0 10px 13px
@@ -399,6 +424,7 @@
 			margin-bottom: 5px
 			padding-left: 13px
 			+fb
+			+clr
 			&:before
 				content: ""
 				position: absolute
@@ -408,6 +434,8 @@
 				height: 4px
 				background: $dark
 				border-radius: 50% 
+			span
+				float: right
 			ul
 				margin: 5px 0 10px
 			li
@@ -486,3 +514,12 @@
 .comment__meta
 	+fi
 	color: $gray 
+.place-legend
+	font-size: 15px
+	+fm
+	.fa
+		margin-right: 5px
+	span
+		display: inline-block
+		margin-left: 15px
+		vertical-align: middle

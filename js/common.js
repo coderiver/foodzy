@@ -88,10 +88,10 @@ head.ready(function() {
 	});
 
 	$(".js-compaign-key").on("click",function(){
-		$(".js-compaigns").slideToggle(200)
+		$(this).parents(".js-place").find(".js-compaigns").slideToggle(200)
 	});
 	$(".js-compaigns-close").on("click",function(){
-		$(".js-compaigns").slideUp(200)
+		$(this).parents(".js-place").find(".js-compaigns").slideUp(200)
 	});
 	
 	function ui_slider_range() {
@@ -335,5 +335,10 @@ head.ready(function() {
 			tooltip.hide(); 
 		}
 	);
+
+	$(".js-more-categs").on("click",function(){
+		$(this).parent().hide();
+		$(this).parents(".js-sidebar-categs").find("[hidden]").removeAttr("hidden");
+	});
 
 });

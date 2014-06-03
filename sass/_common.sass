@@ -23,17 +23,28 @@ $yellow: #ffc600
 $border: #d7d7d7
 $green: #7ab900
 html
+	// +scrollbar
+	// 	width: 5px
+	// 	height: 5px
+	// 	+border-radius(2px)
+	// 	background: $border
+	// +scrollbar-thumb
+	// 	background: $dark
+	// 	+border-radius(2px)
+	// +scrollbar-track-piece     
+	// 	width: 5px 
+	// 	+border-radius(2px)
 	+scrollbar
-		width: 5px
-		height: 5px
-		+border-radius(2px)
-		background: $border
+		width: 6px
+		height: 6px
+		+border-radius(4px)
+		background: #c4c4c4
 	+scrollbar-thumb
-		background: $dark
-		+border-radius(2px)
+		background: $red
+		+border-radius(4px)
 	+scrollbar-track-piece     
-		width: 5px 
-		+border-radius(2px)
+		width: 6px 
+		+border-radius(4px) 
 	+selection
 		background: rgba(0,0,0,.1) 
 body   

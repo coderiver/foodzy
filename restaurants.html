@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>restaurant feedback</title>
+	<title>restaurants</title>
 	<meta name="viewport">
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -101,13 +101,170 @@
 	<div class="l-center">
 		<div class="l-cols">
 			<div class="l-col1">	
-				<div class="sidebar js-sidebar">
+				<div class="sidebar">
 					<div class="sidebar__in">
 						<div class="sidebar__wrap">
-							<div class="sidebar__item">
-								<div class="sidebar__search">
-									<input type="text" placeholder="быстрый поиск блюда">
-									<button class="fa fa-search"></button>
+							<div class="title">Блюда / кухни:</div>
+							<div class="sidebar__categs js-sidebar-categs">
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Пицца
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Суши
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Шашлык
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Пироги
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Бургеры
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Китайская кухня
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Европейская кухня
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Итальянская кухня
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Кавказская кухня
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Американская кухня
+										</span>
+									</label>
+								</div>
+								<div class="link-more-categs">
+									<a href="#" class="js-more-categs">Другие категории <i class="fa fa-angle-double-down"></i></a>
+								</div>
+								<div class="checkbox-wrap" hidden>
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Пицца
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap" hidden>
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Суши
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap" hidden>
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Шашлык
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap" hidden>
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Пироги
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap" hidden>
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Бургеры
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="sidebar__opt">
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											<i class="fa fa-truck"></i>
+											Доставка
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											<i class="fa fa-male"></i>
+											Takeaway
+										</span>
+									</label>
 								</div>
 							</div>
 							<div class="sidebar__filter">
@@ -116,11 +273,21 @@
 										<input class="checkbox__input" type="checkbox">
 										<em class="fa fa-check"></em>
 										<span class="checkbox__text">
+											<i class="fa fa-certificate"></i>
+											Новые рестораны
+										</span>
+									</label> 
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
 											<i class="fa fa-gift"></i>
-											Еда со скидкой
+											Акции
 										</span>
 									</label>
-								</div>
+								</div> 
 								<div class="checkbox-wrap">
 									<label class="checkbox">
 										<input class="checkbox__input" type="checkbox">
@@ -130,39 +297,55 @@
 											Еда за баллы
 										</span>
 									</label>
-								</div>
+								</div> 
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											<i class="fa fa-credit-card"></i>
+											Оплата картой
+										</span>
+									</label>
+								</div> 
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Бесплатная доставка
+										</span>
+									</label>
+								</div> 
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Находятся в моем районе
+										</span>
+									</label>
+								</div> 
 							</div>
-							<ul class="sidebar__nav js-sidebar-nav">
-								<li><a href="js-categ1">Бургеры</a></li>
-								<li>
-									<a href="js-categ2">Закуски <i class="fa fa-angle-up"></i><i class="fa fa-angle-down"></i></a>
-									<ul>
-										<li><a href="js-categ21">Холодные закуски</a></li>
-										<li><a href="js-categ22">Горячие закуски</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="js-categ3">Блюда из курицы <i class="fa fa-angle-up"></i><i class="fa fa-angle-down"></i></a>
-									<ul>
-										<li><a href="js-categ31">Врапы из курицы</a></li>
-										<li><a href="js-categ32">Закуски из курицы</a></li>
-									</ul>
-								</li>
-								<li><a href="js-categ4">Супы</a></li>
-								<li><a href="js-categ5">Салаты</a></li>
-								<li><a href="js-categ6">Паста</a></li>
-								<li><a href="js-categ7">Напитки</a></li>
-							</ul>
 						</div>
 					</div>
 					<i class="sidebar-target"></i>
 				</div>
 			</div>	
 			<div class="l-col2">
+				<div class="places-filter">
+					<a href="#" class="btn-simple is-active">Все</a>         
+					<a href="#" class="btn-simple">Открытые</a>
+					<div class="place-legend">
+						<span><i class="fa fa-certificate"></i>Новые</span>     
+						<span><i class="fa fa-gift"></i>Акции</span>     
+						<span><i class="fa fa-star"></i>Еда за баллы</span>
+					</div>
+				</div>
 				<div class="place-wrap js-place">
 					<div class="place">
 						<div class="place__img">
-							<a href="#"><img src="img/rest1.png" alt="img"></a>
+							<a href="#"><img src="img/rest2.png" alt="img"></a>
 						</div>
 						<div class="place__main">
 							<div class="place__head">
@@ -254,57 +437,133 @@
 						<button class="btn-close js-compaigns-close"></button>
 					</div>
 				</div>
-				<ul class="tab">
-					<li><a href="#">Меню</a></li>
-					<li><a href="#">Информация о ресторане</a></li>
-					<li class="is-active"><a href="#">Отзывы</a></li>
-				</ul>
-				<div class="tab-content box">
-					<div class="add-comment">
-						<div class="add-comment__head">
-							<div class="add-comment__title">Напишите отзыв:</div>
-							<div class="add-comment__like">
-								<a href="#" class="btn-like is-active">
-									<i class="fa fa-thumbs-up"></i>
-									Положительный  
-								</a>
-								<a href="#" class="btn-like">
-									<i class="fa fa-thumbs-down"></i>
-									Отрицательный   
-								</a>
+				<div class="place-wrap js-place">
+					<div class="place">
+						<div class="place__img">
+							<a href="#"><img src="img/rest1.png" alt="img"></a>
+						</div>
+						<div class="place__main">
+							<div class="place__head">
+								<div class="place__name"><a href="#">Crab's Burger</a></div>
+								<div class="place__options">
+									<div class="place__add">
+										<i class="fa fa-credit-card"></i>Оплата картой
+									</div>
+									<div class="place__add">
+										<i class="fa fa-male"></i>Только takeaway
+									</div>
+									<div class="place__badges">
+										<span class="badge badge_bonus js-tooltip-key" data-title="В этом ресторане можно приобрести еду за баллы"><i class="fa fa-star"></i></span>
+									</div>
+								</div>
+								<div class="place__kitchen">америкаснкая кухня, мексиканская кухня</div>
+							</div>
+							<div class="place__rules">
+								<div class="place__rules-item">
+									<strong>Бесплатная <br> доставка</strong>
+								</div>
+								<div class="place__rules-item">
+									<span>Среднее время <br> доставки</span>
+									<strong>60 мин.</strong>
+								</div>
+								<div class="place__rules-item">
+									<span>Минимальная <br> стоимость заказа</span>
+									<strong>3 €</strong>
+								</div>
+							</div>
+							<div class="place__info">
+								C 22:30 до 8:00 минимальная сумма заказа - 10 евро, наценка к заказу - 20%. Минимальная сумма заказа на расстояние от 7 км. за пределы Таллинна- 20 Евро.
 							</div>
 						</div>
-						<div class="add-comment__body">
-							<div class="input input_textarea">
-								<textarea placeholder="Напишите свой комментарий..."></textarea>
+						<a class="place__rate" href="#">
+							<div class="comment-counter">
+								<i class="fa fa-comments"></i>64	
 							</div>
-							<a href="#" class="btn ">Оставить отзыв</a>
-						</div>
+							<div class="rate">
+								<span style="width:75%"></span>
+							</div>
+						</a>
 					</div>
-					<div class="comments-wrap">
-						<div class="comments-info">
-							<a href="#" class="comments-all-link">Все отзывы (<i class="fa fa-comments"></i>64)</a>
-							<a href="#" class="btn-like">
-								<i class="fa fa-thumbs-up"></i>
-								Положительный (<i class="fa fa-comments"></i>60)
-							</a>
-							<a href="#" class="btn-like">
-								<i class="fa fa-thumbs-down"></i>
-								Отрицательный (<i class="fa fa-comments"></i>4)  
-							</a>
+				</div>
+				<div class="place-wrap js-place">
+					<div class="place is-inactive">
+						<div class="place__img">
+							<a href="#"><img src="img/rest1.png" alt="img"></a>
 						</div>
-						<div class="comment">
-							<div class="comment__head">
-								<span class="comment__author"><i class="fa fa-thumbs-up"></i>Настя</span>  
-								<span class="comment__meta">(22 мая 2014, 15:00)</span></div>
-							<div class="comment__body">На удивление доставка быстрая, привезли вкусную, горячую, сочную пиццу, очень вежливый и приятный курьер нажелал кучу приятностей, сделал настроение ) а еще у них очень милые салфеточки м фирменным логотипом мышкой, в общем СПАСИБО БОЛЬШОЕ!!! Буду заказывать еще)</div>
+						<div class="place__main">
+							<div class="place__head">
+								<div class="place__name"><a href="#">Crab's Burger</a></div>
+								<div class="place__options">
+									<div class="place__badges">
+										<span class="badge badge_bonus js-tooltip-key" data-title="В этом ресторане можно приобрести еду за баллы"><i class="fa fa-star"></i></span>
+									</div>
+								</div>
+								<div class="place__kitchen">америкаснкая кухня, мексиканская кухня</div>
+							</div>
+							<div class="place__rules">
+								<div class="place__rules-item">
+									<span>Стоимость <br>доставки</span>
+									<strong>10 €</strong>
+								</div>
+								<div class="place__rules-item">
+									<span>Среднее время <br> доставки</span>
+									<strong>60 мин.</strong>
+								</div>
+								<div class="place__rules-item">
+									<span>Минимальная <br> стоимость заказа</span>
+									<strong>3 €</strong>
+								</div>
+							</div>
+							<div class="place__open"><i class="fa fa-clock-o"></i>Ресторан откроется через <span>25 минут</span></div>
 						</div>
-						<div class="comment">
-							<div class="comment__head">
-								<span class="comment__author"><i class="fa fa-thumbs-down"></i>Константин</span>  
-								<span class="comment__meta">(22 мая 2014, 15:00)</span></div>
-							<div class="comment__body">На удивление доставка быстрая, привезли вкусную, горячую, сочную пиццу, очень вежливый и приятный курьер нажелал кучу приятностей, сделал настроение ) а еще у них очень милые салфеточки м фирменным логотипом мышкой, в общем СПАСИБО БОЛЬШОЕ!!! Буду заказывать еще)</div>
+						<a class="place__rate" href="#">
+							<div class="comment-counter">
+								<i class="fa fa-comments"></i>64	
+							</div>
+							<div class="rate">
+								<span style="width:75%"></span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="place-wrap js-place">
+					<div class="place">
+						<div class="place__img">
+							<a href="#"><img src="img/rest1.png" alt="img"></a>
 						</div>
+						<div class="place__main">
+							<div class="place__head">
+								<div class="place__name"><a href="#">Crab's Burger</a></div>
+								<div class="place__options">
+									<div class="place__badges">
+										<span class="badge badge_bonus js-tooltip-key" data-title="В этом ресторане можно приобрести еду за баллы"><i class="fa fa-star"></i></span>
+									</div>
+								</div>
+								<div class="place__kitchen">америкаснкая кухня, мексиканская кухня</div>
+							</div>
+							<div class="place__rules">
+								<div class="place__rules-item">
+									<span><a href="#">Расчитать стоимость доставки</a></span>
+								</div>
+								<div class="place__rules-item">
+									<span>Среднее время <br> доставки</span>
+									<strong>60 мин.</strong>
+								</div>
+								<div class="place__rules-item">
+									<span>Минимальная <br> стоимость заказа</span>
+									<strong>3 €</strong>
+								</div>
+							</div>
+							
+						</div>
+						<a class="place__rate" href="#">
+							<div class="comment-counter">
+								<i class="fa fa-comments"></i>64	
+							</div>
+							<div class="rate">
+								<span style="width:75%"></span>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>	
