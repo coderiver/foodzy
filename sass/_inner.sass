@@ -639,3 +639,33 @@
 	font-size: 13px 
 	.fa
 		margin-right: 5px
+
+.sidebar-nav
+	.extend-item__list
+		position: static
+		font-size: 13px
+		visibility: visible
+		opacity: 1
+		font-size: 15px
+		+box-shadow(none)
+		&:before
+			display: none
+		.fa
+			font-size: 20px
+		.fa-star
+			font-size: 15px
+		a
+			padding: 9px 20px 11px 
+		.is-active
+			a
+				color: $red 
+	.extend-item__icon
+		margin-right: 16px
+		width: 24px
+		text-align: center
+
+.del-account-link
+	margin: 100px 0 0
+	a
+		&:hover
+			color: $red_d   

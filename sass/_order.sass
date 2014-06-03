@@ -1,0 +1,100 @@
+.order-head
+	margin-bottom: 17px
+	padding: 0 40px 
+	+clr
+.order-head__left
+	float: left
+.order-head__right
+	float: right
+.order-head__title
+	margin-bottom: 6px
+.link-action
+	position: relative
+	display: inline-block
+	&:hover
+		span
+			border-color: transparent
+	span
+		vertical-align: middle
+		border-bottom: 1px dotted #bcbcbc
+	.fa
+		vertical-align: middle
+		color: $dark 
+.order-head__sep
+	display: inline-block
+	margin: 0 9px  
+
+.order-wrap
+	margin-bottom: -1px
+	border-bottom: 1px dashed $border
+	border-top: 1px dashed $border
+	+fm
+	font-size: 15px
+.order
+	display: table
+	min-height: 70px
+	width: 100%
+	&.is-new
+		.order__cell  
+			background: $yellow 
+.order__row
+	display: table-row
+	.order__cell
+		display: table-cell
+		padding: 17px 0 
+		vertical-align: middle
+		span
+			color: $gray
+			font-size: 13px
+			+fr 
+		.fa
+			margin-left: 5px
+			margin-right: 9px
+		.fa-truck
+			float: left
+			margin-top: 3px
+			+ div
+				overflow: hidden
+		.fa-check
+			color: $yellow 
+	.order__cell_1
+		padding: 17px 10px 17px 40px
+		width: 175px
+		+fb
+		font-size: 13px
+	.order__cell_2
+		padding-right: 10px
+		width: 153px
+	.order__cell_3
+		padding-right: 10px
+		width: 145px
+	.order__cell_4
+		padding-right: 10px
+		width: 120px
+
+.order-detail__head
+	border-bottom: 1px solid $border 
+	padding: 21px 10px 21px 60px 
+	background: #e7e7e7 
+	+clr
+.order-detail__meta
+	padding-left: 20px
+	font-size: 13px
+	+fr
+	strong
+		display: block
+		+fb
+		font-weight: normal
+.order-detail__left
+	float: left
+	margin-bottom: 10px
+	padding-left: 12px
+	width: 425px
+.order-detail__right
+	float: right
+	margin-bottom: 10px
+	width: 165px
+.order-detail__user
+	display: inline-block
+	width: 332px
+	text-align: center
