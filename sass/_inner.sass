@@ -1,13 +1,3 @@
-.article
-	font-size: 13px
-	color: $dark
-	p
-		margin-bottom: 10px
-	a
-		+tr
-		&:hover
-			color: $red_d
-			text-decoration: underline 
 .place-wrap
 	margin-bottom: 13px
 	.place
@@ -523,3 +513,79 @@
 		display: inline-block
 		margin-left: 15px
 		vertical-align: middle
+		
+.main
+	margin: 20px 0 23px 
+	padding: 32px 40px 
+.article
+	font-size: 13px
+	color: $dark
+	h2,h3,h4,h5,h6
+		font-weight: normal
+		+fb
+	h1
+		margin: 0 0 27px 
+		+flob
+		color: $title
+		font-size: 26px
+		font-weight: normal
+		text-align: center
+	h2
+		margin: 27px 0 10px 
+		font-size: 17px
+	h3
+		font-size: 16px
+	h4
+		font-size: 15px
+	h5
+		font-size: 14px
+	h6
+		font-size: 13px
+	p
+		margin-bottom: 10px
+	a
+		+tr
+		&:hover
+			color: $red_d
+			text-decoration: underline 
+	hr
+		margin: 26px 0 0 -40px
+		width: 998px
+		border: 0
+		border-top: 1px dashed $border
+	ul
+		margin: 10px 0 10px 5px
+		li
+			position: relative
+			margin-bottom: 5px
+			padding-left: 13px
+			&:before
+				content: ""
+				position: absolute
+				top: 6px
+				left: 0
+				width: 4px
+				height: 4px
+				background: $dark
+				border-radius: 50% 
+			ul
+				margin: 5px 0 10px
+			li
+				padding-left: 9px
+				+fi	
+				&:before
+					display: none
+	table
+		margin: 24px 0 
+		th
+			font-weight: normal
+			+fb
+		td,th
+			border: 1px solid $border
+			padding: 16px
+			font-size: 15px
+			text-align: center
+			h3
+				font-size: 15px
+			&:first-child
+				text-align: left
