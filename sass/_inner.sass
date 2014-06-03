@@ -516,14 +516,23 @@
 		
 .main
 	margin: 20px 0 23px 
-	padding: 32px 40px 
+	padding: 32px 40px
 .article
+	position: relative
 	font-size: 13px
 	color: $dark
+	.date
+		position: absolute
+		right: 0
+		top: 61px
+	&:after
+		content: ""
+		position: absolute
+		 
 	strong,b
 		+fb
 		font-weight: normal
-	i,em
+	em
 		font-style: normal
 		+fi
 	h2,h3,h4,h5,h6
@@ -536,6 +545,9 @@
 		font-size: 26px
 		font-weight: normal
 		text-align: center
+		+ h2,
+		+ p
+			max-width: 800px
 	h2
 		margin: 27px 0 10px 
 		font-size: 17px
@@ -575,7 +587,7 @@
 				background: $dark
 				border-radius: 50% 
 			ul
-				margin: 10px 0
+				margin: 10px
 			li
 				padding-left: 9px
 				+fi	
@@ -595,7 +607,7 @@
 				counter-increment: list1 
 				content: counter(list1) ". "
 			ol
-				margin: 10px 0
+				margin: 10px
 				counter-reset: list2
 			li
 				padding-left: 30px
@@ -612,12 +624,18 @@
 		th
 			font-weight: normal
 			+fb
+			font-size: 15px
 		td,th
 			border: 1px solid $border
 			padding: 16px
-			font-size: 15px
 			text-align: center
 			h3
 				font-size: 15px
 			&:first-child
 				text-align: left
+				
+.date
+	color: #808080
+	font-size: 13px 
+	.fa
+		margin-right: 5px
