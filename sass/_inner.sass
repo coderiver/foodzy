@@ -520,6 +520,12 @@
 .article
 	font-size: 13px
 	color: $dark
+	strong,b
+		+fb
+		font-weight: normal
+	i,em
+		font-style: normal
+		+fi
 	h2,h3,h4,h5,h6
 		font-weight: normal
 		+fb
@@ -554,7 +560,7 @@
 		border: 0
 		border-top: 1px dashed $border
 	ul
-		margin: 10px 0 10px 5px
+		margin: 10px 0 20px 5px
 		li
 			position: relative
 			margin-bottom: 5px
@@ -569,12 +575,38 @@
 				background: $dark
 				border-radius: 50% 
 			ul
-				margin: 5px 0 10px
+				margin: 10px 0
 			li
 				padding-left: 9px
 				+fi	
+	ol
+		margin: 10px 0 20px 5px
+		counter-reset: list1
+		li
+			position: relative
+			margin-bottom: 5px
+			padding-left: 20px
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				+fb
+				counter-increment: list1 
+				content: counter(list1) ". "
+			ol
+				margin: 10px 0
+				counter-reset: list2
+			li
+				padding-left: 30px
+				+fi	
 				&:before
-					display: none
+					content: "" 
+					position: absolute
+					left: 0
+					top: 0
+					counter-increment: list2
+					content: counter(list1) "." counter(list2) ". "
 	table
 		margin: 24px 0 
 		th

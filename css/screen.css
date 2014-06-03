@@ -549,6 +549,8 @@ a { color: #da2400; text-decoration: none; }
 .main { margin: 20px 0 23px; padding: 32px 40px; }
 
 .article { font-size: 13px; color: #3d3d3d; }
+.article strong, .article b { font-family: "roboto-bold", Arial, sans-serif; font-weight: normal; }
+.article i, .article em { font-style: normal; font-family: "roboto-italic", Arial, sans-serif; }
 .article h2, .article h3, .article h4, .article h5, .article h6 { font-weight: normal; font-family: "roboto-bold", Arial, sans-serif; }
 .article h1 { margin: 0 0 27px; font-family: "lobster", Arial, sans-serif; color: #4c4c4b; font-size: 26px; font-weight: normal; text-align: center; }
 .article h2 { margin: 27px 0 10px; font-size: 17px; }
@@ -560,12 +562,17 @@ a { color: #da2400; text-decoration: none; }
 .article a { -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .article a:hover { color: #a51b00; text-decoration: underline; }
 .article hr { margin: 26px 0 0 -40px; width: 998px; border: 0; border-top: 1px dashed #d7d7d7; }
-.article ul { margin: 10px 0 10px 5px; }
+.article ul { margin: 10px 0 20px 5px; }
 .article ul li { position: relative; margin-bottom: 5px; padding-left: 13px; }
 .article ul li:before { content: ""; position: absolute; top: 6px; left: 0; width: 4px; height: 4px; background: #3d3d3d; border-radius: 50%; }
-.article ul li ul { margin: 5px 0 10px; }
+.article ul li ul { margin: 10px 0; }
 .article ul li li { padding-left: 9px; font-family: "roboto-italic", Arial, sans-serif; }
-.article ul li li:before { display: none; }
+.article ol { margin: 10px 0 20px 5px; counter-reset: list1; }
+.article ol li { position: relative; margin-bottom: 5px; padding-left: 20px; }
+.article ol li:before { content: ""; position: absolute; top: 0; left: 0; font-family: "roboto-bold", Arial, sans-serif; counter-increment: list1; content: counter(list1) ". "; }
+.article ol li ol { margin: 10px 0; counter-reset: list2; }
+.article ol li li { padding-left: 30px; font-family: "roboto-italic", Arial, sans-serif; }
+.article ol li li:before { content: ""; position: absolute; left: 0; top: 0; counter-increment: list2; content: counter(list1) "." counter(list2) ". "; }
 .article table { margin: 24px 0; }
 .article table th { font-weight: normal; font-family: "roboto-bold", Arial, sans-serif; }
 .article table td, .article table th { border: 1px solid #d7d7d7; padding: 16px; font-size: 15px; text-align: center; }
