@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>user data</title>
+	<title>restaurant compaign</title>
 	<meta name="viewport">
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -11,7 +11,7 @@
 
 <!-- BEGIN  out-->
 <div class="out">
-	<header class="header js-full-cart">
+	<header class="header">
 		<div class="header__top">
 			<div class="l-center">
 				<div class="header__user">
@@ -90,7 +90,7 @@
 						</span>
 						<span class="cart-btn__in">
 							<span>Корзина </span>
-							26,50 €
+							0 €
 						</span>
 						<span class="cart-btn__text">Оформить заказ</span>
 					</a>
@@ -101,55 +101,98 @@
 	<div class="l-center">
 		<div class="l-cols-2 box">
 			<div class="l-col1">
+				<div class="title title_h1">Акция ресторана</div>
+				<div class="info-text">
+					Одновременно в ресторане может быть только одна кампания. Кампания будет отображаться все время, пока она активна на странице меню вашего ресторана и на главной странице (в произвольном порядке).
+				</div>
 				<div class="l-col1__in">
-					<div class="title title_h1">Настройки аккаунта</div>
 					<div class="input-section">
-						<div class="input-group">
-							<div class="input-wrap input-wrap_col2">
-								<input type="text" class="input" placeholder="ФИО">
+						<div class="input-group input-group_with-title">
+							<ul class="tab-list">
+								<li class="is-active"><a href="#">Русский</a></li>
+								<li><a href="#">Eesti</a></li>
+								<li><a href="#">English</a></li>
+							</ul>
+							<div class="input-title">
+								<span>Название кампании</span>
 							</div>
-							<div class="input-wrap input-wrap_col2">
-								<input type="tel" class="input" placeholder="Телефон">
-							</div>
-						</div>
-						<div class="input-group">
-							<div class="input-wrap input-wrap_col2">
-								<input type="email" class="input" placeholder="Email">
-							</div>
-							<div class="input-wrap input-wrap_col2">
-								<input type="password" class="input" placeholder="Пароль">
+							<div class="input-wrap">	
+								<input type="text" class="input">
 							</div>
 						</div>
 					</div>
 					<div class="input-section">
-						<div class="input-group">
-							<div class="input-group__title">ваши адреса доставки:</div>
-							<div class="input-wrap input-wrap_with-del">
-								<input type="text" class="input" placeholder="Например: Masina 22, Tallinn, Estonia">
-								<button class="btn-del"><i class="fa fa-times-circle"></i></button>
+						<div class="input-group input-group_with-title">
+							<div class="input-title">
+								<span>Изображение кампании</span>
 							</div>
-							<div class="input-wrap input-wrap_with-del">
-								<input type="text" class="input" placeholder="Например: Masina 22, Tallinn, Estonia">
-								<button class="btn-del"><i class="fa fa-times-circle"></i></button>
+							<div class="input-wrap">	
+								<div class="download">
+									<div class="download__file">
+										<img src="http://lorempixel.com/90/90/food" alt="">
+									</div>
+									<div class="download__btn">
+										<input type="file">
+										<div>
+											<span><i class="fa fa-cloud-upload"></i>Загрузить другое изображение</span>
+											(минимальный размер 187х187 пк)
+										</div>
+									</div>
+								</div>		
 							</div>
-							<div class="input-wrap input-wrap_btn">
-								<button class="btn-add"><i class="fa fa-times-circle"></i>Добавить адрес доставки</button>
-								<div class="checkbox-wrap">
-									<label class="checkbox">
-										<input class="checkbox__input" type="checkbox" checked>
-										<em class="fa fa-check"></em>
-										<span class="checkbox__text">
-											Я хочу получать персональные предложения о скидках и акциях на e-mail
-										</span>
-									</label>
-								</div>
-								<div class="btn-wrap"><input type="submit" class="btn btn_width" value="Сохранить изменения"></div>
-								<div class="del-account-link"><a href="#">Удалить аккаунт</a>, при этом все данные профайла и данные о заказах будут удалены.
-								</div>
-							</div>
-							
 						</div>
 					</div>
+					<div class="input-section">
+						<div class="input-group input-group_with-title">
+							<ul class="tab-list">
+								<li class="is-active"><a href="#">Русский</a></li>
+								<li><a href="#">Eesti</a></li>
+								<li><a href="#">English</a></li>
+							</ul>
+							<div class="input-title">
+								<span>Описание кампании <em>(255)</em></span>
+							</div>
+							<div class="input-wrap">	
+								<div class="input input_textarea">
+									<textarea></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="input-section">
+						<div class="input-group input-group_with-title">
+							<div class="input-title">
+								<span>Кампания активна</span>
+							</div>
+							<div class="input-wrap input-wrap_date">	
+								<span>с</span>
+								<div class="input-date">
+									<input type="text" class="input">
+									<i class="fa fa-caret-down"></i>
+								</div>
+								<span>до</span>
+								<div class="input-date input-wrap_date">
+									<input type="text" class="input">
+									<i class="fa fa-caret-down"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="input-section">
+						<div class="input-group input-group_with-title">
+							<div class="input-title"></div>
+							<div class="input-wrap">	
+								<label class="checkbox checkbox_extend">
+									<input class="checkbox__input" type="checkbox" checked>
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										Показывать кампанию пользователям
+									</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="btn-wrap"><input type="submit" class="btn btn_width" value="Сохранить кампанию"></div>
 				</div>
 			</div>
 			<div class="l-col2">
@@ -158,11 +201,9 @@
 						<li>
 							<a href="#">
 								<span class="extend-item__icon">
-									<span class="badge badge_bonus"><i class="fa fa-star"></i></span>
+									<i class="fa fa-cutlery"></i>
 								</span>
-								<span class="extend-item__text">
-									У вас 44 бонусных пункта <span>как использовать бонусы?</span>
-								</span>
+								<span class="extend-item__text">Меню ресторана</span>
 							</a>
 						</li>
 						<li>
@@ -170,17 +211,34 @@
 								<span class="extend-item__icon">
 									<i class="fa fa-tags"></i>
 								</span>
-								<span class="extend-item__text">Мои заказы</span>
+								<span class="extend-item__text">Заказы ресторана</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="extend-item__icon">
+									<i class="fa fa-gear"></i>
+								</span>
+								<span class="extend-item__text">Настройки ресторана</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blanc">
+								<span class="extend-item__icon">
+									<i class="fa  fa-external-link-square"></i>
+								</span>
+								<span class="extend-item__text">Страница ресторана</span>
 							</a>
 						</li>
 						<li class="is-active">
 							<a href="#">
 								<span class="extend-item__icon">
-									<i class="fa fa-cog"></i>
+									<i class="fa fa-gift"></i>
 								</span>
-								<span class="extend-item__text">Настройки аккаунта</span>
+								<span class="extend-item__text">Акция ресторана</span>
 							</a>
 						</li>
+						
 					</ul>
 				</div>
 			</div>

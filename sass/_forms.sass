@@ -1,0 +1,167 @@
+.input-section
+	margin-bottom: 15px
+.input-group
+	+clr	
+	.tab-list
+		margin-left: 117px
+.input-wrap_with-del
+	position: relative
+	width: 547px
+	.btn-del
+		position: absolute
+		right: -40px
+		top: 0
+.input-group_with-title
+	+clr
+	.input-wrap
+		float: right
+		width: 500px
+.input-group__title
+	margin-bottom: 8px
+	padding-left: 20px
+	+fb
+.input-title
+	float: left
+	padding-right: 5px
+	width: 95px
+	height: 40px
+	min-height: 1px
+	line-height: 40px
+	+box
+	+fb
+	font-size: 13px
+	span
+		display: inline-block
+		vertical-align: middle
+		line-height: 1.2
+	em
+		display: block
+		color: #8e8e8e
+		+fr
+		font-style: normal 
+.input-wrap
+	position: relative
+	margin-bottom: 5px
+.input-wrap_col2
+	float: left
+	width: 290px
+	margin-left: 5px
+	&:first-child
+		margin-left: 0
+.input-wrap_date
+	.input-date
+		margin: 0 15px 0 5px
+	span
+		display: inline-block
+		vertical-align: middle
+
+.input-date
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	width: 117px
+	.fa
+		position: absolute
+		top: 18px
+		right: 18px
+.input
+	display: block
+	border: 1px solid $border
+	padding: 0 20px 
+	width: 100%
+	height: 47px
+	border-radius: 15px
+	+box
+	+fi
+	color: #4c4c4b 
+	+tr(border .2s linear)
+	+placeholder
+		font-style: normal
+		+fi
+		color: $gray 
+	//&:hover,
+	//&:focus
+	//	border-color: $gray 
+.input_textarea
+	position: relative
+	padding: 12px 12px 12px 20px
+	max-height: 206px
+	overflow-y: auto
+	overflow-x: hidden
+	height: auto
+	textarea
+		display: block
+		padding-right: 8px
+		width: 100%
+		height: 100%
+		resize: none 
+		border: 0
+		+box
+		+fi
+		+placeholder
+			font-style: normal
+			+fi
+			color: $gray 
+		+scrollbar
+			width: 6px
+			height: 6px
+			+border-radius(4px)
+			background: #c4c4c4
+		+scrollbar-thumb
+			background: $red
+			+border-radius(4px)
+		+scrollbar-track-piece     
+			width: 6px 
+			+border-radius(4px)
+.tab-list
+	+clr
+	li
+		float: left
+		margin-right: 2px
+		&.is-active
+			a
+				background: #fff
+				border-color: $border  
+				color: $dark 
+	a
+		display: block
+		min-width: 109px
+		height: 28px
+		line-height: 28px
+		color: #fff 
+		text-align: center
+		background: #5f5f5f
+		border: 1px solid #5f5f5f
+		border-bottom: 0  
+		border-radius: 15px 15px 0 0 
+		
+.download
+	padding-left: 20px
+	+clr
+.download__file
+	float: left
+	margin-right: 24px
+.download__btn
+	position: relative
+	float: left
+	width: 220px
+	overflow: hidden
+	input
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		cursor: pointer
+		opacity: 0
+	input[type="file"]::-webkit-file-upload-button
+		cursor: pointer
+	div
+		color: $gray
+		cursor: pointer
+		span
+			display: block 
+			margin-bottom: 5px   
+			color: $red 
+	.fa
+		margin-right: 5px
