@@ -48,6 +48,8 @@
 		&:first-child
 			border-top: 0
 		&.is-active
+			a
+				color: $red 
 			.fa
 				color: $red 
 	a
@@ -126,10 +128,13 @@
 	display: inline-block
 	vertical-align: middle
 	cursor: pointer
+	&.is-checked
+		span
+			+fb
 	.fa-check
 		position: absolute
 		left: 0
-		top: 1px
+		top: 0
 		width: 16px
 		height: 16px
 		font-size: 14px
@@ -144,7 +149,7 @@
 .checkbox__input
 	position: absolute
 	left: 0
-	top: 3px
+	top: 0
 	width: 16px
 	height: 16px
 	opacity: 0
@@ -376,6 +381,8 @@
 			margin-top: 1px
 	.fa
 		vertical-align: middle
+.btn-del_small
+	font-size: 13px
 	
 .input-wrap_btn
 	padding-left: 20px	
@@ -383,6 +390,8 @@
 		margin-bottom: 40px
 	.btn-wrap
 		margin: 23px 0 
+.btn-add-wrap
+	padding: 16px 40px 36px
 .btn-add
 	margin-top: 7px
 	color: $red

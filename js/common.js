@@ -345,4 +345,46 @@ head.ready(function() {
 		$(this).parent().find(".js-order-detail").slideToggle(200)
 	});
 
+	$(".js-select select").on("change",function(){
+		var	val = $(this).val();
+		$(this).parent().find(".js-select-input").val(val);
+	});
+
+	$(".js-check input").on("change",function(){
+		if ($(this).is(":checked")) {
+			$(this).parent().addClass("is-checked");
+			$(this).parents(".js-check-group").addClass("is-active")
+		}
+		else {
+			$(this).parent().removeClass("is-checked");
+			$(this).parents(".js-check-group").removeClass("is-active")
+		}
+	});
+	$(".js-check-add input").on("change",function(){
+		if ($(this).is(":checked")) {
+			$(this).parents(".js-check-group").addClass("is-active-add")
+		}
+		else {
+			$(this).parents(".js-check-group").removeClass("is-active-add")
+		}
+	});
+	$(".js-check input").each(function(){
+		if ($(this).is(":checked")) {
+			$(this).parent().addClass("is-checked");
+			$(this).parents(".js-check-group").addClass("is-active")
+		}
+		else {
+			$(this).parent().removeClass("is-checked");
+			$(this).parents(".js-check-group").removeClass("is-active")
+		}
+	});
+	$(".js-check-add input").each(function(){
+		if ($(this).is(":checked")) {
+			$(this).parents(".js-check-group").addClass("is-active-add")
+		}
+		else {
+			$(this).parents(".js-check-group").removeClass("is-active-add")
+		}
+	});
+
 });

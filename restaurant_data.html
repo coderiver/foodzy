@@ -1,0 +1,1546 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>restaurant data</title>
+	<meta name="viewport">
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out">
+	<header class="header">
+		<div class="header__top">
+			<div class="l-center">
+				<div class="header__user">
+					<div class="extend-item js-extend-item">
+						<a href="#" class="extend-item__link js-extend-item-link">Афанасий никитин <i class="fa fa-sort-desc"></i></a>
+						<ul class="extend-item__list js-extend-item-list">
+							<li>
+								<a href="#">
+									<span class="extend-item__icon">
+										<i class="fa fa-cutlery"></i>
+									</span>
+									<span class="extend-item__text">Меню ресторана</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="extend-item__icon">
+										<i class="fa fa-tags"></i>
+									</span>
+									<span class="extend-item__text">Заказы ресторана</span>
+								</a>
+							</li>
+							<li class="is-active">
+								<a href="#">
+									<span class="extend-item__icon">
+										<i class="fa fa-gear"></i>
+									</span>
+									<span class="extend-item__text">Настройки ресторана</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blanc">
+									<span class="extend-item__icon">
+										<i class="fa  fa-external-link-square"></i>
+									</span>
+									<span class="extend-item__text">Страница ресторана</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="extend-item__icon">
+										<i class="fa fa-gift"></i>
+									</span>
+									<span class="extend-item__text">Акция ресторана</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header__login">
+					<a href="#">Выйти <i class="fa fa-sign-out"></i></a>
+				</div>
+				<div class="header__lang">
+					<div class="extend-item js-extend-item">
+						<a href="#" class="extend-item__link js-extend-item-link">По-русски <i class="fa fa-sort-desc"></i></a>
+						<ul class="extend-item__list js-extend-item-list">
+							<li><a href="#">По-русски</a></li>
+							<li><a href="#">По-русски</a></li>
+							<li><a href="#">По-русски</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="header__main">
+			<div class="l-center">
+				<a href="#" class="header__logo">
+					<strong>foodzy</strong>
+					система доставки
+				</a>
+				<div class="header__city">
+					<a href="#" class="header__city-btn">
+						<span>ваш город: </span>
+						<i class="fa fa-location-arrow"></i>
+					</a>		
+					<div class="header__input">
+						<input type="text" placeholder="Выберите город">
+					</div>
+				</div>
+				<div class="header__search">	
+					<div class="header__input">
+						<input type="text" placeholder="блюдо или ресторан...">
+						<button class="fa fa-search"></button>
+					</div>
+				</div>
+				<div class="header__cart">
+					<a href="#" class="cart-btn">
+						<span class="cart-btn__icon">
+							<i class="fa fa-shopping-cart"></i>
+						</span>
+						<span class="cart-btn__in">
+							<span>Корзина </span>
+							0 €
+						</span>
+						<span class="cart-btn__text">Оформить заказ</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="l-center">
+		<div class="l-cols-2 box">
+			<div class="l-col1">
+				<div class="title title_h1">Настройки ресторана</div>
+				<div class="input-section">
+						<div class="input-group input-group_with-title">
+							<div class="input-title">
+								<span>Название ресторана</span>
+							</div>
+							<div class="input-wrap">	
+								<input type="text" class="input">
+							</div>
+						</div>
+				</div>
+				<div class="input-section">
+					<div class="input-group input-group_with-title">
+						<div class="input-title">
+							<span>Логотип ресторана</span>
+						</div>
+						<div class="input-wrap">	
+							<div class="download">
+								<div class="download__file">
+									<img src="http://lorempixel.com/90/90/food" alt="">
+								</div>
+								<div class="download__btn">
+									<input type="file">
+									<div>
+										<span><i class="fa fa-cloud-upload"></i>Загрузить другое изображение</span>
+									</div>
+								</div>
+							</div>		
+						</div>
+					</div>
+				</div>
+				<div class="input-section">
+					<div class="input-group input-group_with-title">
+						<div class="input-title">
+							<span>Категории ресторана</span>
+						</div>
+						<div class="input-wrap">	
+							<div class="checkbox-cols">
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Пицца
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Суши
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Шашлык
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Пироги
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Бургеры
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Китайская кухня
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Американская кухня
+										</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Мексиканская кухня
+										</span>
+									</label>
+								</div>
+							</div>		
+						</div>
+					</div>
+				</div>
+				<div class="input-section">
+					<div class="input-group input-group_with-title">
+						<ul class="tab-list">
+							<li class="is-active"><a href="#">Русский</a></li>
+							<li><a href="#">Eesti</a></li>
+							<li><a href="#">English</a></li>
+						</ul>
+						<div class="input-title">
+							<span>Краткая информация <em>(255)</em></span>
+						</div>
+						<div class="input-wrap">	
+							<div class="input input_textarea">
+								<textarea></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="input-section">
+					<div class="input-group input-group_with-title">
+						<ul class="tab-list">
+							<li class="is-active"><a href="#">Русский</a></li>
+							<li><a href="#">Eesti</a></li>
+							<li><a href="#">English</a></li>
+						</ul>
+						<div class="input-title">
+							<span>Подробная информация <em>(255)</em></span>
+						</div>
+						<div class="input-wrap">	
+							<div class="input input_textarea input_height">
+								<textarea></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="input-section input-section_contacts">
+					<div class="input-group input-group_with-title">
+						<div class="input-group__title is-big-title">Контакты ресторана:</div>
+						<div class="input-title">
+							<span>Адрес ресторана</span>
+						</div>
+						<div class="input-wrap">	
+							<input type="text" class="input">
+						</div>
+					</div>
+					<div class="input-group">
+						<div class="input-wrap input-wrap_two-parts">	
+							<div class="input-wrap__title"><span>Телефон 1</span></div>
+							<input type="tel" class="input">
+						</div>
+						<div class="input-wrap input-wrap_two-parts">	
+							<div class="input-wrap__title"><span>Телефон 2</span></div>
+							<input type="tel" class="input">
+						</div>
+					</div>
+					<div class="input-group">
+						<div class="input-wrap input-wrap_two-parts">	
+							<div class="input-wrap__title"><span>e-mail</span></div>
+							<input type="email" class="input">
+						</div>
+					</div>
+				</div>
+				<div class="input-section input-section_tabs">
+					<div class="input-group input-group_with-title">
+						<div class="input-group__title is-big-title">Время работы ресторана:</div>
+					</div>
+				</div>
+				<ul class="tab-list tab-list_width">
+					<li class="is-active"><a href="#">Ресторан открыт</a></li>
+					<li><a href="#">Прием заказов  <i class="fa fa-exclamation-triangle"></i></a></li>
+					<li><a href="#">Takeaway</a></li>
+				</ul>
+				<div class="input-section input-section_days">
+					<div class="input-group">
+						<div class="time js-check-group">
+							<div class="time__left">
+								<label class="checkbox js-check">
+									<input class="checkbox__input" type="checkbox" checked>
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										Понедельник
+									</span>
+								</label>
+							</div>
+							<div class="time__input">
+								<span class="time__text">с</span>
+								<div class="input-select select js-select">
+									<input type="text" class="input js-select-input" readonly value="10:00">
+									<i class="fa fa-caret-down"></i>
+									<select>
+										<option value="10:00">10:00</option>
+										<option value="11:00">11:00</option>
+										<option value="12:00">12:00</option>
+										<option value="13:00">13:00</option>
+										<option value="15:00">15:00</option>
+										<option value="16:00">16:00</option>
+										<option value="17:00">17:00</option>
+										<option value="18:00">18:00</option>
+										<option value="19:00">19:00</option>
+										<option value="20:00">20:00</option>
+										<option value="21:00">21:00</option>
+									</select>
+								</div>
+								<span class="time__text">до</span>
+								<div class="input-select select js-select">
+									<input type="text" class="input js-select-input" readonly value="21:00">
+									<i class="fa fa-caret-down"></i>
+									<select>
+										<option value="21:00">21:00</option>
+										<option value="20:00">20:00</option>
+										<option value="19:00">19:00</option>
+										<option value="18:00">18:00</option>
+										<option value="17:00">17:00</option>
+										<option value="16:00">16:00</option>
+										<option value="15:00">15:00</option>
+										<option value="14:00">14:00</option>
+										<option value="13:00">13:00</option>
+										<option value="12:00">12:00</option>
+										<option value="11:00">11:00</option>
+										<option value="10:00">10:00</option>
+									</select>
+								</div>
+							</div>
+							<div class="time__right js-check-add">
+								<label class="checkbox js-check-hour">
+									<input class="checkbox__input" type="checkbox">
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										24 ч.
+									</span>
+								</label>
+							</div>
+						</div>
+						<div class="time js-check-group">
+							<div class="time__left">
+								<label class="checkbox js-check">
+									<input class="checkbox__input" type="checkbox" checked>
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										Вторник
+									</span>
+								</label>
+							</div>
+							<div class="time__input">
+								<span class="time__text">с</span>
+								<div class="input-select select js-select">
+									<input type="text" class="input js-select-input" readonly value="10:00">
+									<i class="fa fa-caret-down"></i>
+									<select>
+										<option value="10:00">10:00</option>
+										<option value="11:00">11:00</option>
+										<option value="12:00">12:00</option>
+										<option value="13:00">13:00</option>
+										<option value="15:00">15:00</option>
+										<option value="16:00">16:00</option>
+										<option value="17:00">17:00</option>
+										<option value="18:00">18:00</option>
+										<option value="19:00">19:00</option>
+										<option value="20:00">20:00</option>
+										<option value="21:00">21:00</option>
+									</select>
+								</div>
+								<span class="time__text">до</span>
+								<div class="input-select select js-select">
+									<input type="text" class="input js-select-input" readonly value="21:00">
+									<i class="fa fa-caret-down"></i>
+									<select>
+										<option value="21:00">21:00</option>
+										<option value="20:00">20:00</option>
+										<option value="19:00">19:00</option>
+										<option value="18:00">18:00</option>
+										<option value="17:00">17:00</option>
+										<option value="16:00">16:00</option>
+										<option value="15:00">15:00</option>
+										<option value="14:00">14:00</option>
+										<option value="13:00">13:00</option>
+										<option value="12:00">12:00</option>
+										<option value="11:00">11:00</option>
+										<option value="10:00">10:00</option>
+									</select>
+								</div>
+							</div>
+							<div class="time__right js-check-add">
+								<label class="checkbox js-check-hour">
+									<input class="checkbox__input" type="checkbox" checked>
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										24 ч.
+									</span>
+								</label>
+							</div>
+						</div>
+						<div class="time js-check-group">
+							<div class="time__left">
+								<label class="checkbox js-check">
+									<input class="checkbox__input" type="checkbox">
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										Среда
+									</span>
+								</label>
+							</div>
+							<div class="time__input">
+								<span class="time__text">с</span>
+								<div class="input-select select js-select">
+									<input type="text" class="input js-select-input" readonly value="10:00">
+									<i class="fa fa-caret-down"></i>
+									<select>
+										<option value="10:00">10:00</option>
+										<option value="11:00">11:00</option>
+										<option value="12:00">12:00</option>
+										<option value="13:00">13:00</option>
+										<option value="15:00">15:00</option>
+										<option value="16:00">16:00</option>
+										<option value="17:00">17:00</option>
+										<option value="18:00">18:00</option>
+										<option value="19:00">19:00</option>
+										<option value="20:00">20:00</option>
+										<option value="21:00">21:00</option>
+									</select>
+								</div>
+								<span class="time__text">до</span>
+								<div class="input-select select js-select">
+									<input type="text" class="input js-select-input" readonly value="21:00">
+									<i class="fa fa-caret-down"></i>
+									<select>
+										<option value="21:00">21:00</option>
+										<option value="20:00">20:00</option>
+										<option value="19:00">19:00</option>
+										<option value="18:00">18:00</option>
+										<option value="17:00">17:00</option>
+										<option value="16:00">16:00</option>
+										<option value="15:00">15:00</option>
+										<option value="14:00">14:00</option>
+										<option value="13:00">13:00</option>
+										<option value="12:00">12:00</option>
+										<option value="11:00">11:00</option>
+										<option value="10:00">10:00</option>
+									</select>
+								</div>
+							</div>
+							<div class="time__right js-check-add">
+								<label class="checkbox js-check-hour">
+									<input class="checkbox__input" type="checkbox">
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										24 ч.
+									</span>
+								</label>
+							</div>
+						</div>
+						<div class="time js-check-group">
+							<div class="time__left">
+								<label class="checkbox js-check">
+									<input class="checkbox__input" type="checkbox">
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										Четверг
+									</span>
+								</label>
+							</div>
+							<div class="time__input">
+								<span class="time__text">с</span>
+								<div class="input-select select js-select">
+									<input type="text" class="input js-select-input" readonly value="10:00">
+									<i class="fa fa-caret-down"></i>
+									<select>
+										<option value="10:00">10:00</option>
+										<option value="11:00">11:00</option>
+										<option value="12:00">12:00</option>
+										<option value="13:00">13:00</option>
+										<option value="15:00">15:00</option>
+										<option value="16:00">16:00</option>
+										<option value="17:00">17:00</option>
+										<option value="18:00">18:00</option>
+										<option value="19:00">19:00</option>
+										<option value="20:00">20:00</option>
+										<option value="21:00">21:00</option>
+									</select>
+								</div>
+								<span class="time__text">до</span>
+								<div class="input-select select js-select">
+									<input type="text" class="input js-select-input" readonly value="21:00">
+									<i class="fa fa-caret-down"></i>
+									<select>
+										<option value="21:00">21:00</option>
+										<option value="20:00">20:00</option>
+										<option value="19:00">19:00</option>
+										<option value="18:00">18:00</option>
+										<option value="17:00">17:00</option>
+										<option value="16:00">16:00</option>
+										<option value="15:00">15:00</option>
+										<option value="14:00">14:00</option>
+										<option value="13:00">13:00</option>
+										<option value="12:00">12:00</option>
+										<option value="11:00">11:00</option>
+										<option value="10:00">10:00</option>
+									</select>
+								</div>
+							</div>
+							<div class="time__right js-check-add">
+								<label class="checkbox js-check-hour">
+									<input class="checkbox__input" type="checkbox">
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										24 ч.
+									</span>
+								</label>
+							</div>
+						</div>
+						<div class="time js-check-group">
+							<div class="time__left">
+								<label class="checkbox js-check">
+									<input class="checkbox__input" type="checkbox">
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										Пятница
+									</span>
+								</label>
+							</div>
+							<div class="time__input">
+								<span class="time__text">с</span>
+								<div class="input-select select js-select">
+									<input type="text" class="input js-select-input" readonly value="10:00">
+									<i class="fa fa-caret-down"></i>
+									<select>
+										<option value="10:00">10:00</option>
+										<option value="11:00">11:00</option>
+										<option value="12:00">12:00</option>
+										<option value="13:00">13:00</option>
+										<option value="15:00">15:00</option>
+										<option value="16:00">16:00</option>
+										<option value="17:00">17:00</option>
+										<option value="18:00">18:00</option>
+										<option value="19:00">19:00</option>
+										<option value="20:00">20:00</option>
+										<option value="21:00">21:00</option>
+									</select>
+								</div>
+								<span class="time__text">до</span>
+								<div class="input-select select js-select">
+									<input type="text" class="input js-select-input" readonly value="21:00">
+									<i class="fa fa-caret-down"></i>
+									<select>
+										<option value="21:00">21:00</option>
+										<option value="20:00">20:00</option>
+										<option value="19:00">19:00</option>
+										<option value="18:00">18:00</option>
+										<option value="17:00">17:00</option>
+										<option value="16:00">16:00</option>
+										<option value="15:00">15:00</option>
+										<option value="14:00">14:00</option>
+										<option value="13:00">13:00</option>
+										<option value="12:00">12:00</option>
+										<option value="11:00">11:00</option>
+										<option value="10:00">10:00</option>
+									</select>
+								</div>
+							</div>
+							<div class="time__right js-check-add">
+								<label class="checkbox js-check-hour">
+									<input class="checkbox__input" type="checkbox">
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										24 ч.
+									</span>
+								</label>
+							</div>
+						</div>
+						<div class="time js-check-group">
+							<div class="time__left">
+								<label class="checkbox js-check">
+									<input class="checkbox__input" type="checkbox">
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										Суббота
+									</span>
+								</label>
+							</div>
+							<div class="time__input">
+								<span class="time__text">с</span>
+								<div class="input-select select js-select">
+									<input type="text" class="input js-select-input" readonly value="10:00">
+									<i class="fa fa-caret-down"></i>
+									<select>
+										<option value="10:00">10:00</option>
+										<option value="11:00">11:00</option>
+										<option value="12:00">12:00</option>
+										<option value="13:00">13:00</option>
+										<option value="15:00">15:00</option>
+										<option value="16:00">16:00</option>
+										<option value="17:00">17:00</option>
+										<option value="18:00">18:00</option>
+										<option value="19:00">19:00</option>
+										<option value="20:00">20:00</option>
+										<option value="21:00">21:00</option>
+									</select>
+								</div>
+								<span class="time__text">до</span>
+								<div class="input-select select js-select">
+									<input type="text" class="input js-select-input" readonly value="21:00">
+									<i class="fa fa-caret-down"></i>
+									<select>
+										<option value="21:00">21:00</option>
+										<option value="20:00">20:00</option>
+										<option value="19:00">19:00</option>
+										<option value="18:00">18:00</option>
+										<option value="17:00">17:00</option>
+										<option value="16:00">16:00</option>
+										<option value="15:00">15:00</option>
+										<option value="14:00">14:00</option>
+										<option value="13:00">13:00</option>
+										<option value="12:00">12:00</option>
+										<option value="11:00">11:00</option>
+										<option value="10:00">10:00</option>
+									</select>
+								</div>
+							</div>
+							<div class="time__right js-check-add">
+								<label class="checkbox js-check-hour">
+									<input class="checkbox__input" type="checkbox">
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										24 ч.
+									</span>
+								</label>
+							</div>
+						</div>
+						<div class="time js-check-group">
+							<div class="time__left">
+								<label class="checkbox js-check">
+									<input class="checkbox__input" type="checkbox">
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										Воскресенье
+									</span>
+								</label>
+							</div>
+							<div class="time__input">
+								<span class="time__text">с</span>
+								<div class="input-select select js-select">
+									<input type="text" class="input js-select-input" readonly value="10:00">
+									<i class="fa fa-caret-down"></i>
+									<select>
+										<option value="10:00">10:00</option>
+										<option value="11:00">11:00</option>
+										<option value="12:00">12:00</option>
+										<option value="13:00">13:00</option>
+										<option value="15:00">15:00</option>
+										<option value="16:00">16:00</option>
+										<option value="17:00">17:00</option>
+										<option value="18:00">18:00</option>
+										<option value="19:00">19:00</option>
+										<option value="20:00">20:00</option>
+										<option value="21:00">21:00</option>
+									</select>
+								</div>
+								<span class="time__text">до</span>
+								<div class="input-select select js-select">
+									<input type="text" class="input js-select-input" readonly value="21:00">
+									<i class="fa fa-caret-down"></i>
+									<select>
+										<option value="21:00">21:00</option>
+										<option value="20:00">20:00</option>
+										<option value="19:00">19:00</option>
+										<option value="18:00">18:00</option>
+										<option value="17:00">17:00</option>
+										<option value="16:00">16:00</option>
+										<option value="15:00">15:00</option>
+										<option value="14:00">14:00</option>
+										<option value="13:00">13:00</option>
+										<option value="12:00">12:00</option>
+										<option value="11:00">11:00</option>
+										<option value="10:00">10:00</option>
+									</select>
+								</div>
+							</div>
+							<div class="time__right js-check-add">
+								<label class="checkbox js-check-hour">
+									<input class="checkbox__input" type="checkbox">
+									<em class="fa fa-check"></em>
+									<span class="checkbox__text">
+										24 ч.
+									</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="input-section input-section_opt">
+					<div class="input-group input-group_with-title">
+						<div class="input-group__title is-big-title">Опции доставки:</div>
+					</div>
+					<div class="delivery-opt js-check-group">
+						<div class="delivery-opt__left">
+							<label class="checkbox js-check">
+								<input class="checkbox__input" type="checkbox" checked>
+								<em class="fa fa-check"></em>
+								<span class="checkbox__text">
+									<i class="fa fa-male"></i>
+									Takeaway
+								</span>
+							</label>
+						</div>
+						<div class="delivery-opt__right">
+							<span class="delivery-opt__text">Варианты оплаты:</span>
+							<label class="checkbox">
+								<input class="checkbox__input" type="checkbox" checked>
+								<em class="fa fa-check"></em>
+								<span class="checkbox__text">
+									Наличные
+								</span>
+							</label>
+							<label class="checkbox">
+								<input class="checkbox__input" type="checkbox">
+								<em class="fa fa-check"></em>
+								<span class="checkbox__text">
+									Карта
+								</span>
+							</label>
+						</div>
+					</div>
+					<div class="delivery-opt js-check-group">
+						<div class="delivery-opt__left">
+							<label class="checkbox js-check">
+								<input class="checkbox__input" type="checkbox">
+								<em class="fa fa-check"></em>
+								<span class="checkbox__text">
+									<i class="fa fa-truck"></i>
+									Доставка
+								</span>
+							</label>
+						</div>
+						<div class="delivery-opt__right">
+							<span class="delivery-opt__text">Варианты оплаты:</span>
+							<label class="checkbox">
+								<input class="checkbox__input" type="checkbox" checked>
+								<em class="fa fa-check"></em>
+								<span class="checkbox__text">
+									Наличные
+								</span>
+							</label>
+							<label class="checkbox">
+								<input class="checkbox__input" type="checkbox">
+								<em class="fa fa-check"></em>
+								<span class="checkbox__text">
+									Карта
+								</span>
+							</label>
+						</div>
+					</div>
+					<div class="input-group">
+						<div class="input-wrap input-wrap_small-parts ">	
+							<div class="input-wrap__title"><span>Минимальная сумма заказа</span></div>
+							<input type="tel" class="input">
+							<span class="input-wrap__text"><span>€</span>
+						</div>
+						<div class="input-wrap input-wrap_small-parts ">	
+							<div class="input-wrap__title"><span>Среднее время доставки</span></div>
+							<input type="tel" class="input">
+						</div>
+					</div>
+				</div>
+				<div class="input-section input-section_city">
+					<div class="input-group input-group_with-title">
+						<div class="input-title">
+							<span>Город</span>
+						</div>
+						<div class="input-wrap">
+							<div class="input-select input-select_city select js-select">
+								<input type="text" class="input js-select-input" readonly value="Таллинн ">
+								<i class="fa fa-caret-down"></i>
+								<select>
+									<option value="Таллинн">Таллинн</option>
+									<option value="Таллинн">Таллинн</option>
+									<option value="Таллинн">Таллинн</option>
+									<option value="Таллинн">Таллинн</option>
+									<option value="Таллинн">Таллинн</option>
+									<option value="Таллинн">Таллинн</option>
+									<option value="Таллинн">Таллинн</option>
+								</select>
+							</div>
+							<div class="to-right">
+								<a href="#" class="btn-del btn-del_small"><i class="fa fa-times-circle"></i> Удалить город</a>
+							</div>
+						</div>
+					</div>
+					<div class="input-group input-group_with-title">
+						<div class="input-title">
+						</div>
+						<div class="input-wrap">
+							<div class="input-district js-check-group">
+								<div class="input-district__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Lasnamae
+										</span>
+									</label>
+								</div>
+								<div class="input-district__input">
+									<div>
+										<span>Стоимость <br>доставки</span>
+									</div>
+									<input type="text" class="input">
+									<div>
+										<span>€</span>
+									</div>
+								</div>
+								<div class="input-district__right">
+									<label class="checkbox js-check-add">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											бесплатная доставка
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="input-district js-check-group">
+								<div class="input-district__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Mustamae
+										</span>
+									</label>
+								</div>
+								<div class="input-district__input">
+									<div>
+										<span>Стоимость <br>доставки</span>
+									</div>
+									<input type="text" class="input">
+									<div>
+										<span>€</span>
+									</div>
+								</div>
+								<div class="input-district__right">
+									<label class="checkbox js-check-add">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											бесплатная доставка
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="input-district js-check-group">
+								<div class="input-district__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Lasnamae
+										</span>
+									</label>
+								</div>
+								<div class="input-district__input">
+									<div>
+										<span>Стоимость <br>доставки</span>
+									</div>
+									<input type="text" class="input">
+									<div>
+										<span>€</span>
+									</div>
+								</div>
+								<div class="input-district__right">
+									<label class="checkbox js-check-add">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											бесплатная доставка
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="input-district js-check-group">
+								<div class="input-district__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Mustamae
+										</span>
+									</label>
+								</div>
+								<div class="input-district__input">
+									<div>
+										<span>Стоимость <br>доставки</span>
+									</div>
+									<input type="text" class="input">
+									<div>
+										<span>€</span>
+									</div>
+								</div>
+								<div class="input-district__right">
+									<label class="checkbox js-check-add">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											бесплатная доставка
+										</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn-add-wrap">
+					<a href="#" class="btn-add">
+						<i class="fa fa-plus-circle"></i>Добавить город
+					</a>
+				</div>
+				<div class="btn-wrap"><input type="submit" class="btn btn_width" value="Сохранить кампанию"></div>
+			</div>
+			<div class="l-col2">
+				<div class="extend-item sidebar-nav">
+					<ul class="extend-item__list">
+						<li>
+							<a href="#">
+								<span class="extend-item__icon">
+									<i class="fa fa-cutlery"></i>
+								</span>
+								<span class="extend-item__text">Меню ресторана</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="extend-item__icon">
+									<i class="fa fa-tags"></i>
+								</span>
+								<span class="extend-item__text">Заказы ресторана</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="extend-item__icon">
+									<i class="fa fa-gear"></i>
+								</span>
+								<span class="extend-item__text">Настройки ресторана</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blanc">
+								<span class="extend-item__icon">
+									<i class="fa  fa-external-link-square"></i>
+								</span>
+								<span class="extend-item__text">Страница ресторана</span>
+							</a>
+						</li>
+						<li class="is-active">
+							<a href="#">
+								<span class="extend-item__icon">
+									<i class="fa fa-gift"></i>
+								</span>
+								<span class="extend-item__text">Акция ресторана</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div> 
+	<div class="push"></div> 
+	<div class="item-popup item-popup_simple js-item-popup js-item-popup-1">
+		<div class="item">
+			<div class="item__in">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item1.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="choose js-choose" data-max-number="50">
+						<div class="choose__main"><span class="js-choose-digit">1</span> шт.</div>
+						<input type="hidden" value="1">
+						<button class="fa fa-plus-circle js-plus"></button>
+	                    <button class="fa fa-minus-circle js-minus"></button>
+	                </div>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+						<a class="btn-order-bonus" href="#">
+							купить за 90 баллов
+						</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<button class="btn-close js-item-popup-close"></button>
+	</div>
+	<div class="item-popup item-popup_width js-item-popup js-item-popup-2">
+		<div class="item">
+			<div class="item__in">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item2.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="choose js-choose" data-max-number="50">
+						<div class="choose__main"><span class="js-choose-digit">1</span> шт.</div>
+						<input type="hidden" value="1">
+						<button class="fa fa-plus-circle js-plus"></button>
+	                    <button class="fa fa-minus-circle js-minus"></button>
+	                </div>
+	                <div class="item__add-info">Добавки: 2,4 €</div>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+						<a class="btn-order-bonus" href="#">
+							купить за 90 баллов
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item-same">
+			<div class="title">Сопутствующие блюда:</div>
+			<div class="item">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item4.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item5.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="btn-close js-item-popup-close"></button>
+	</div>
+	<div class="item-popup item-popup_width js-item-popup js-item-popup-3">
+		<div class="item">
+			<div class="item__in">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item2.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="choose js-choose" data-max-number="50">
+						<div class="choose__main"><span class="js-choose-digit">1</span> шт.</div>
+						<input type="hidden" value="1">
+						<button class="fa fa-plus-circle js-plus"></button>
+	                    <button class="fa fa-minus-circle js-minus"></button>
+	                </div>
+	                <div class="item__add-info">Добавки: 2,4 €</div>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+						<a class="btn-order-bonus" href="#">
+							купить за 90 баллов
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item-opt">
+			<div class="item-opt__categ">Выберите булочку:</div>
+			<div class="item-opt__list">
+				<div class="item-opt__cols">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1" checked>
+							<span>Белая булочка</span> 
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Белая буолчка с кунжутом</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Чиабатта с оливками</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Чиабатта ржаная</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Чиабатта с паприкой</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Чиабатта классическая</span>
+						</label>
+					</div>
+				</div>
+				<div class="item-opt__categ">Добавки:</div>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox" checked>
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с плесенью
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с дырками
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox" checked>
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Жареный панированый лук
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Бекон 
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Зелень
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Салат
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с плесенью
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с дырками
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Жареный панированый лук
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Бекон 
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Зелень
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Салат
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+			</div>
+		</div>
+		<button class="btn-close js-item-popup-close"></button>
+	</div>
+	<div class="item-popup item-popup_width item_height js-item-popup js-item-popup-4">
+		<div class="item">
+			<div class="item__in">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item4.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="choose js-choose" data-max-number="50">
+						<div class="choose__main"><span class="js-choose-digit">1</span> шт.</div>
+						<input type="hidden" value="1">
+						<button class="fa fa-plus-circle js-plus"></button>
+	                    <button class="fa fa-minus-circle js-minus"></button>
+	                </div>
+	                <div class="item__add-info">Добавки: 2,4 €</div>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+						<a class="btn-order-bonus" href="#">
+							купить за 90 баллов
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item-opt">
+			<div class="item-opt__categ">Выберите булочку:</div>
+			<div class="item-opt__list">
+				<div class="item-opt__cols">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2" checked>
+							<span>Белая булочка</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Белая буолчка с кунжутом</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Чиабатта с оливками</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Чиабатта ржаная</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Чиабатта с паприкой</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Чиабатта классическая</span>
+						</label>
+					</div>
+				</div>
+				<div class="item-opt__categ">Добавки:</div>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox" checked>
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с плесенью
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с дырками
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox" checked>
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Жареный панированый лук
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Бекон 
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Зелень
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Салат
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с плесенью
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с дырками
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Жареный панированый лук
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Бекон 
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Зелень
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Салат
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+			</div>
+		</div>
+		<div class="item-same-extend">
+			<div class="title">Сопутствующие блюда:</div>
+			<div class="item">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item4.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item5.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item6.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="btn-close js-item-popup-close"></button>
+	</div>
+</div>
+<!-- END out-->
+<footer class="footer">
+	<div class="l-center">
+		<div class="footer__top">
+			<div class="footer__feedback">
+				<div class="footer__feedback-title">Поддержка</div>
+				<ul>
+					<li>Вопросы и ответы</li>
+					<li>+372 66 777 888</li>
+					<li>+372 66 999 262</li>
+					<li><a href="mailto:info@fudzy.ee">info@fudzy.ee</a></li>
+				</ul>
+			</div>
+			<div class="footer__nav footer__col">
+				<ul>
+					<li><a href="#">Условия использования сайта</a></li>
+					<li><a href="#">Ресторанам</a></li>
+					<li><a href="#">Агентам</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="footer__about footer__col">
+				fudzy— это сервис, объединивший сотни служб доставки пиццы, суши, еды и продуктов в Единую Систему Заказов. <br>
+				Цель проекта — обеспечить своим пользователям наилучшие условия для быстрого, удобного и выгодного осуществления заказов.
+				<div class="footer__soc">
+					<a href="#">
+						<i class="fa fa-facebook"></i>
+						<span>Facebook</span>
+					</a>
+					<a href="#">
+						<i class="fa fa-instagram"></i>
+						<span>Instagram</span>
+					</a>
+					<a href="#">
+						<i class="fa fa-comments"></i>
+						<span>Блог</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer__meta"><span>© fudzy 2014</span> Designed by <a href="#">Aprol Designs</a></div>
+	</div>
+</footer>
+
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html> 
