@@ -340,5 +340,9 @@ head.ready(function() {
 		$(this).parent().hide();
 		$(this).parents(".js-sidebar-categs").find("[hidden]").removeAttr("hidden");
 	});
+	$(".js-order").on("click",function(){
+		$(this).toggleClass("is-active");
+		$(this).parent().find(".js-order-detail").slideToggle(200)
+	});
 
 });

@@ -1,6 +1,6 @@
 .order-head
 	margin-bottom: 17px
-	padding: 0 40px 
+	padding: 0 34px 0 40px
 	+clr
 .order-head__left
 	float: left
@@ -34,51 +34,88 @@
 	display: table
 	min-height: 70px
 	width: 100%
+	cursor: pointer
+	&.is-active
+		.order__cell  
+			background: #4c4c4c 
+			color: #fff
+			span
+				color: #fff 
 	&.is-new
 		.order__cell  
+			color: $dark 
 			background: $yellow 
+			span
+				color: $gray 
+	.fa-truck
+		float: left
+		margin-top: 3px
+		+ div
+			overflow: hidden
+	.fa-check
+		color: $yellow
+	.fa-star
+		margin: 0 5px 0 0
+.order_user
+	.order__cell_1
+		font-size: 15px
+	.fa-check
+		color: $green   
 .order__row
 	display: table-row
-	.order__cell
-		display: table-cell
-		padding: 17px 0 
-		vertical-align: middle
-		span
-			color: $gray
-			font-size: 13px
-			+fr 
-		.fa
-			margin-left: 5px
-			margin-right: 9px
-		.fa-truck
-			float: left
-			margin-top: 3px
-			+ div
-				overflow: hidden
-		.fa-check
-			color: $yellow 
-	.order__cell_1
-		padding: 17px 10px 17px 40px
-		width: 175px
-		+fb
+.order__cell
+	display: table-cell
+	padding: 17px 0 
+	vertical-align: middle
+	span
+		color: $gray
 		font-size: 13px
-	.order__cell_2
-		padding-right: 10px
-		width: 153px
-	.order__cell_3
-		padding-right: 10px
-		width: 145px
-	.order__cell_4
-		padding-right: 10px
-		width: 120px
-
+		+fr 
+	strong
+		font-weight: normal
+		color: $red
+		font-size: 13px 
+	.fa
+		margin-left: 5px
+		margin-right: 9px
+.order__cell_1
+	padding: 17px 10px 17px 40px
+	width: 175px
+	+fb
+	font-size: 13px
+.order__cell_2
+	padding-right: 10px
+	width: 153px
+.order__cell_3
+	padding-right: 10px
+	width: 145px
+.order__cell_4
+	padding-right: 10px
+	width: 120px
+.order-detail
+	display: none
+	border-top: 1px dashed $border  
 .order-detail__head
 	border-bottom: 1px solid $border 
 	padding: 21px 10px 21px 60px 
 	background: #e7e7e7 
 	+clr
+.order-detail__body
+	padding: 10px 58px
+	.wrap
+		padding: 10px 0 
+		border-bottom: 1px solid $border 
+	.order-detail__left
+		width: 260px
+	.order-detail__right
+		text-align: right
+		padding-right: 15px
+	.btn-wrap
+		text-align: center
+		margin: 22px 0 8px
+
 .order-detail__meta
-	padding-left: 20px
+	padding: 10px 0 0 20px
 	font-size: 13px
 	+fr
 	strong
@@ -87,14 +124,24 @@
 		font-weight: normal
 .order-detail__left
 	float: left
-	margin-bottom: 10px
 	padding-left: 12px
-	width: 425px
+	width: 375px
 .order-detail__right
 	float: right
-	margin-bottom: 10px
 	width: 165px
+	span
+		display: inline-block
+		width: 65px
+		text-align: right
+	em
+		display: inline-block
+		padding-top: 10px
+		width: 106px
+		text-align: right
+		font-style: normal
+		font-size: 13px
+		+fb
 .order-detail__user
 	display: inline-block
-	width: 332px
+	width: 315px
 	text-align: center
