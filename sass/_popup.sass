@@ -1,3 +1,193 @@
+.has-open-popup
+	overflow: hidden
+.overlay
+	display: none
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	z-index: 20000
+	background: #000 
+	background: rgba(#000,.48)
+	text-align: center
+	overflow: auto
+	font-size: 0
+	&:before
+		content: ""
+		display: inline-block
+		vertical-align: middle
+		width: 0
+		height: 100% 
+	+scrollbar
+		width: 6px
+		height: 6px
+		+border-radius(4px)
+		background: #c4c4c4
+	+scrollbar-thumb
+		background: $red
+		+border-radius(4px)
+	+scrollbar-track-piece     
+		width: 6px 
+		+border-radius(4px) 
+.popup
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	margin: 50px 0
+	width: 1000px
+	background: #fafafa
+	font-size: 12px
+	border-radius: 10px
+	text-align: left
+	+box
+	overflow: hidden
+	border-radius: 20px 
+	+box-shadow(0 0 8px rgba(#000, .6))
+	em
+		color: #817f7f 
+		a
+			color: #949494 
+	sup
+		color: #db2121 
+	.fa-star-half-empty
+		color: $yellow   
+	.fa-envelope-o
+		color: #797979
+		font-size: 42px   
+.popup__close
+	position: absolute
+	top: 17px
+	right: 17px
+	+s(close)
+.popup__head
+	position: relative
+	border-bottom: 1px solid $border 
+	padding: 33px 40px 17px 
+	background: #fff 
+	.link-prev
+		position: absolute
+		left: 40px
+		top: 46px
+		+tr
+		&:hover
+			color: $red_d 
+.popup__body
+	+clr
+	.btn
+		margin-top: 12px
+.popup__left
+	float: left
+	padding: 29px 25px 40px 40px
+	width: 652px
+	+box
+	background: #fff
+	border-right: 1px solid $border 
+	.input-wrap_with-label
+		padding-top: 15px
+		.input
+			margin: 10px 0 12px
+		.input-wrap__label
+			padding-left: 20px
+			+fb
+		.checkbox-wrap
+			padding-left: 20px
+.popup__right
+	overflow: hidden
+	padding: 29px 40px 5px 22px 
+	.checkbox-wrap
+		padding: 7px 20px 0
+	.btn
+		padding: 9px 55px 
+	.enter-soc
+		margin-top: 45px
+.popup__footer
+	margin-top: 47px
+	border-top: 1px dashed $border 
+	padding-top: 34px
+.benefit-wrap
+	padding: 36px 0 30px 
+	+clr
+.benefit
+	float: left
+	width: 33.3%
+	white-space: nowrap
+	.fa
+		font-size: 48px
+.benefit__img,
+.benefit__main
+	display: inline-block
+	vertical-align: middle
+.benefit__img
+	margin-right: 13px
+.benefit__main
+	max-width: 125px
+	font-size: 14px
+	white-space: normal
+	+fb
+	color: #5b5b5b 
+.cart-wrap
+	border-bottom: 1px solid $border 
+	background: #fff 
+	+clr
+	padding: 20px 0 0 
+	.cart-place
+		float: left
+		margin-right: 20px
+	.cart-item
+		overflow: hidden
+.cart-place
+	+clr
+	width: 280px
+.cart-place__img
+	float: left
+	margin: 0 20px 0 30px 
+	overflow: hidden
+	width: 90px
+	img
+		max-width: 100%
+.cart-place__info
+	overflow: hidden
+	a
+		font-size: 21px
+		+fb
+	span
+		display: block
+		+fi
+		color: $gray 
+.cart-item
+	margin-bottom: 13px
+	border-bottom: 1px dashed $border 
+	padding: 0 0 17px 
+	+clr
+.cart-item__cell
+	float: left
+	+box
+	.choose
+		margin: 0 0 8px
+		display: block
+		+ span
+			display: inline-block
+			padding-left: 20px
+			color: $red 
+.cart-item__cell-1
+	padding: 4px 10px 0 14px 
+	width: 270px
+	a
+		font-size: 17px  
+		+fm
+		color: $dark
+	span
+		display: block
+		margin-top: 8px
+		color: $gray 
+.cart-item__cell-2
+	width: 250px
+.cart-item__cell-3
+	width: 100px
+	padding: 10px 10px 0 0
+	+fb
+	font-size: 18px
 .item-popup		
 	position: absolute
 	display: none
@@ -112,3 +302,51 @@
 	.item
 		height: auto
 		
+.window
+	display: none
+	position: absolute
+	top: 300px
+	left: 500px
+	z-index: 200  
+	padding: 17px 15px
+	background: #fff
+	border-radius: 20px 
+	+box-shadow(0 0 8px rgba(#000,.5)) 
+	+box
+	.input-wrap
+		display: inline-block
+		vertical-align: bottom
+		margin: 0 0 0 9px
+		&:first-child
+			margin-left: 0
+		.input
+			display: inline-block
+			vertical-align: middle
+		.input_s
+			width: 90px
+	.input-wrap_small
+		width: 90px
+	.input-wrap__label
+		display: block
+		margin-bottom: 9px
+	.btn
+		width: 90px
+	.input-wrap__text  
+		margin: 0 5px 
+		font-size: 15px
+.window_price
+	margin-left: 223px
+.window_discount
+	margin-left: 333px
+.window_width
+	padding: 20px 
+	.input-group
+		.tab-list
+			margin-left: 20px  
+		.input-wrap
+			margin-left: 0
+	.btn
+		margin-left: 7px
+	.btn-close
+		top: 14px
+		right: 14px

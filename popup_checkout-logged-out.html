@@ -1,0 +1,607 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>popup_checkout-logged-out</title>
+	<meta name="viewport">
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body class="has-open-popup">
+
+<!-- BEGIN  out-->
+<div class="out">
+	
+	<header class="header">
+		<div class="header__top">
+			<div class="l-center">
+				<div class="header__login">
+					<a href="#">Войти <i class="fa fa-sign-in"></i></a>
+				</div>
+				<a href="#" class="header__link">Зарегистрироваться</a>
+				<div class="header__lang">
+					<div class="extend-item js-extend-item">
+						<a href="#" class="extend-item__link js-extend-item-link">По-русски <i class="fa fa-sort-desc"></i></a>
+						<ul class="extend-item__list js-extend-item-list">
+							<li><a href="#">По-русски</a></li>
+							<li><a href="#">По-русски</a></li>
+							<li><a href="#">По-русски</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="header__main">
+			<div class="l-center">
+				<a href="#" class="header__logo">
+					<strong>foodzy</strong>
+					система доставки
+				</a>
+				<div class="header__city">
+					<a href="#" class="header__city-btn">
+						<span>ваш город: </span>
+						<i class="fa fa-location-arrow"></i>
+					</a>		
+					<div class="header__input">
+						<input type="text" placeholder="Выберите город">
+					</div>
+				</div>
+				<div class="header__search">	
+					<div class="header__input">
+						<input type="text" placeholder="блюдо или ресторан...">
+						<button class="fa fa-search"></button>
+					</div>
+				</div>
+				<div class="header__cart">
+					<a href="#" class="cart-btn">
+						<span class="cart-btn__icon">
+							<i class="fa fa-shopping-cart"></i>
+						</span>
+						<span class="cart-btn__in">
+							<span>Корзина</span>
+							0 €
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="slider">
+		<div class="js-promo-slider">
+			<div>
+				<div class="l-center">
+					<div class="slider__info">
+						<div class="slider__title">Доставка пиццы</div>
+						<div class="slider__text">Все лучшие пиццерии города <br> на одном сайте</div>
+						<a href="#" class="btn">посмотреть пиццерии <i class="fa fa-arrow-right"></i></a>
+					</div>
+					<div class="slider__img slider__img_pizza">
+						<img src="img/slide-pizza.png" alt="">
+					</div>
+				</div>		
+			</div> 
+			<div>
+				<div class="l-center">
+					<div class="slider__info">
+						<div class="slider__title">Доставка пиццы</div>
+						<div class="slider__text">Все лучшие пиццерии города <br> на одном сайте</div>
+						<a href="#" class="btn">посмотреть пиццерии <i class="fa fa-arrow-right"></i></a>
+					</div>
+					<div class="slider__img slider__img_burger">
+						<img src="img/slide-burger.png" alt="">  
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<div class="categ-section">
+		<div class="l-center">
+			<div class="title">Рестораны</div>
+			<ul class="categ-wrap">
+				<li class="categ">
+					<div class="categ__img">
+						<a href="#">
+							<img src="img/cat1.png" alt="">
+						</a>
+					</div>
+					<a href="#" class="categ__name">Пицца</a>
+				</li>
+				<li class="categ">
+					<div class="categ__img">
+						<a href="#">
+							<img src="img/cat2.png" alt="">
+						</a>
+					</div>
+					<a href="#" class="categ__name">Суши</a>
+				</li>
+				<li class="categ">
+					<div class="categ__img">
+						<a href="#">
+							<img src="img/cat3.png" alt="">
+						</a>
+					</div>
+					<a href="#" class="categ__name">Шашлык</a>
+				</li>
+				<li class="categ">
+					<div class="categ__img">
+						<a href="#">
+							<img src="img/cat4.png" alt="">
+						</a>
+					</div>
+					<a href="#" class="categ__name">Пироги</a>
+				</li>
+				<li class="categ">
+					<div class="categ__img">
+						<a href="#">
+							<img src="img/cat5.png" alt="">
+						</a>
+					</div>
+					<a href="#" class="categ__name">Бургеры</a>
+				</li>
+				<li class="categ">
+					<div class="categ__img">
+						<a href="#">
+							<img src="img/cat6.png" alt="">
+						</a>
+					</div>
+					<a href="#" class="categ__name">Все рестораны</a>
+				</li>
+			</ul>
+			<div class="title">Магазины</div>
+			<ul class="categ-wrap">
+				<li class="categ">
+					<div class="categ__img">
+						<a href="#">
+							<img src="img/cat7.png" alt="">
+						</a>
+					</div>
+					<a href="#" class="categ__name">Фермерские</a>
+				</li>
+				<li class="categ">
+					<div class="categ__img">
+						<a href="#">
+							<img src="img/cat8.png" alt="">
+						</a>
+					</div>
+					<a href="#" class="categ__name">Молочные</a>
+				</li>
+				<li class="categ">
+					<div class="categ__img">
+						<a href="#">
+							<img src="img/cat9.png" alt="">
+						</a>
+					</div>
+					<a href="#" class="categ__name">Деликатесы</a>
+				</li>
+				<li class="categ">
+					<div class="categ__img">
+						<a href="#">
+							<img src="img/cat10.png" alt="">
+						</a>
+					</div>
+					<a href="#" class="categ__name">Кондитерские</a>
+				</li>
+				<li class="categ">
+					<div class="categ__img">
+						<a href="#">
+							<img src="img/cat11.png" alt="">
+						</a>
+					</div>
+					<a href="#" class="categ__name">Гастрономия</a>
+				</li>
+				<li class="categ">
+					<div class="categ__img">
+						<a href="#">
+							<img src="img/cat12.png" alt="">
+						</a>
+					</div>
+					<a href="#" class="categ__name">Все магазины</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="offer-section l-center">
+		<div class="title">Специальные предложения</div>
+		<div class="offers-slider">
+			<div class="js-slider-offers">
+				<div>
+					<div class="offer">
+						<div class="offer__img">
+							<a href="#"><img src="img/offer-img.png" alt="img"></a>
+						</div>
+						<div class="offer__main">
+							<div class="offer__info">
+								<div class="offer__title">Пицца поло в подарок!</div>
+								<div class="offer__descr">
+									При заказе от 20 Евро пицца Поло в подарок!
+								</div>
+							</div>
+							<div class="offer__owner">
+								от <a href="#">PIZZA GRANDE</a>
+							</div>
+							<div class="offer__meta">кампания действует до 20.05.2014
+							</div>
+							<div class="offer__btn">
+								<a href="#" class="btn btn_detail">подробнее... <i class="fa fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="offer">
+						<div class="offer__img">
+							<a href="#"><img src="img/offer-img.png" alt="img"></a>
+						</div>
+						<div class="offer__main">
+							<div class="offer__info">
+								<div class="offer__title">Пицца поло в подарок!</div>
+								<div class="offer__descr">
+									При заказе от 20 Евро пицца Поло в подарок!
+								</div>
+							</div>
+							<div class="offer__owner">
+								от <a href="#">PIZZA GRANDE</a>
+							</div>
+							<div class="offer__meta">кампания действует до 20.05.2014
+							</div>
+							<div class="offer__btn">
+								<a href="#" class="btn btn_detail">подробнее... <i class="fa fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="offer">
+						<div class="offer__img">
+							<a href="#"><img src="img/offer-img.png" alt="img"></a>
+						</div>
+						<div class="offer__main">
+							<div class="offer__info">
+								<div class="offer__title">Пицца поло в подарок!</div>
+								<div class="offer__descr">
+									При заказе от 20 Евро пицца Поло в подарок! При заказе от 20 Евро пицца Поло в подарок!
+								</div>
+							</div>
+							<div class="offer__owner">
+								от <a href="#">PIZZA GRANDE </a>
+							</div>
+							<div class="offer__meta">кампания действует до 20.05.2014
+							</div>
+							<div class="offer__btn">
+								<a href="#" class="btn btn_detail">подробнее... <i class="fa fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="offer">
+						<div class="offer__img">
+							<a href="#"><img src="img/offer-img.png" alt="img"></a>
+						</div>
+						<div class="offer__main">
+							<div class="offer__info">
+								<div class="offer__title">Пицца поло в подарок!</div>
+								<div class="offer__descr">
+									При заказе от 20 Евро пицца Поло в подарок!
+								</div>
+							</div>
+							<div class="offer__owner">
+								от <a href="#">PIZZA GRANDE</a>
+							</div>
+							<div class="offer__meta">кампания действует до 20.05.2014
+							</div>
+							<div class="offer__btn">
+								<a href="#" class="btn btn_detail">подробнее... <i class="fa fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="offer">
+						<div class="offer__img">
+							<a href="#"><img src="img/offer-img.png" alt="img"></a>
+						</div>
+						<div class="offer__main">
+							<div class="offer__info">
+								<div class="offer__title">Пицца поло в подарок!</div>
+								<div class="offer__descr">
+									При заказе от 20 Евро пицца Поло в подарок!
+								</div>
+							</div>
+							<div class="offer__owner">
+								от <a href="#">PIZZA GRANDE</a>
+							</div>
+							<div class="offer__meta">кампания действует до 20.05.2014
+							</div>
+							<div class="offer__btn">
+								<a href="#" class="btn btn_detail">подробнее... <i class="fa fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="offer">
+						<div class="offer__img">
+							<a href="#"><img src="img/offer-img.png" alt="img"></a>
+						</div>
+						<div class="offer__main">
+							<div class="offer__info">
+								<div class="offer__title">Пицца поло в подарок!</div>
+								<div class="offer__descr">
+									При заказе от 20 Евро пицца Поло в подарок!
+								</div>
+							</div>
+							<div class="offer__owner">
+								от <a href="#">PIZZA GRANDE</a>
+							</div>
+							<div class="offer__meta">кампания действует до 20.05.2014
+							</div>
+							<div class="offer__btn">
+								<a href="#" class="btn btn_detail">подробнее... <i class="fa fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="offer">
+						<div class="offer__img">
+							<a href="#"><img src="img/offer-img.png" alt="img"></a>
+						</div>
+						<div class="offer__main">
+							<div class="offer__info">
+								<div class="offer__title">Пицца поло в подарок!</div>
+								<div class="offer__descr">
+									При заказе от 20 Евро пицца Поло в подарок! При заказе от 20 Евро пицца Поло в подарок!
+								</div>
+							</div>
+							<div class="offer__owner">
+								от <a href="#">PIZZA GRANDE </a>
+							</div>
+							<div class="offer__meta">кампания действует до 20.05.2014
+							</div>
+							<div class="offer__btn">
+								<a href="#" class="btn btn_detail">подробнее... <i class="fa fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="offer">
+						<div class="offer__img">
+							<a href="#"><img src="img/offer-img.png" alt="img"></a>
+						</div>
+						<div class="offer__main">
+							<div class="offer__info">
+								<div class="offer__title">Пицца поло в подарок!</div>
+								<div class="offer__descr">
+									При заказе от 20 Евро пицца Поло в подарок!
+								</div>
+							</div>
+							<div class="offer__owner">
+								от <a href="#">PIZZA GRANDE</a>
+							</div>
+							<div class="offer__meta">кампания действует до 20.05.2014
+							</div>
+							<div class="offer__btn">
+								<a href="#" class="btn btn_detail">подробнее... <i class="fa fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="offer">
+						<div class="offer__img">
+							<a href="#"><img src="img/offer-img.png" alt="img"></a>
+						</div>
+						<div class="offer__main">
+							<div class="offer__info">
+								<div class="offer__title">Пицца поло в подарок!</div>
+								<div class="offer__descr">
+									При заказе от 20 Евро пицца Поло в подарок!
+								</div>
+							</div>
+							<div class="offer__owner">
+								от <a href="#">PIZZA GRANDE</a>
+							</div>
+							<div class="offer__meta">кампания действует до 20.05.2014
+							</div>
+							<div class="offer__btn">
+								<a href="#" class="btn btn_detail">подробнее... <i class="fa fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="offer">
+						<div class="offer__img">
+							<a href="#"><img src="img/offer-img.png" alt="img"></a>
+						</div>
+						<div class="offer__main">
+							<div class="offer__info">
+								<div class="offer__title">Пицца поло в подарок!</div>
+								<div class="offer__descr">
+									При заказе от 20 Евро пицца Поло в подарок!
+								</div>
+							</div>
+							<div class="offer__owner">
+								от <a href="#">PIZZA GRANDE</a>
+							</div>
+							<div class="offer__meta">кампания действует до 20.05.2014
+							</div>
+							<div class="offer__btn">
+								<a href="#" class="btn btn_detail">подробнее... <i class="fa fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="offer">
+						<div class="offer__img">
+							<a href="#"><img src="img/offer-img.png" alt="img"></a>
+						</div>
+						<div class="offer__main">
+							<div class="offer__info">
+								<div class="offer__title">Пицца поло в подарок!</div>
+								<div class="offer__descr">
+									При заказе от 20 Евро пицца Поло в подарок! При заказе от 20 Евро пицца Поло в подарок!
+								</div>
+							</div>
+							<div class="offer__owner">
+								от <a href="#">PIZZA GRANDE </a>
+							</div>
+							<div class="offer__meta">кампания действует до 20.05.2014
+							</div>
+							<div class="offer__btn">
+								<a href="#" class="btn btn_detail">подробнее... <i class="fa fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="offer">
+						<div class="offer__img">
+							<a href="#"><img src="img/offer-img.png" alt="img"></a>
+						</div>
+						<div class="offer__main">
+							<div class="offer__info">
+								<div class="offer__title">Пицца поло в подарок!</div>
+								<div class="offer__descr">
+									При заказе от 20 Евро пицца Поло в подарок!
+								</div>
+							</div>
+							<div class="offer__owner">
+								от <a href="#">PIZZA GRANDE</a>
+							</div>
+							<div class="offer__meta">кампания действует до 20.05.2014
+							</div>
+							<div class="offer__btn">
+								<a href="#" class="btn btn_detail">подробнее... <i class="fa fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="push"></div> 
+</div>
+<!-- END out-->
+<footer class="footer">
+	<div class="l-center">
+		<div class="footer__top">
+			<div class="footer__feedback">
+				<div class="footer__feedback-title">Поддержка</div>
+				<ul>
+					<li>Вопросы и ответы</li>
+					<li>+372 66 777 888</li>
+					<li>+372 66 999 262</li>
+					<li><a href="mailto:info@fudzy.ee">info@fudzy.ee</a></li>
+				</ul>
+			</div>
+			<div class="footer__nav footer__col">
+				<ul>
+					<li><a href="#">Условия использования сайта</a></li>
+					<li><a href="#">Ресторанам</a></li>
+					<li><a href="#">Агентам</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="footer__about footer__col">
+				fudzy— это сервис, объединивший сотни служб доставки пиццы, суши, еды и продуктов в Единую Систему Заказов. <br>
+				Цель проекта — обеспечить своим пользователям наилучшие условия для быстрого, удобного и выгодного осуществления заказов.
+				<div class="footer__soc">
+					<a href="#">
+						<i class="fa fa-facebook"></i>
+						<span>Facebook</span>
+					</a>
+					<a href="#">
+						<i class="fa fa-instagram"></i>
+						<span>Instagram</span>
+					</a>
+					<a href="#">
+						<i class="fa fa-comments"></i>
+						<span>Блог</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer__meta"><span>© fudzy 2014</span> Designed by <a href="#">Aprol Designs</a></div>
+	</div>
+</footer>
+<div class="overlay js-overlay" style="display:block">
+	<div class="popup js-popup js-popup-logged-out">
+		<div class="popup__head">
+			<div class="title title_h1">Оформление заказа</div>
+			<a href="#" class="link-prev"><i class="fa fa-angle-double-left"></i> 	 Редактировать заказ</a>
+		</div>
+		<div class="popup__body">
+			<div class="popup__left">
+				<div class="input-group input-group_with-title">
+					<div class="input-group__title is-big-title">Вы новый пользователь? Введите ваши данные:</div>
+				</div>
+				<div class="input-group">
+					<div class="input-wrap">	
+						<input type="text" class="input input_half" placeholder="ваше имя">
+						<input type="tel" class="input input_half" placeholder="номер телефона">
+					</div>
+					<div class="input-wrap">	
+						<input type="text" class="input" placeholder="адрес доставки">
+					</div>
+				</div>
+				<div class="btn-wrap">
+					<button type="submit" class="btn btn_width btn_big">Подтвердить заказ <i class="fa fa-shopping-cart"></i></button>
+				</div>
+				<div class="popup__footer">
+					<p>Кстати, если <a href="#">зарегистрироваться</a>, то пользоваться сайтом будет еще быстрей и проще!</p>
+					<div class="benefit-wrap">
+						<div class="benefit">
+							<div class="benefit__img">
+								<i class="fa fa-gift"></i>
+							</div>
+							<div class="benefit__main">
+								Получайте бонусы и покупайте <br>на них еду
+							</div>
+						</div>
+						<div class="benefit">
+							<div class="benefit__img">
+								<i class="fa fa-star-half-empty"></i>
+							</div>
+							<div class="benefit__main">
+								Оставляйте отзывы о ресторанах
+							</div>
+						</div>
+						<div class="benefit">
+							<div class="benefit__img">
+								<i class="fa fa-envelope-o"></i>
+							</div>
+							<div class="benefit__main">
+								Получайте персональные предложения
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup__right">
+				<div class="input-group input-group_with-title">
+					<div class="input-group__title is-big-title">Вы зарегистрированный пльзователь?</div>
+				</div>
+				<div class="input-group">
+					<div class="input-wrap">	
+						<input type="email" class="input" placeholder="Email">
+					</div>
+					<div class="input-wrap">	
+						<input type="text" class="input" placeholder="Пароль">
+					</div>
+				</div>
+				<div class="checkbox-wrap">
+					<label class="checkbox checkbox_extend">
+						<input class="checkbox__input" type="checkbox" checked>
+						<em class="fa fa-check"></em>
+						<span class="checkbox__text">
+							Запомнить меня 
+						</span>
+						<div class="checkbox__add"><a href="#">Забыли пароль?</a></div>
+					</label>
+				</div>
+				<div class="btn-wrap">
+					<button type="submit" class="btn btn_width btn_big">Войти <i class="fa fa-sign-in"></i></button>
+				</div>
+				<div class="enter-soc">
+					<div class="enter-soc__title">или войдите через социальные сети:</div>
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-google-plus"></i></a>
+				</div>
+			</div>
+		</div>
+		<button class="popup__close js-popup-close"></button>
+	</div>
+</div>
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html> 
