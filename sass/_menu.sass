@@ -1,0 +1,166 @@
+.menu-list
+	border-top: 1px solid $border 
+	&.is-inactive
+		.menu-item
+			opacity: .55 
+		.menu-item_head
+			opacity: 1
+			.menu-item__categ,
+			.menu-item__add
+				opacity: .55 
+	+ .btn-add-wrap
+		padding-bottom: 65px
+.menu-item
+	margin-bottom: -1px
+	border-top: 1px dashed $border  
+	border-bottom: 1px dashed $border  
+	height: 100px
+	overflow: hidden
+	+clr
+	&.is-inactive
+		.menu-item__img,
+		.menu-item__name
+			opacity: 0.5
+.menu-item_head
+	height: auto
+	border-top: none
+.menu-item__img
+	float: left
+	margin-left: 20px
+	width: 120px
+	height: 100px
+	line-height: 100px
+	text-align: center
+	img
+		vertical-align: middle
+		max-width: 100%
+		max-height: 100%
+.menu-item__name
+	float: left
+	padding: 16px 10px 0 20px 
+	width: 180px
+	+box  
+	+fm
+	color: $gray
+.menu-item__title
+	display: block
+	margin-bottom: 11px
+	color: $dark
+	+fm
+	font-size: 17px 
+.menu-item__price
+	float: left
+	padding: 16px 10px 0 0 
+	width: 100px
+	+box
+.menu-item__key
+	display: inline-block
+	border-bottom: 1px dashed $border 
+	color: $dark
+	&:hover
+		border-color: transparent 
+.menu-item__discount
+	float: left
+	padding: 16px 13px 0 0 
+	width: 113px
+	+box
+.menu-item__settings
+	float: left
+	padding: 13px 0 0
+	a
+		display: inline-block
+		position: relative
+		padding: 2px 0 2px 18px
+		+tr
+		&:hover
+			color: $red_d 
+		.fa
+			position: absolute
+			left: 0
+			top: 2px
+			
+.menu-item__categ
+	float: left
+	padding: 0 10px 0 40px  
+	width: 300px
+	height: 80px
+	line-height: 70px
+	+box
+	+fb
+	font-size: 26px
+	span
+		display: inline-block
+		vertical-align: middle
+		line-height: 1.2
+.menu-item__subcateg
+	float: left
+	padding: 0 10px 0 50px  
+	width: 300px
+	height: 80px
+	line-height: 70px
+	+box
+	+fb
+	font-size: 18px
+	div
+		display: inline-block
+		vertical-align: middle
+		line-height: 1.2
+	span
+		display: block
+		color: $gray  
+		font-size: 13px
+		+fr 
+	.fa
+		margin-right: 13px
+		
+.menu-item__info
+	overflow: hidden
+	padding-right: 12px
+.menu-item__add
+	float: left  
+	width: 232px
+	height: 80px
+	line-height: 70px
+	+box
+	div
+		display: inline-block
+		line-height: 1.2
+		vertical-align: middle
+	span
+		display: inline-block
+		max-width: 130px
+		vertical-align: middle
+	.menu-item__key
+		font-size: 17px
+		+fb
+		border-color: $dark
+		&:hover
+			border-color: transparent 
+.menu-item__sublist
+	clear: both
+	
+.add-subcateg
+	border-top: 1px solid $border 
+	border-bottom: 1px solid $border 
+	padding: 17px 50px 61px
+	a
+		font-size: 18px
+		+fb
+		+tr
+		&:hover
+			color: $red_d
+	.fa
+		margin-right: 18px
+		+tr
+.add-categ
+	padding: 23px 0
+	text-align: center
+	a
+		font-size: 26px
+		+fb
+		+tr
+		&:hover
+			color: $red_d
+	.fa
+		margin-right: 20px
+		+tr
