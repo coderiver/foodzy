@@ -313,7 +313,7 @@ a { color: #da2400; text-decoration: none; }
 
 .btn-add-wrap { padding: 16px 40px 36px; }
 
-.btn-add { margin-top: 7px; color: #da2400; background: none; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.btn-add { margin-top: 7px; color: #da2400; background: none; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; font-family: "roboto-regular", Arial, sans-serif; }
 .btn-add:hover { color: #a51b00; }
 .btn-add .fa { margin-right: 3px; }
 
