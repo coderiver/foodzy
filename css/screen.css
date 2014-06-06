@@ -905,7 +905,7 @@ a { color: #da2400; text-decoration: none; }
 
 .window_discount { margin-left: 333px; }
 
-.window_width { padding: 20px; }
+.window_width { padding: 20px; width: 675px; }
 .window_width .input-group .tab-list { margin-left: 20px; }
 .window_width .input-group .input-wrap { margin-left: 0; }
 .window_width .btn { margin-left: 7px; }
