@@ -371,6 +371,7 @@ head.ready(function() {
 	$(".js-select select").on("change",function(){
 		var	val = $(this).val();
 		$(this).parent().find(".js-select-input").val(val);
+		$(this).parent().find(".js-select-text").text(val);
 	});
 
 	$(".js-check input").on("change",function(){

@@ -137,11 +137,12 @@
 	.cart-item
 		overflow: hidden
 .cart-place
+	padding-left: 30px
 	+clr
 	width: 280px
 .cart-place__img
 	float: left
-	margin: 0 20px 0 30px 
+	margin: 0 20px 10px 0
 	overflow: hidden
 	width: 90px
 	img
@@ -155,11 +156,40 @@
 		display: block
 		+fi
 		color: $gray 
+.cart-place__add
+	clear: both
+	overflow: hidden
+	.fa
+		float: left
+		margin-right: 10px
+		font-size: 16px
+	div
+		overflow: hidden
+		font-size: 13px		
+
 .cart-item
-	margin-bottom: 13px
 	border-bottom: 1px dashed $border 
-	padding: 0 0 17px 
+	padding: 13px 0 17px 
 	+clr
+	&:first-child
+		padding-top: 0
+	.radio
+		+fr
+		span
+			color: $dark
+	.radio_bold
+		+fm
+	.radio-group
+		padding-left: 27px
+		float: none
+		margin-right: 0
+		.select
+			margin-left: 15px
+.cart-item_delivery
+	border-bottom: 0 
+	background: $light 
+	.cart-item__cell-2
+		padding-top: 9px
 .cart-item__cell
 	float: left
 	+box
@@ -177,17 +207,50 @@
 		font-size: 17px  
 		+fm
 		color: $dark
-	span
-		display: block
+	div
 		margin-top: 8px
 		color: $gray 
+	.link-action
+		color: #da2400
+		font-size: 13px
+		+fr
 .cart-item__cell-2
 	width: 250px
 .cart-item__cell-3
-	width: 100px
+	width: 85px
 	padding: 10px 10px 0 0
 	+fb
 	font-size: 18px
+.cart-item__cell-4
+	float: right
+	padding: 12px 47px 0 0 
+	.fa
+		background: none
+		font-size: 18px
+		
+.popup__bottom
+	padding: 22px 30px 
+	background: #fff	
+	+clr
+	.cart-price
+		display: inline-block
+		margin-top: 9px
+		vertical-align: middle	
+	.popup__bonus
+		display: inline-block
+		margin-top: 9px
+		margin-left: 95px
+		vertical-align: middle
+		+fm
+		font-size: 15px
+		.badge
+			margin-right: 7px
+	.btn
+		float: right
+.cart-price
+	font-size: 18px
+	+fb		
+
 .item-popup		
 	position: absolute
 	display: none
