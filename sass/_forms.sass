@@ -35,6 +35,13 @@
 		+clr
 	.to-right
 		float: right
+.input-section_city
+	padding-left: 20px
+	padding-right: 20px
+	.input-wrap
+		+clr
+	.to-right
+		float: right
 .input-section_secr
 	padding: 19px 40px 14px
 .to-right
@@ -126,6 +133,24 @@
 		text-align: center
 	.input-wrap__title
 		width: 115px
+.input-wrap_three-parts
+	float: left
+	margin-left: 10px
+	width: 190px
+	&:first-child
+		float: left
+		margin-left: 0
+	.input
+		float: left
+		padding: 0 5px 
+		width: 60px
+		text-align: center
+	.input-wrap__title
+		width: 90px
+		margin-right: 5px
+		+fr
+	.input-wrap__text
+		+fr
 .input-wrap_date
 	.input-date
 		margin: 0 15px 0 5px
@@ -428,10 +453,12 @@
 	vertical-align: middle
 	white-space: normal
 .input-district__left
-	margin-left: 20px
-	width: 165px 
+	width: 120px 
+	+text-overflow
+	+ .input-district__input
+		width: 170px
 .input-district__input
-	width: 208px
+	width: 185px
 	visibility: hidden
 	opacity: 0
 	+tr
@@ -440,7 +467,7 @@
 		display: inline-block
 		vertical-align: middle
 	div
-		+fb      
+		+fb    
 		height: 40px
 		line-height: 40px
 		span
@@ -451,10 +478,11 @@
 		width: 69px
 		padding: 0 5px
 		text-align: center 
-		margin: 0 10px 0 3px
+		margin: 0 0 0 3px
 		
 .input-district__right
 	width: 115px 
+	margin-left: 49px
 	visibility: hidden
 	opacity: 0
 	+tr

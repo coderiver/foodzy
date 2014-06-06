@@ -781,18 +781,24 @@
 						</div>
 					</div>
 					<div class="input-group">
-						<div class="input-wrap input-wrap_small-parts ">	
+						<div class="input-wrap input-wrap_three-parts ">	
 							<div class="input-wrap__title"><span>Минимальная сумма заказа</span></div>
 							<input type="tel" class="input">
 							<span class="input-wrap__text"><span>€</span>
 						</div>
-						<div class="input-wrap input-wrap_small-parts ">	
+						<div class="input-wrap input-wrap_three-parts ">	
 							<div class="input-wrap__title"><span>Среднее время доставки</span></div>
 							<input type="tel" class="input">
+							<span class="input-wrap__text"><span>мин</span>
+						</div>
+						<div class="input-wrap input-wrap_three-parts ">	
+							<div class="input-wrap__title"><span>Бесплатная доставка после</span></div>
+							<input type="tel" class="input">
+							<span class="input-wrap__text"><span>€</span>
 						</div>
 					</div>
 				</div>
-				<div class="input-section input-section_with-bg js-removeable">
+				<div class="input-section input-section_with-bg input-section_city js-removeable">
 					<div class="input-group input-group_with-title">
 						<div class="input-title">
 							<span>Город</span>
@@ -816,9 +822,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="input-group input-group_with-title">
-						<div class="input-title">
-						</div>
+					<div class="input-group">
 						<div class="input-wrap">
 							<div class="input-district js-check-group">
 								<div class="input-district__left">
@@ -839,29 +843,9 @@
 										<span>€</span>
 									</div>
 								</div>
-								<div class="input-district__right">
-									<label class="checkbox js-check-add">
-										<input class="checkbox__input" type="checkbox" checked>
-										<em class="fa fa-check"></em>
-										<span class="checkbox__text">
-											бесплатная доставка
-										</span>
-									</label>
-								</div>
-							</div>
-							<div class="input-district js-check-group">
-								<div class="input-district__left">
-									<label class="checkbox js-check">
-										<input class="checkbox__input" type="checkbox">
-										<em class="fa fa-check"></em>
-										<span class="checkbox__text">
-											Mustamae
-										</span>
-									</label>
-								</div>
 								<div class="input-district__input">
 									<div>
-										<span>Стоимость <br>доставки</span>
+										<span>Бесплатная <br>доставка после</span>
 									</div>
 									<input type="text" class="input">
 									<div>
@@ -870,7 +854,7 @@
 								</div>
 								<div class="input-district__right">
 									<label class="checkbox js-check-add">
-										<input class="checkbox__input" type="checkbox">
+										<input class="checkbox__input" type="checkbox" checked>
 										<em class="fa fa-check"></em>
 										<span class="checkbox__text">
 											бесплатная доставка
@@ -897,6 +881,15 @@
 										<span>€</span>
 									</div>
 								</div>
+								<div class="input-district__input">
+									<div>
+										<span>Бесплатная <br>доставка после</span>
+									</div>
+									<input type="text" class="input">
+									<div>
+										<span>€</span>
+									</div>
+								</div>
 								<div class="input-district__right">
 									<label class="checkbox js-check-add">
 										<input class="checkbox__input" type="checkbox" checked>
@@ -910,10 +903,10 @@
 							<div class="input-district js-check-group">
 								<div class="input-district__left">
 									<label class="checkbox js-check">
-										<input class="checkbox__input" type="checkbox">
+										<input class="checkbox__input" type="checkbox" checked>
 										<em class="fa fa-check"></em>
 										<span class="checkbox__text">
-											Mustamae
+											Lasnamae
 										</span>
 									</label>
 								</div>
@@ -926,9 +919,56 @@
 										<span>€</span>
 									</div>
 								</div>
+								<div class="input-district__input">
+									<div>
+										<span>Бесплатная <br>доставка после</span>
+									</div>
+									<input type="text" class="input">
+									<div>
+										<span>€</span>
+									</div>
+								</div>
 								<div class="input-district__right">
 									<label class="checkbox js-check-add">
-										<input class="checkbox__input" type="checkbox">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											бесплатная доставка
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="input-district js-check-group">
+								<div class="input-district__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Lasnamae
+										</span>
+									</label>
+								</div>
+								<div class="input-district__input">
+									<div>
+										<span>Стоимость <br>доставки</span>
+									</div>
+									<input type="text" class="input">
+									<div>
+										<span>€</span>
+									</div>
+								</div>
+								<div class="input-district__input">
+									<div>
+										<span>Бесплатная <br>доставка после</span>
+									</div>
+									<input type="text" class="input">
+									<div>
+										<span>€</span>
+									</div>
+								</div>
+								<div class="input-district__right">
+									<label class="checkbox js-check-add">
+										<input class="checkbox__input" type="checkbox" checked>
 										<em class="fa fa-check"></em>
 										<span class="checkbox__text">
 											бесплатная доставка
@@ -1542,7 +1582,7 @@
 	</div> 
 </footer>
 <div class="js-hidden-block js-hidden-city" hidden>
-	<div class="input-section input-section_with-bg js-removeable">
+	<div class="input-section input-section_with-bg input-section_city js-removeable">
 		<div class="input-group input-group_with-title">
 			<div class="input-title">
 				<span>Город</span>
@@ -1566,9 +1606,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="input-group input-group_with-title">
-			<div class="input-title">
-			</div>
+		<div class="input-group">
 			<div class="input-wrap">
 				<div class="input-district js-check-group">
 					<div class="input-district__left">
@@ -1589,29 +1627,9 @@
 							<span>€</span>
 						</div>
 					</div>
-					<div class="input-district__right">
-						<label class="checkbox js-check-add">
-							<input class="checkbox__input" type="checkbox" checked>
-							<em class="fa fa-check"></em>
-							<span class="checkbox__text">
-								бесплатная доставка
-							</span>
-						</label>
-					</div>
-				</div>
-				<div class="input-district js-check-group">
-					<div class="input-district__left">
-						<label class="checkbox js-check">
-							<input class="checkbox__input" type="checkbox">
-							<em class="fa fa-check"></em>
-							<span class="checkbox__text">
-								Mustamae
-							</span>
-						</label>
-					</div>
 					<div class="input-district__input">
 						<div>
-							<span>Стоимость <br>доставки</span>
+							<span>Бесплатная <br>доставка после</span>
 						</div>
 						<input type="text" class="input">
 						<div>
@@ -1620,7 +1638,7 @@
 					</div>
 					<div class="input-district__right">
 						<label class="checkbox js-check-add">
-							<input class="checkbox__input" type="checkbox">
+							<input class="checkbox__input" type="checkbox" checked>
 							<em class="fa fa-check"></em>
 							<span class="checkbox__text">
 								бесплатная доставка
@@ -1647,6 +1665,15 @@
 							<span>€</span>
 						</div>
 					</div>
+					<div class="input-district__input">
+						<div>
+							<span>Бесплатная <br>доставка после</span>
+						</div>
+						<input type="text" class="input">
+						<div>
+							<span>€</span>
+						</div>
+					</div>
 					<div class="input-district__right">
 						<label class="checkbox js-check-add">
 							<input class="checkbox__input" type="checkbox" checked>
@@ -1660,10 +1687,10 @@
 				<div class="input-district js-check-group">
 					<div class="input-district__left">
 						<label class="checkbox js-check">
-							<input class="checkbox__input" type="checkbox">
+							<input class="checkbox__input" type="checkbox" checked>
 							<em class="fa fa-check"></em>
 							<span class="checkbox__text">
-								Mustamae
+								Lasnamae
 							</span>
 						</label>
 					</div>
@@ -1676,9 +1703,56 @@
 							<span>€</span>
 						</div>
 					</div>
+					<div class="input-district__input">
+						<div>
+							<span>Бесплатная <br>доставка после</span>
+						</div>
+						<input type="text" class="input">
+						<div>
+							<span>€</span>
+						</div>
+					</div>
 					<div class="input-district__right">
 						<label class="checkbox js-check-add">
-							<input class="checkbox__input" type="checkbox">
+							<input class="checkbox__input" type="checkbox" checked>
+							<em class="fa fa-check"></em>
+							<span class="checkbox__text">
+								бесплатная доставка
+							</span>
+						</label>
+					</div>
+				</div>
+				<div class="input-district js-check-group">
+					<div class="input-district__left">
+						<label class="checkbox js-check">
+							<input class="checkbox__input" type="checkbox" checked>
+							<em class="fa fa-check"></em>
+							<span class="checkbox__text">
+								Lasnamae
+							</span>
+						</label>
+					</div>
+					<div class="input-district__input">
+						<div>
+							<span>Стоимость <br>доставки</span>
+						</div>
+						<input type="text" class="input">
+						<div>
+							<span>€</span>
+						</div>
+					</div>
+					<div class="input-district__input">
+						<div>
+							<span>Бесплатная <br>доставка после</span>
+						</div>
+						<input type="text" class="input">
+						<div>
+							<span>€</span>
+						</div>
+					</div>
+					<div class="input-district__right">
+						<label class="checkbox js-check-add">
+							<input class="checkbox__input" type="checkbox" checked>
 							<em class="fa fa-check"></em>
 							<span class="checkbox__text">
 								бесплатная доставка

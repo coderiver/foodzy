@@ -1044,6 +1044,11 @@ a { color: #da2400; text-decoration: none; }
 .input-section_with-bg .input-wrap:after { content: " "; display: table; clear: both; }
 .input-section_with-bg .to-right { float: right; }
 
+.input-section_city { padding-left: 20px; padding-right: 20px; }
+.input-section_city .input-wrap { *zoom: 1; }
+.input-section_city .input-wrap:after { content: " "; display: table; clear: both; }
+.input-section_city .to-right { float: right; }
+
 .input-section_secr { padding: 19px 40px 14px; }
 
 .to-right { text-align: right; }
@@ -1087,6 +1092,12 @@ a { color: #da2400; text-decoration: none; }
 .input-wrap_small-parts:first-child { float: left; }
 .input-wrap_small-parts .input { float: left; padding: 0 5px; width: 60px; text-align: center; }
 .input-wrap_small-parts .input-wrap__title { width: 115px; }
+
+.input-wrap_three-parts { float: left; margin-left: 10px; width: 190px; }
+.input-wrap_three-parts:first-child { float: left; margin-left: 0; }
+.input-wrap_three-parts .input { float: left; padding: 0 5px; width: 60px; text-align: center; }
+.input-wrap_three-parts .input-wrap__title { width: 90px; margin-right: 5px; font-family: "roboto-regular", Arial, sans-serif; }
+.input-wrap_three-parts .input-wrap__text { font-family: "roboto-regular", Arial, sans-serif; }
 
 .input-wrap_date .input-date { margin: 0 15px 0 5px; }
 .input-wrap_date span { display: inline-block; vertical-align: middle; }
@@ -1214,15 +1225,16 @@ a { color: #da2400; text-decoration: none; }
 
 .input-district__left, .input-district__input, .input-district__right { display: inline-block; vertical-align: middle; white-space: normal; }
 
-.input-district__left { margin-left: 20px; width: 165px; }
+.input-district__left { width: 120px; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
+.input-district__left + .input-district__input { width: 170px; }
 
-.input-district__input { width: 208px; visibility: hidden; opacity: 0; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.input-district__input { width: 185px; visibility: hidden; opacity: 0; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .input-district__input div, .input-district__input .input { display: inline-block; vertical-align: middle; }
 .input-district__input div { font-family: "roboto-bold", Arial, sans-serif; height: 40px; line-height: 40px; }
 .input-district__input div span { display: inline-block; vertical-align: middle; line-height: 1.2; }
-.input-district__input .input { width: 69px; padding: 0 5px; text-align: center; margin: 0 10px 0 3px; }
+.input-district__input .input { width: 69px; padding: 0 5px; text-align: center; margin: 0 0 0 3px; }
 
-.input-district__right { width: 115px; visibility: hidden; opacity: 0; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.input-district__right { width: 115px; margin-left: 49px; visibility: hidden; opacity: 0; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .input-district__right .fa, .input-district__right input { top: 7px; }
 
 .radio-group { float: left; padding-left: 20px; margin-right: 60px; }
