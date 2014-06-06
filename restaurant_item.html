@@ -243,44 +243,46 @@
 						</div>
 					</div>
 				</div>
-				<ul class="tab-list tab-list_width">
-					<li class="is-active"><a href="#">Русский</a></li>
-					<li><a href="#">Eesti</a></li>
-					<li><a href="#">English</a></li>
-				</ul>
-				<div class="input-section input-section_with-bg">
-					<div class="input-group input-group_with-title input-group_mb">
-						<div class="input-title">
-							<span>Вариация</span>
+				<div class="js-removeable">
+					<ul class="tab-list tab-list_width">
+						<li class="is-active"><a href="#">Русский</a></li>
+						<li><a href="#">Eesti</a></li>
+						<li><a href="#">English</a></li>
+					</ul>
+					<div class="input-section input-section_with-bg">
+						<div class="input-group input-group_with-title input-group_mb">
+							<div class="input-title">
+								<span>Вариация</span>
+							</div>
+							<div class="input-wrap">
+								<input type="text" class="input input_457">
+								<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+							</div>
 						</div>
-						<div class="input-wrap">
-							<input type="text" class="input input_457">
-							<button class="btn-del"><i class="fa fa-times-circle"></i></button>
-						</div>
-					</div>
-					<div class="input-group input-group_with-title">
-						<div class="input-title">
-							<span>Опции</span>
-						</div>
-						<div class="input-wrap">
-							<input type="text" class="input input_348">
-							<button class="btn-del"><i class="fa fa-times-circle"></i></button>
-						</div>
-						<div class="input-wrap">
-							<input type="text" class="input input_348">
-							<button class="btn-del"><i class="fa fa-times-circle"></i></button>
-						</div>
-						<div class="input-wrap">
-							<div class="btn-add-wrap">
-							<a href="#" class="btn-add">
-								<i class="fa fa-plus-circle"></i>Добавить опцию
-							</a>
-						</div>
+						<div class="input-group input-group_with-title">
+							<div class="input-title">
+								<span>Опции</span>
+							</div>
+							<div class="input-wrap js-removeable">
+								<input type="text" class="input input_348">
+								<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+							</div>
+							<div class="input-wrap js-removeable">
+								<input type="text" class="input input_348">
+								<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+							</div>
+							<div class="input-wrap js-add-btn-wrap">
+								<div class="btn-add-wrap">
+								<a href="#" class="btn-add js-add-btn" data-hidden="js-hidden-option">
+									<i class="fa fa-plus-circle"></i>Добавить опцию
+								</a>
+							</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="btn-add-wrap">
-					<a href="#" class="btn-add btn-add_bold"> 
+				<div class="btn-add-wrap js-add-btn-wrap">
+					<a href="#" class="btn-add btn-add_bold js-add-btn" data-hidden="js-hidden-variation"> 
 						<i class="fa fa-plus-circle"></i>Добавки к блюду
 					</a>
 				</div>
@@ -306,39 +308,47 @@
 						</div>
 					</div>
 				</div>
-				<ul class="tab-list tab-list_width">
-					<li class="is-active"><a href="#">Русский</a></li>
-					<li><a href="#">Eesti</a></li>
-					<li><a href="#">English</a></li>
-				</ul>
-				<div class="input-section input-section_with-bg">
-					<div class="input-group input-group_with-title input-group_mb">
-						<div class="input-title">
-							<span>Вариация</span>
+				<div class="js-removeable">
+					<ul class="tab-list tab-list_width">
+						<li class="is-active"><a href="#">Русский</a></li>
+						<li><a href="#">Eesti</a></li>
+						<li><a href="#">English</a></li>
+					</ul>
+					<div class="input-section input-section_with-bg">
+						<div class="input-group input-group_with-title input-group_mb">
+							<div class="input-title">
+								<span>Вариация</span>
+							</div>
+							<div class="input-wrap">
+								<input type="text" class="input input_457">
+								<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+							</div>
 						</div>
-						<div class="input-wrap">
-							<input type="text" class="input input_457">
-							<button class="btn-del"><i class="fa fa-times-circle"></i></button>
-						</div>
-					</div>
-					<div class="input-group input-group_with-title">
-						<div class="input-title">
-							<span>Опции</span>
-						</div>
-						<div class="input-wrap">
-							<input type="text" class="input input_348">
-							<button class="btn-del"><i class="fa fa-times-circle"></i></button>
-						</div>
-						<div class="input-wrap">
-							<input type="text" class="input input_348">
-							<button class="btn-del"><i class="fa fa-times-circle"></i></button>
-						</div>
-						<div class="input-wrap">
-							<div class="btn-add-wrap">
-							<a href="#" class="btn-add">
-								<i class="fa fa-plus-circle"></i>Новая добавка
-							</a>
-						</div>
+						<div class="input-group input-group_with-title">
+							<div class="input-title">
+								<span>Добавки к блюду</span>
+							</div>
+							<div class="input-wrap js-removeable">
+								<input type="text" class="input input_348">
+								<span class="input-wrap__text">+</span>
+								<input type="text" class="input input_s">
+								<span class="input-wrap__text">€</span>
+								<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+							</div>
+							<div class="input-wrap js-removeable">
+								<input type="text" class="input input_348">
+								<span class="input-wrap__text">+</span>
+								<input type="text" class="input input_s">
+								<span class="input-wrap__text">€</span>
+								<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+							</div>
+							<div class="input-wrap js-add-btn-wrap">
+								<div class="btn-add-wrap">
+								<a href="#" class="btn-add js-add-btn" data-hidden="js-hidden-additional">
+									<i class="fa fa-plus-circle"></i>Новая добавка
+								</a>
+							</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1014,7 +1024,61 @@
 		<div class="footer__meta"><span>© fudzy 2014</span> Designed by <a href="#">Aprol Designs</a></div>
 	</div>
 </footer>
-
+<div class="js-hidden-block js-hidden-variation" hidden>
+	<div class="js-removeable">
+		<ul class="tab-list tab-list_width">
+			<li class="is-active"><a href="#">Русский</a></li>
+			<li><a href="#">Eesti</a></li>
+			<li><a href="#">English</a></li>
+		</ul>
+		<div class="input-section input-section_with-bg">
+			<div class="input-group input-group_with-title input-group_mb">
+				<div class="input-title">
+					<span>Вариация</span>
+				</div>
+				<div class="input-wrap">
+					<input type="text" class="input input_457">
+					<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+				</div>
+			</div>
+			<div class="input-group input-group_with-title">
+				<div class="input-title">
+					<span>Опции</span>
+				</div>
+				<div class="input-wrap js-removeable">
+					<input type="text" class="input input_348">
+					<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+				</div>
+				<div class="input-wrap js-removeable">
+					<input type="text" class="input input_348">
+					<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+				</div>
+				<div class="input-wrap">
+					<div class="btn-add-wrap">
+					<a href="#" class="btn-add">
+						<i class="fa fa-plus-circle"></i>Добавить опцию
+					</a>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="js-hidden-block js-hidden-option" hidden>
+	<div class="input-wrap js-removeable">
+		<input type="text" class="input input_348">
+		<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+	</div>
+</div>
+<div class="js-hidden-block js-hidden-additional" hidden>
+	<div class="input-wrap js-removeable">
+		<input type="text" class="input input_348">
+		<span class="input-wrap__text">+</span>
+		<input type="text" class="input input_s">
+		<span class="input-wrap__text">€</span>
+		<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+	</div>
+</div>
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
 </html> 

@@ -372,8 +372,8 @@ head.ready(function() {
 	$("body").on("click",".js-add-btn",function(){
 		var new_el = $(this).attr("data-hidden");
 		var html = $("."+new_el).html();
-		if ($(this).parent().hasClass("js-add-btn-wrap")) {
-			$(this).parent().before(html);
+		if ($(this).parents(".js-add-btn-wrap")) {
+			$(this).parents(".js-add-btn-wrap").before(html);
 		}
 		else {
 			$(this).before(html);

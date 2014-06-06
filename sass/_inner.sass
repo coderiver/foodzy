@@ -339,6 +339,8 @@
 			border-color: #eb8875
 			text-shadow: none
 			+box-shadow(inset -1px 0 0 #c42000) 
+		.btn-order__add
+			background: $yellow_l 
 .btn-order__main
 	position: relative
 	z-index: 2
@@ -381,6 +383,7 @@
 	height: 40px
 	line-height: 53px
 	color: $dark 
+	+tr
 	border-radius: 0 0 20px 20px 
 	+fr
 
@@ -393,6 +396,9 @@
 	background: $yellow    
 	border-radius: 13px
 	color: $dark 
+	+tr
+	&:hover
+		background: $yellow_l 
 	
 .contacts-wrap
 	padding: 0 0 0 19px 

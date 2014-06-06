@@ -124,16 +124,16 @@
 				<div class="input-section">
 					<div class="input-group">
 						<div class="input-group__title">ваши адреса доставки:</div>
-						<div class="input-wrap input-wrap_with-del">
+						<div class="input-wrap input-wrap_with-del js-removeable">
 							<input type="text" class="input" placeholder="Например: Masina 22, Tallinn, Estonia">
-							<button class="btn-del"><i class="fa fa-times-circle"></i></button>
+							<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
 						</div>
-						<div class="input-wrap input-wrap_with-del">
+						<div class="input-wrap input-wrap_with-del js-removeable">
 							<input type="text" class="input" placeholder="Например: Masina 22, Tallinn, Estonia">
-							<button class="btn-del"><i class="fa fa-times-circle"></i></button>
+							<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
 						</div>
-						<div class="input-wrap input-wrap_btn">
-							<button class="btn-add"><i class="fa fa-times-circle"></i>Добавить адрес доставки</button>
+						<div class="input-wrap input-wrap_btn js-add-btn-wrap">
+							<button class="btn-add js-add-btn" data-hidden="js-hidden-address"><i class="fa fa-times-circle"></i>Добавить адрес доставки</button>
 							<div class="checkbox-wrap">
 								<label class="checkbox">
 									<input class="checkbox__input" type="checkbox" checked>
@@ -731,7 +731,12 @@
 		<div class="footer__meta"><span>© fudzy 2014</span> Designed by <a href="#">Aprol Designs</a></div>
 	</div>
 </footer>
-
+<div class="js-hidden js-hidden-address" hidden>
+	<div class="input-wrap input-wrap_with-del js-removeable">
+		<input type="text" class="input" placeholder="Например: Masina 22, Tallinn, Estonia">
+		<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+	</div>
+</div>
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
 </html> 
