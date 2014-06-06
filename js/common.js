@@ -321,7 +321,7 @@ head.ready(function() {
 		$(this).parent().find(".js-select-text").text(val);
 	});
 
-	$(".js-check input").on("change",function(){
+	$("body").on("change",".js-check input",function(){
 		if ($(this).is(":checked")) {
 			$(this).parent().addClass("is-checked");
 			$(this).parents(".js-check-group").addClass("is-active")
@@ -331,7 +331,7 @@ head.ready(function() {
 			$(this).parents(".js-check-group").removeClass("is-active")
 		}
 	});
-	$(".js-check-add input").on("change",function(){
+	$("body").on("change",".js-check-add input",function(){
 		if ($(this).is(":checked")) {
 			$(this).parents(".js-check-group").addClass("is-active-add")
 		}
@@ -369,19 +369,24 @@ head.ready(function() {
         
 	});
 
-	$("body").on("click",".js-add-child-key",function(){
-		var hidden = $(".js-add-hidden")[0];
-		var parent = $(".js-add-parent")[0];
-		var html = $(this).closest(".js-add-group").find(hidden).html();
-		$(this).closest(".js-add-group").find(parent).append(html);
+	$("body").on("click",".js-add-btn",function(){
+		var new_el = $(this).attr("data-hidden");
+		var html = $("."+new_el).html();
+		if ($(this).parent().hasClass("js-add-btn-wrap")) {
+			$(this).parent().before(html);
+		}
+		else {
+			$(this).before(html);
+		}
+		
 		return false;
 	});
 
-	$("body").on("click",".js-remove-key",function(){
+	$("body").on("click",".js-remove-btn",function(){
 		$(this).closest(".js-removeable").remove();
 		return false;
 	});
-	
+
 	$(".js-remove-key").on("click",function(){
 		$(this).closest(".js-removeable").remove();
 		return false;
