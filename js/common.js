@@ -402,6 +402,7 @@ head.ready(function() {
 	$(".js-drag-list").sortable({
     	items: ".js-drag-item"
     });
+    
 
     $(".js-hide-menu-item").on("click",function(){
     	if ($(this).parents(".js-menu-item").length) {
