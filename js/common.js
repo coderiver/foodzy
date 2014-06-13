@@ -109,7 +109,16 @@ head.ready(function() {
 			$(".slider").addClass("is-ready");
 		}
 	});
+	$(".js-promo-slider").each(function(){
 
+		if ($(this).find(".js-slide").length <= 1) {
+			$(this).addClass("has-one-slide");
+		}
+		else {
+			$(this).removeClass("has-one-slide");
+		}
+	});
+	
 	$(".js-compaign-key").on("click",function(){
 		$(this).parents(".js-place").find(".js-compaigns").slideToggle(200)
 	});
