@@ -118,16 +118,22 @@
 			<div class="l-col1">
 				<div class="title title_h1">Создание блюда</div>
 				<div class="input-section">
-					<div class="input-group input-group_with-title">
-						<ul class="tab-list">
-							<li class="is-active"><a href="#">Русский</a></li>
-							<li><a href="#">Eesti</a></li>
-							<li><a href="#">English</a></li>
+					<div class="input-group input-group_with-title js-tab-group">
+						<ul class="tab-list js-tab">
+							<li class="is-active"><a href="js-tab1">Русский</a></li>
+							<li><a href="js-tab2">Eesti</a></li>
+							<li><a href="js-tab3">English</a></li>
 						</ul>
 						<div class="input-title">
 							<span>Название блюда</span>
 						</div>
-						<div class="input-wrap">	
+						<div class="input-wrap js-tab-cont js-tab1">	
+							<input type="text" class="input">
+						</div>
+						<div class="input-wrap js-tab-cont js-tab2">	
+							<input type="text" class="input">
+						</div>
+						<div class="input-wrap js-tab-cont js-tab3">	
 							<input type="text" class="input">
 						</div>
 					</div> 
@@ -205,16 +211,26 @@
 					</div>
 				</div>
 				<div class="input-section input-section_secr">
-					<div class="input-group input-group_with-title">
-						<ul class="tab-list">
-							<li class="is-active"><a href="#">Русский</a></li>
-							<li><a href="#">Eesti</a></li>
-							<li><a href="#">English</a></li>
+					<div class="input-group input-group_with-title js-tab-group">
+						<ul class="tab-list js-tab">
+							<li class="is-active"><a href="js-tab1">Русский</a></li>
+							<li><a href="js-tab2">Eesti</a></li>
+							<li><a href="js-tab3">English</a></li>
 						</ul>
 						<div class="input-title">
 							<span>Описание блюда <em>(500)</em></span>
 						</div>
-						<div class="input-wrap">	
+						<div class="input-wrap js-tab-cont js-tab1">	
+							<div class="input input_textarea input_m-height">
+								<textarea></textarea>
+							</div>
+						</div>
+						<div class="input-wrap js-tab-cont js-tab2">	
+							<div class="input input_textarea input_m-height">
+								<textarea></textarea>
+							</div>
+						</div>
+						<div class="input-wrap js-tab-cont js-tab3">	
 							<div class="input input_textarea input_m-height">
 								<textarea></textarea>
 							</div>
@@ -243,13 +259,75 @@
 						</div>
 					</div>
 				</div>
-				<div class="js-removeable">
-					<ul class="tab-list tab-list_width">
-						<li class="is-active"><a href="#">Русский</a></li>
-						<li><a href="#">Eesti</a></li>
-						<li><a href="#">English</a></li>
+				<div class="js-removeable js-tab-group">
+					<ul class="tab-list tab-list_width js-tab">
+						<li class="is-active"><a href="js-tab1">Русский</a></li>
+						<li><a href="js-tab2">Eesti</a></li>
+						<li><a href="js-tab3">English</a></li>
 					</ul>
-					<div class="input-section input-section_with-bg">
+					<div class="input-section input-section_with-bg js-tab-cont js-tab1" style="display:block">
+						<div class="input-group input-group_with-title input-group_mb">
+							<div class="input-title">
+								<span>Вариация</span>
+							</div>
+							<div class="input-wrap">
+								<input type="text" class="input input_457">
+								<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+							</div>
+						</div>
+						<div class="input-group input-group_with-title">
+							<div class="input-title">
+								<span>Опции</span>
+							</div>
+							<div class="input-wrap js-removeable">
+								<input type="text" class="input input_348">
+								<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+							</div>
+							<div class="input-wrap js-removeable">
+								<input type="text" class="input input_348">
+								<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+							</div>
+							<div class="input-wrap js-add-btn-wrap">
+								<div class="btn-add-wrap">
+								<a href="#" class="btn-add js-add-btn" data-hidden="js-hidden-option">
+									<i class="fa fa-plus-circle"></i>Добавить опцию
+								</a>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="input-section input-section_with-bg js-tab-cont js-tab2">
+						<div class="input-group input-group_with-title input-group_mb">
+							<div class="input-title">
+								<span>Вариация</span>
+							</div>
+							<div class="input-wrap">
+								<input type="text" class="input input_457">
+								<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+							</div>
+						</div>
+						<div class="input-group input-group_with-title">
+							<div class="input-title">
+								<span>Опции</span>
+							</div>
+							<div class="input-wrap js-removeable">
+								<input type="text" class="input input_348">
+								<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+							</div>
+							<div class="input-wrap js-removeable">
+								<input type="text" class="input input_348">
+								<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+							</div>
+							<div class="input-wrap js-add-btn-wrap">
+								<div class="btn-add-wrap">
+								<a href="#" class="btn-add js-add-btn" data-hidden="js-hidden-option">
+									<i class="fa fa-plus-circle"></i>Добавить опцию
+								</a>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="input-section input-section_with-bg js-tab-cont js-tab3">
 						<div class="input-group input-group_with-title input-group_mb">
 							<div class="input-title">
 								<span>Вариация</span>
@@ -1025,13 +1103,13 @@
 	</div>
 </footer>
 <div class="js-hidden-block js-hidden-variation" hidden>
-	<div class="js-removeable">
-		<ul class="tab-list tab-list_width">
-			<li class="is-active"><a href="#">Русский</a></li>
-			<li><a href="#">Eesti</a></li>
-			<li><a href="#">English</a></li>
+	<div class="js-removeable js-tab-group">
+		<ul class="tab-list tab-list_width js-tab">
+			<li class="is-active"><a href="js-tab1">Русский</a></li>
+			<li><a href="js-tab2">Eesti</a></li>
+			<li><a href="js-tab3">English</a></li>
 		</ul>
-		<div class="input-section input-section_with-bg">
+		<div class="input-section input-section_with-bg js-tab-cont js-tab1" style="display:block">
 			<div class="input-group input-group_with-title input-group_mb">
 				<div class="input-title">
 					<span>Вариация</span>
@@ -1053,9 +1131,71 @@
 					<input type="text" class="input input_348">
 					<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
 				</div>
-				<div class="input-wrap">
+				<div class="input-wrap js-add-btn-wrap">
 					<div class="btn-add-wrap">
-					<a href="#" class="btn-add">
+					<a href="#" class="btn-add js-add-btn" data-hidden="js-hidden-option">
+						<i class="fa fa-plus-circle"></i>Добавить опцию
+					</a>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="input-section input-section_with-bg js-tab-cont js-tab2">
+			<div class="input-group input-group_with-title input-group_mb">
+				<div class="input-title">
+					<span>Вариация</span>
+				</div>
+				<div class="input-wrap">
+					<input type="text" class="input input_457">
+					<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+				</div>
+			</div>
+			<div class="input-group input-group_with-title">
+				<div class="input-title">
+					<span>Опции</span>
+				</div>
+				<div class="input-wrap js-removeable">
+					<input type="text" class="input input_348">
+					<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+				</div>
+				<div class="input-wrap js-removeable">
+					<input type="text" class="input input_348">
+					<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+				</div>
+				<div class="input-wrap js-add-btn-wrap">
+					<div class="btn-add-wrap">
+					<a href="#" class="btn-add js-add-btn" data-hidden="js-hidden-option">
+						<i class="fa fa-plus-circle"></i>Добавить опцию
+					</a>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="input-section input-section_with-bg js-tab-cont js-tab3">
+			<div class="input-group input-group_with-title input-group_mb">
+				<div class="input-title">
+					<span>Вариация</span>
+				</div>
+				<div class="input-wrap">
+					<input type="text" class="input input_457">
+					<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+				</div>
+			</div>
+			<div class="input-group input-group_with-title">
+				<div class="input-title">
+					<span>Опции</span>
+				</div>
+				<div class="input-wrap js-removeable">
+					<input type="text" class="input input_348">
+					<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+				</div>
+				<div class="input-wrap js-removeable">
+					<input type="text" class="input input_348">
+					<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+				</div>
+				<div class="input-wrap js-add-btn-wrap">
+					<div class="btn-add-wrap">
+					<a href="#" class="btn-add js-add-btn" data-hidden="js-hidden-option">
 						<i class="fa fa-plus-circle"></i>Добавить опцию
 					</a>
 				</div>

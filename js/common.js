@@ -275,12 +275,12 @@ head.ready(function() {
         	tab_cont.hide();
             var id_active = $(this).find(".is-active").attr("href");
         	$("."+id_active).show();
-        	//$(this).parents(".js-tab-group").find(".js-tab1").show();
-        	tab_link.on("click", function() {
+        	$(this).parents(".js-tab-group").find(".js-tab1").show();
+        	$("body").on("click",".js-tab a", function() {
             	var index = $(this).attr("href");
-            	tab_link.removeClass("is-active");
-            	$(this).addClass("is-active");
-            	tab_cont.hide();
+            	$(this).parents(".js-tab").find("li").removeClass("is-active");
+            	$(this).parent().addClass("is-active");
+            	$(this).parents(".js-tab-group").find(".js-tab-cont").hide();
             	$(this).parents(".js-tab-group").find("."+index).show();
             	return false;
           	});

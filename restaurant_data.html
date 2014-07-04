@@ -231,16 +231,26 @@
 					</div>
 				</div>
 				<div class="input-section">
-					<div class="input-group input-group_with-title">
-						<ul class="tab-list">
-							<li class="is-active"><a href="#">Русский</a></li>
-							<li><a href="#">Eesti</a></li>
-							<li><a href="#">English</a></li>
+					<div class="input-group input-group_with-title js-tab-group">
+						<ul class="tab-list js-tab">
+							<li class="is-active"><a href="js-tab1">Русский</a></li>
+							<li><a href="js-tab2">Eesti</a></li>
+							<li><a href="js-tab3">English</a></li>
 						</ul>
 						<div class="input-title">
 							<span>Краткая информация <em>(255)</em></span>
 						</div>
-						<div class="input-wrap">	
+						<div class="input-wrap js-tab-cont js-tab1">	
+							<div class="input input_textarea">
+								<textarea></textarea>
+							</div>
+						</div>
+						<div class="input-wrap js-tab-cont js-tab2">	
+							<div class="input input_textarea">
+								<textarea></textarea>
+							</div>
+						</div>
+						<div class="input-wrap js-tab-cont js-tab3">	
 							<div class="input input_textarea">
 								<textarea></textarea>
 							</div>
@@ -248,16 +258,26 @@
 					</div>
 				</div>
 				<div class="input-section">
-					<div class="input-group input-group_with-title">
-						<ul class="tab-list">
-							<li class="is-active"><a href="#">Русский</a></li>
-							<li><a href="#">Eesti</a></li>
-							<li><a href="#">English</a></li>
+					<div class="input-group input-group_with-title js-tab-group">
+						<ul class="tab-list js-tab">
+							<li class="is-active"><a href="js-tab1">Русский</a></li>
+							<li><a href="js-tab2">Eesti</a></li>
+							<li><a href="js-tab3">English</a></li>
 						</ul>
 						<div class="input-title">
 							<span>Подробная информация <em>(255)</em></span>
 						</div>
-						<div class="input-wrap">	
+						<div class="input-wrap js-tab-cont js-tab1">	
+							<div class="input input_textarea input_height">
+								<textarea></textarea>
+							</div>
+						</div>
+						<div class="input-wrap js-tab-cont js-tab2">	
+							<div class="input input_textarea input_height">
+								<textarea></textarea>
+							</div>
+						</div>
+						<div class="input-wrap js-tab-cont js-tab3">	
 							<div class="input input_textarea input_height">
 								<textarea></textarea>
 							</div>
@@ -296,424 +316,1260 @@
 						<div class="input-group__title is-big-title">Время работы ресторана:</div>
 					</div>
 				</div>
-				<ul class="tab-list tab-list_width">
-					<li class="is-active"><a href="#">Ресторан открыт</a></li>
-					<li><a href="#">Прием заказов  <i class="fa fa-exclamation-triangle"></i></a></li>
-					<li><a href="#">Takeaway</a></li>
-				</ul>
-				<div class="input-section input-section_days">
-					<div class="input-group">
-						<div class="time js-check-group">
-							<div class="time__left">
-								<label class="checkbox js-check">
-									<input class="checkbox__input" type="checkbox" checked>
-									<em class="fa fa-check"></em>
-									<span class="checkbox__text">
-										Понедельник
-									</span>
-								</label>
-							</div>
-							<div class="time__input">
-								<span class="time__text">с</span>
-								<div class="input-select select js-select">
-									<input type="text" class="input js-select-input" readonly value="10:00">
-									<i class="fa fa-caret-down"></i>
-									<select>
-										<option value="10:00">10:00</option>
-										<option value="11:00">11:00</option>
-										<option value="12:00">12:00</option>
-										<option value="13:00">13:00</option>
-										<option value="15:00">15:00</option>
-										<option value="16:00">16:00</option>
-										<option value="17:00">17:00</option>
-										<option value="18:00">18:00</option>
-										<option value="19:00">19:00</option>
-										<option value="20:00">20:00</option>
-										<option value="21:00">21:00</option>
-									</select>
+				<div class="js-tab-group">
+					<ul class="tab-list tab-list_width js-tab">
+						<li class="is-active"><a href="js-tab1">Ресторан открыт</a></li>
+						<li><a href="js-tab2">Прием заказов  <i class="fa fa-exclamation-triangle"></i></a></li>
+						<li><a href="js-tab3">Takeaway</a></li>
+					</ul>
+					<div class="input-section input-section_days js-tab-cont js-tab1">
+						<div class="input-group">
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Понедельник
+										</span>
+									</label>
 								</div>
-								<span class="time__text">до</span>
-								<div class="input-select select js-select">
-									<input type="text" class="input js-select-input" readonly value="21:00">
-									<i class="fa fa-caret-down"></i>
-									<select>
-										<option value="21:00">21:00</option>
-										<option value="20:00">20:00</option>
-										<option value="19:00">19:00</option>
-										<option value="18:00">18:00</option>
-										<option value="17:00">17:00</option>
-										<option value="16:00">16:00</option>
-										<option value="15:00">15:00</option>
-										<option value="14:00">14:00</option>
-										<option value="13:00">13:00</option>
-										<option value="12:00">12:00</option>
-										<option value="11:00">11:00</option>
-										<option value="10:00">10:00</option>
-									</select>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
 								</div>
 							</div>
-							<div class="time__right js-check-add">
-								<label class="checkbox js-check-hour">
-									<input class="checkbox__input" type="checkbox">
-									<em class="fa fa-check"></em>
-									<span class="checkbox__text">
-										24 ч.
-									</span>
-								</label>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Вторник
+										</span>
+									</label>
+								</div>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Среда
+										</span>
+									</label>
+								</div>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Четверг
+										</span>
+									</label>
+								</div>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Пятница
+										</span>
+									</label>
+								</div>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Суббота
+										</span>
+									</label>
+								</div>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Воскресенье
+										</span>
+									</label>
+								</div>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
+								</div>
 							</div>
 						</div>
-						<div class="time js-check-group">
-							<div class="time__left">
-								<label class="checkbox js-check">
-									<input class="checkbox__input" type="checkbox" checked>
-									<em class="fa fa-check"></em>
-									<span class="checkbox__text">
-										Вторник
-									</span>
-								</label>
-							</div>
-							<div class="time__input">
-								<span class="time__text">с</span>
-								<div class="input-select select js-select">
-									<input type="text" class="input js-select-input" readonly value="10:00">
-									<i class="fa fa-caret-down"></i>
-									<select>
-										<option value="10:00">10:00</option>
-										<option value="11:00">11:00</option>
-										<option value="12:00">12:00</option>
-										<option value="13:00">13:00</option>
-										<option value="15:00">15:00</option>
-										<option value="16:00">16:00</option>
-										<option value="17:00">17:00</option>
-										<option value="18:00">18:00</option>
-										<option value="19:00">19:00</option>
-										<option value="20:00">20:00</option>
-										<option value="21:00">21:00</option>
-									</select>
+					</div>
+					<div class="input-section input-section_days js-tab-cont js-tab2">
+						<div class="input-group">
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Понедельник
+										</span>
+									</label>
 								</div>
-								<span class="time__text">до</span>
-								<div class="input-select select js-select">
-									<input type="text" class="input js-select-input" readonly value="21:00">
-									<i class="fa fa-caret-down"></i>
-									<select>
-										<option value="21:00">21:00</option>
-										<option value="20:00">20:00</option>
-										<option value="19:00">19:00</option>
-										<option value="18:00">18:00</option>
-										<option value="17:00">17:00</option>
-										<option value="16:00">16:00</option>
-										<option value="15:00">15:00</option>
-										<option value="14:00">14:00</option>
-										<option value="13:00">13:00</option>
-										<option value="12:00">12:00</option>
-										<option value="11:00">11:00</option>
-										<option value="10:00">10:00</option>
-									</select>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
 								</div>
 							</div>
-							<div class="time__right js-check-add">
-								<label class="checkbox js-check-hour">
-									<input class="checkbox__input" type="checkbox" checked>
-									<em class="fa fa-check"></em>
-									<span class="checkbox__text">
-										24 ч.
-									</span>
-								</label>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Вторник
+										</span>
+									</label>
+								</div>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Среда
+										</span>
+									</label>
+								</div>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Четверг
+										</span>
+									</label>
+								</div>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Пятница
+										</span>
+									</label>
+								</div>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Суббота
+										</span>
+									</label>
+								</div>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Воскресенье
+										</span>
+									</label>
+								</div>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
+								</div>
 							</div>
 						</div>
-						<div class="time js-check-group">
-							<div class="time__left">
-								<label class="checkbox js-check">
-									<input class="checkbox__input" type="checkbox">
-									<em class="fa fa-check"></em>
-									<span class="checkbox__text">
-										Среда
-									</span>
-								</label>
-							</div>
-							<div class="time__input">
-								<span class="time__text">с</span>
-								<div class="input-select select js-select">
-									<input type="text" class="input js-select-input" readonly value="10:00">
-									<i class="fa fa-caret-down"></i>
-									<select>
-										<option value="10:00">10:00</option>
-										<option value="11:00">11:00</option>
-										<option value="12:00">12:00</option>
-										<option value="13:00">13:00</option>
-										<option value="15:00">15:00</option>
-										<option value="16:00">16:00</option>
-										<option value="17:00">17:00</option>
-										<option value="18:00">18:00</option>
-										<option value="19:00">19:00</option>
-										<option value="20:00">20:00</option>
-										<option value="21:00">21:00</option>
-									</select>
+					</div>
+					<div class="input-section input-section_days js-tab-cont js-tab3">
+						<div class="input-group">
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Понедельник
+										</span>
+									</label>
 								</div>
-								<span class="time__text">до</span>
-								<div class="input-select select js-select">
-									<input type="text" class="input js-select-input" readonly value="21:00">
-									<i class="fa fa-caret-down"></i>
-									<select>
-										<option value="21:00">21:00</option>
-										<option value="20:00">20:00</option>
-										<option value="19:00">19:00</option>
-										<option value="18:00">18:00</option>
-										<option value="17:00">17:00</option>
-										<option value="16:00">16:00</option>
-										<option value="15:00">15:00</option>
-										<option value="14:00">14:00</option>
-										<option value="13:00">13:00</option>
-										<option value="12:00">12:00</option>
-										<option value="11:00">11:00</option>
-										<option value="10:00">10:00</option>
-									</select>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
 								</div>
-							</div>
-							<div class="time__right js-check-add">
-								<label class="checkbox js-check-hour">
-									<input class="checkbox__input" type="checkbox">
-									<em class="fa fa-check"></em>
-									<span class="checkbox__text">
-										24 ч.
-									</span>
-								</label>
-							</div>
-						</div>
-						<div class="time js-check-group">
-							<div class="time__left">
-								<label class="checkbox js-check">
-									<input class="checkbox__input" type="checkbox">
-									<em class="fa fa-check"></em>
-									<span class="checkbox__text">
-										Четверг
-									</span>
-								</label>
-							</div>
-							<div class="time__input">
-								<span class="time__text">с</span>
-								<div class="input-select select js-select">
-									<input type="text" class="input js-select-input" readonly value="10:00">
-									<i class="fa fa-caret-down"></i>
-									<select>
-										<option value="10:00">10:00</option>
-										<option value="11:00">11:00</option>
-										<option value="12:00">12:00</option>
-										<option value="13:00">13:00</option>
-										<option value="15:00">15:00</option>
-										<option value="16:00">16:00</option>
-										<option value="17:00">17:00</option>
-										<option value="18:00">18:00</option>
-										<option value="19:00">19:00</option>
-										<option value="20:00">20:00</option>
-										<option value="21:00">21:00</option>
-									</select>
-								</div>
-								<span class="time__text">до</span>
-								<div class="input-select select js-select">
-									<input type="text" class="input js-select-input" readonly value="21:00">
-									<i class="fa fa-caret-down"></i>
-									<select>
-										<option value="21:00">21:00</option>
-										<option value="20:00">20:00</option>
-										<option value="19:00">19:00</option>
-										<option value="18:00">18:00</option>
-										<option value="17:00">17:00</option>
-										<option value="16:00">16:00</option>
-										<option value="15:00">15:00</option>
-										<option value="14:00">14:00</option>
-										<option value="13:00">13:00</option>
-										<option value="12:00">12:00</option>
-										<option value="11:00">11:00</option>
-										<option value="10:00">10:00</option>
-									</select>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
 								</div>
 							</div>
-							<div class="time__right js-check-add">
-								<label class="checkbox js-check-hour">
-									<input class="checkbox__input" type="checkbox">
-									<em class="fa fa-check"></em>
-									<span class="checkbox__text">
-										24 ч.
-									</span>
-								</label>
-							</div>
-						</div>
-						<div class="time js-check-group">
-							<div class="time__left">
-								<label class="checkbox js-check">
-									<input class="checkbox__input" type="checkbox">
-									<em class="fa fa-check"></em>
-									<span class="checkbox__text">
-										Пятница
-									</span>
-								</label>
-							</div>
-							<div class="time__input">
-								<span class="time__text">с</span>
-								<div class="input-select select js-select">
-									<input type="text" class="input js-select-input" readonly value="10:00">
-									<i class="fa fa-caret-down"></i>
-									<select>
-										<option value="10:00">10:00</option>
-										<option value="11:00">11:00</option>
-										<option value="12:00">12:00</option>
-										<option value="13:00">13:00</option>
-										<option value="15:00">15:00</option>
-										<option value="16:00">16:00</option>
-										<option value="17:00">17:00</option>
-										<option value="18:00">18:00</option>
-										<option value="19:00">19:00</option>
-										<option value="20:00">20:00</option>
-										<option value="21:00">21:00</option>
-									</select>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Вторник
+										</span>
+									</label>
 								</div>
-								<span class="time__text">до</span>
-								<div class="input-select select js-select">
-									<input type="text" class="input js-select-input" readonly value="21:00">
-									<i class="fa fa-caret-down"></i>
-									<select>
-										<option value="21:00">21:00</option>
-										<option value="20:00">20:00</option>
-										<option value="19:00">19:00</option>
-										<option value="18:00">18:00</option>
-										<option value="17:00">17:00</option>
-										<option value="16:00">16:00</option>
-										<option value="15:00">15:00</option>
-										<option value="14:00">14:00</option>
-										<option value="13:00">13:00</option>
-										<option value="12:00">12:00</option>
-										<option value="11:00">11:00</option>
-										<option value="10:00">10:00</option>
-									</select>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
 								</div>
-							</div>
-							<div class="time__right js-check-add">
-								<label class="checkbox js-check-hour">
-									<input class="checkbox__input" type="checkbox">
-									<em class="fa fa-check"></em>
-									<span class="checkbox__text">
-										24 ч.
-									</span>
-								</label>
-							</div>
-						</div>
-						<div class="time js-check-group">
-							<div class="time__left">
-								<label class="checkbox js-check">
-									<input class="checkbox__input" type="checkbox">
-									<em class="fa fa-check"></em>
-									<span class="checkbox__text">
-										Суббота
-									</span>
-								</label>
-							</div>
-							<div class="time__input">
-								<span class="time__text">с</span>
-								<div class="input-select select js-select">
-									<input type="text" class="input js-select-input" readonly value="10:00">
-									<i class="fa fa-caret-down"></i>
-									<select>
-										<option value="10:00">10:00</option>
-										<option value="11:00">11:00</option>
-										<option value="12:00">12:00</option>
-										<option value="13:00">13:00</option>
-										<option value="15:00">15:00</option>
-										<option value="16:00">16:00</option>
-										<option value="17:00">17:00</option>
-										<option value="18:00">18:00</option>
-										<option value="19:00">19:00</option>
-										<option value="20:00">20:00</option>
-										<option value="21:00">21:00</option>
-									</select>
-								</div>
-								<span class="time__text">до</span>
-								<div class="input-select select js-select">
-									<input type="text" class="input js-select-input" readonly value="21:00">
-									<i class="fa fa-caret-down"></i>
-									<select>
-										<option value="21:00">21:00</option>
-										<option value="20:00">20:00</option>
-										<option value="19:00">19:00</option>
-										<option value="18:00">18:00</option>
-										<option value="17:00">17:00</option>
-										<option value="16:00">16:00</option>
-										<option value="15:00">15:00</option>
-										<option value="14:00">14:00</option>
-										<option value="13:00">13:00</option>
-										<option value="12:00">12:00</option>
-										<option value="11:00">11:00</option>
-										<option value="10:00">10:00</option>
-									</select>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox" checked>
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
 								</div>
 							</div>
-							<div class="time__right js-check-add">
-								<label class="checkbox js-check-hour">
-									<input class="checkbox__input" type="checkbox">
-									<em class="fa fa-check"></em>
-									<span class="checkbox__text">
-										24 ч.
-									</span>
-								</label>
-							</div>
-						</div>
-						<div class="time js-check-group">
-							<div class="time__left">
-								<label class="checkbox js-check">
-									<input class="checkbox__input" type="checkbox">
-									<em class="fa fa-check"></em>
-									<span class="checkbox__text">
-										Воскресенье
-									</span>
-								</label>
-							</div>
-							<div class="time__input">
-								<span class="time__text">с</span>
-								<div class="input-select select js-select">
-									<input type="text" class="input js-select-input" readonly value="10:00">
-									<i class="fa fa-caret-down"></i>
-									<select>
-										<option value="10:00">10:00</option>
-										<option value="11:00">11:00</option>
-										<option value="12:00">12:00</option>
-										<option value="13:00">13:00</option>
-										<option value="15:00">15:00</option>
-										<option value="16:00">16:00</option>
-										<option value="17:00">17:00</option>
-										<option value="18:00">18:00</option>
-										<option value="19:00">19:00</option>
-										<option value="20:00">20:00</option>
-										<option value="21:00">21:00</option>
-									</select>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Среда
+										</span>
+									</label>
 								</div>
-								<span class="time__text">до</span>
-								<div class="input-select select js-select">
-									<input type="text" class="input js-select-input" readonly value="21:00">
-									<i class="fa fa-caret-down"></i>
-									<select>
-										<option value="21:00">21:00</option>
-										<option value="20:00">20:00</option>
-										<option value="19:00">19:00</option>
-										<option value="18:00">18:00</option>
-										<option value="17:00">17:00</option>
-										<option value="16:00">16:00</option>
-										<option value="15:00">15:00</option>
-										<option value="14:00">14:00</option>
-										<option value="13:00">13:00</option>
-										<option value="12:00">12:00</option>
-										<option value="11:00">11:00</option>
-										<option value="10:00">10:00</option>
-									</select>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
 								</div>
 							</div>
-							<div class="time__right js-check-add">
-								<label class="checkbox js-check-hour">
-									<input class="checkbox__input" type="checkbox">
-									<em class="fa fa-check"></em>
-									<span class="checkbox__text">
-										24 ч.
-									</span>
-								</label>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Четверг
+										</span>
+									</label>
+								</div>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Пятница
+										</span>
+									</label>
+								</div>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Суббота
+										</span>
+									</label>
+								</div>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="time js-check-group">
+								<div class="time__left">
+									<label class="checkbox js-check">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Воскресенье
+										</span>
+									</label>
+								</div>
+								<div class="time__input">
+									<span class="time__text">с</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="10:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+											<option value="12:00">12:00</option>
+											<option value="13:00">13:00</option>
+											<option value="15:00">15:00</option>
+											<option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+											<option value="18:00">18:00</option>
+											<option value="19:00">19:00</option>
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</div>
+									<span class="time__text">до</span>
+									<div class="input-select select js-select">
+										<input type="text" class="input js-select-input" readonly value="21:00">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="21:00">21:00</option>
+											<option value="20:00">20:00</option>
+											<option value="19:00">19:00</option>
+											<option value="18:00">18:00</option>
+											<option value="17:00">17:00</option>
+											<option value="16:00">16:00</option>
+											<option value="15:00">15:00</option>
+											<option value="14:00">14:00</option>
+											<option value="13:00">13:00</option>
+											<option value="12:00">12:00</option>
+											<option value="11:00">11:00</option>
+											<option value="10:00">10:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="time__right js-check-add">
+									<label class="checkbox js-check-hour">
+										<input class="checkbox__input" type="checkbox">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											24 ч.
+										</span>
+									</label>
+								</div>
 							</div>
 						</div>
 					</div>
