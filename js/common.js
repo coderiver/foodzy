@@ -510,5 +510,17 @@ head.ready(function() {
 
     });   
 
+    $(".js-textarea textarea").keyup(function () {  
+		var counter = $(this).parents(".js-textarea").find('.js-char-counter');
+		var max = +counter.attr("data-max");
+		var len = $(this).val().length;
+		var char = max - len;
+		if (len >= max) {
+		    counter.addClass("is-limit").text("("+char+")");
+		} else {
+		    counter.removeClass("is-limit").text("("+char+")");
+		}
+	});
+
 
 });
