@@ -318,7 +318,7 @@ a { color: #da2400; text-decoration: none; }
 
 .select { position: relative; }
 .select:hover .link-action span { border-color: transparent; }
-.select select { position: absolute; z-index: 2; cursor: pointer; top: 0; left: 0; width: 100%; height: 100%; margin: 0; opacity: 0; }
+.select select { position: absolute; z-index: 2; cursor: pointer; top: 0; left: 0; width: 100%; height: 47px; margin: 0; opacity: 0; }
 
 .select_inline { display: inline-block; }
 
@@ -1122,7 +1122,7 @@ a { color: #da2400; text-decoration: none; }
 
 .input-select { position: relative; display: inline-block; vertical-align: middle; }
 .input-select .fa { position: absolute; top: 18px; right: 18px; }
-.input-select select { bottom: 0; width: 100%; }
+.input-select select { height: 47px; width: 100%; }
 
 .input-select_width { width: 100%; }
 
