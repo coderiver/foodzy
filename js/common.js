@@ -62,12 +62,21 @@ head.ready(function() {
 
 	$(".js-order-link").on("click", function(event){
 		var popup = $(this).attr("href");
-		var left = $(this).parents(".items-wrap").find(".js-item").first().offset().left;
 		var top = $(this).parents(".js-item").offset().top;
-		$("."+popup).css({
-		 	left: left,
-		 	top: top
-		});
+		if ($("."+popup).hasClass("item-popup_simple")) {
+			var left = $(this).parents(".js-item").offset().left;
+			$("."+popup).css({
+			 	left: left,
+			 	top: top
+			});
+		}
+		else {
+			var left = $(this).parents(".items-wrap").find(".js-item").first().offset().left;
+			$("."+popup).css({
+			 	left: left,
+			 	top: top
+			});
+		}
 		$("."+popup).fadeIn(200);
 		event.stopPropagation();
 		return false;

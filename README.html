@@ -1,0 +1,15 @@
+<h1 id="sass-boilerplate-for-generic-css-html">Sass Boilerplate for generic CSS/HTML</h1>
+<p>Coderiver.com.ua boilerplate.</p>
+<p>I&#39;m using this as a starting template for almost any project now.
+It includes sprites, assorted mixins (aka code snippets), file structure, jquery+cycle+scrollto (most usable these days).
+And, that&#39;s it.</p>
+<p>You need to have Compass installed for it to work properly.</p>
+<h1 id="structure">Structure</h1>
+<p><code>/sass/lib/base</code> - all the mixins and libs needed for us.</p>
+<p><code>/sass/screen.sass</code> - agregates all .sass files.</p>
+<p><code>/sass/main.sass</code> - styles for the mainpage.</p>
+<h1 id="naming-blocks">Naming blocks</h1>
+<p>I use BEM naming, meaning <code>.block</code> for independent block. <code>.block__element</code> for elements inside that block. And <code>.block_modification</code> for modification of the block.</p>
+<p><code>layouts.sass</code> consists of all the columns-header-footer stuff, all with <code>.l-*</code> prefixes. So you know its layout.</p>
+<p>States of the blocks use prefix <code>.is-*</code>. For example <code>.is-running</code>, <code>.is-hidden</code>, <code>.is-open</code>.</p>
+<p>Hooks for js should use prefix <code>.js-*</code>.</p>
