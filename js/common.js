@@ -531,5 +531,55 @@ head.ready(function() {
 		}
 	});
 
+	function showDatePicker() {
+		$(".js-date-group").each(function(){
+			var date_from = $(this).find(".js-date-from input");
+			var date_to = $(this).find(".js-date-to input");
+
+			if (date_from.length) {
+				date_from.datepicker({
+			        dateFormat: 'yy-mm-dd',
+			        firstDay: 1,
+			        changeMonth: true,
+			        changeYear: true,
+			        showOtherMonths: true,
+			        //showTimezone: true,
+			        selectOtherMonths: true,
+			        yearRange: '-10:+3',
+			        //showSecond: true,
+			        showButtonPanel: false,
+			        //timeFormat: 'HH:mm:ss z',
+			        //timeFormat: 'HH:mm:ss',
+			        onClose: function( selectedDate ) {
+				        date_to.datepicker( "option", "minDate", selectedDate );
+				    }
+			    });
+			}
+			if (date_to.length) {
+				date_to.datepicker({
+			        dateFormat: 'yy-mm-dd',
+			        firstDay: 1,
+			        changeMonth: true,
+			        changeYear: true,
+			        showOtherMonths: true,
+			        //showTimezone: true,
+			        selectOtherMonths: true,
+			        yearRange: '-10:+3',
+			        //showSecond: true,
+			        showButtonPanel: false,
+			        //timeFormat: 'HH:mm:ss z',
+			        //timeFormat: 'HH:mm:ss',
+			        //hour: 23,
+			       // minute: 59,
+			        //second: 59,
+			        onClose : function( selectedDate ) {
+				        date_from.datepicker( "option", "maxDate", selectedDate );
+				    }
+			    });
+			}
+		});
+	}
+	showDatePicker();
+
 
 });
