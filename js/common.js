@@ -606,6 +606,15 @@ head.ready(function() {
 		if ($(this).is(":checked")) {
 			$("."+el).slideDown();
 		}
+
+	});
+
+	$(".js-btn-order").on("click", function(){
+		$(".header").addClass("has-order-animation");
+		setTimeout(function() {
+			$(".header").removeClass("has-order-animation");
+        }, 1000);
+		return false;
 	});
 
 	$(".js-next-step").on("click", function(){
@@ -638,11 +647,17 @@ head.ready(function() {
 			});
 		}
 	}
-	modalWindow();
-	$(window).resize(function(){
+	if ($(".js-modal").length) {
 		modalWindow();
+	}
+	$(window).resize(function(){
+		if ($(".js-modal").length) {
+			modalWindow();
+		}
 	});
 	$(window).scroll(function(){
-		modalWindow();
+		if ($(".js-modal").length) {
+			modalWindow();
+		}
 	});
 });

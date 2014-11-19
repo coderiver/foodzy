@@ -66,16 +66,14 @@ body
 			left: 0
 			right: 0
 		.header__city,
-		.header__search,
-		.cart-btn__icon,
-		.cart-btn__in
+		.header__search
 			display: none
-		.cart-btn
-			padding-left: 0
-			background: $red 
-			text-align: center
-			&:hover
-				background: $red_d 
+		// .cart-btn
+		// 	padding-left: 0
+		// 	background: $red 
+		// 	text-align: center
+		// 	&:hover
+		// 		background: $red_d 
 
 		.cart-btn__text
 			display: block
@@ -144,8 +142,28 @@ a
 			left: -500px
 		&:after
 			right: -500px
++keyframes(anim1)
+	0
+		background: #fcfcfc
+		+box-shadow(0 1px 9px rgba(0,0,0,.5)) 
+	25%
+		background: #fff
+		+box-shadow(0 1px 15px rgba(0,0,0,.5)) 
+	50%
+		background: #fcfcfc
+		+box-shadow(0 1px 9px rgba(0,0,0,.5)) 
+	75%
+		background: #fff
+		+box-shadow(0 1px 15px rgba(0,0,0,.5)) 
+	100%
+		background: #fcfcfc
+		+box-shadow(0 1px 9px rgba(0,0,0,.5)) 
 .header
 	position: relative
+	&.has-order-animation
+		.header__main
+			+animation(anim1 .5s linear 2)
+
 .header__top
 	+clr
 	text-align: right

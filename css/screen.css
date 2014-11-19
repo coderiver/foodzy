@@ -33,9 +33,7 @@ html ::-moz-selection { background: rgba(0, 0, 0, 0.1); }
 body { min-width: 1110px; font-family: "roboto-regular", Arial, sans-serif; font-size: 13px; line-height: 1.2; color: #3d3d3d; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; background: #f2f2f2 url(../img/light-bg.png) 0 0 repeat; }
 body.has-fixed-header .header { padding-top: 64px; }
 body.has-fixed-header .header__main { position: fixed; z-index: 500; top: 0; left: 0; right: 0; }
-body.has-fixed-header .header__city, body.has-fixed-header .header__search, body.has-fixed-header .cart-btn__icon, body.has-fixed-header .cart-btn__in { display: none; }
-body.has-fixed-header .cart-btn { padding-left: 0; background: #da2400; text-align: center; }
-body.has-fixed-header .cart-btn:hover { background: #a51b00; }
+body.has-fixed-header .header__city, body.has-fixed-header .header__search { display: none; }
 body.has-fixed-header .cart-btn__text { display: block; }
 body.has-fixed-header.has-fixed-sidebar .sidebar__in { top: 79px; }
 body.has-fixed-sidebar .sidebar__in { position: fixed; top: 0; width: 242px; }
@@ -65,7 +63,33 @@ a { color: #da2400; text-decoration: none; }
 .subtitle span:before { left: -500px; }
 .subtitle span:after { right: -500px; }
 
+@-moz-keyframes anim1 { 0 { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
+  25% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
+  50% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
+  75% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
+  100% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); } }
+@-webkit-keyframes anim1 { 0 { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
+  25% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
+  50% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
+  75% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
+  100% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); } }
+@-o-keyframes anim1 { 0 { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
+  25% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
+  50% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
+  75% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
+  100% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); } }
+@-ms-keyframes anim1 { 0 { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
+  25% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
+  50% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
+  75% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
+  100% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); } }
+@keyframes anim1 { 0 { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
+  25% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
+  50% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
+  75% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
+  100% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); } }
 .header { position: relative; }
+.header.has-order-animation .header__main { -webkit-animation: anim1 0.5s linear 2; -moz-animation: anim1 0.5s linear 2; -ms-animation: anim1 0.5s linear 2; -o-animation: anim1 0.5s linear 2; animation: anim1 0.5s linear 2; }
 
 .header__top { *zoom: 1; text-align: right; background: #3d3d3d url(../img/dark-bg.png) 0 0 repeat; }
 .header__top:after { content: " "; display: table; clear: both; }
