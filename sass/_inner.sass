@@ -681,3 +681,87 @@
 	border-top: 1px dashed $border 
 	padding: 18px 40px
 	color: #8e8e8e 
+
+.step
+	display: none
+	&:first-child
+		display: block
+		.cart
+			padding-top: 0
+.cart
+	padding-top: 45px 
+	&.is-inactive
+		.btn
+			background: #c9c9c9 
+
+.delivery
+	text-align: center
+	padding: 20px 0 30px
+	&__title
+		font-size: 18px
+		+fb
+	.cart-item
+		border: 0
+		margin-bottom: 30px
+	.cart-item__cell
+		display: inline-block
+		vertical-align: top
+		margin-left: 75px
+		float: none
+		text-align: left
+		&:first-child
+			margin-left: 0
+	.input-group
+		width: 293px
+		margin: 0 auto 
+	.input-group_with-title
+		width: 100%
+	.input-wrap__label	
+		margin: 16px 0 8px
+		+fb
+
+.message
+	padding: 10px 30px
+	border-bottom: $border
+	background: #fff0d0   
+	color: $dark
+	font-size: 13px
+	.radio
+		margin: 0 50px 10px 0
+	div
+		margin-bottom: 5px
+	&_center
+		text-align: center 
+		line-height: 82px
+		min-height: 82px
+		div
+			display: inline-block
+			vertical-align: middle
+			line-height: 1.2
+			margin: 0
+.payment
+	width: 420px
+	margin: 18px auto 26px
+	.radio
+		padding: 0 30px 
+		position: relative
+		display: block
+		margin-bottom: -1px
+		height: 60px
+		line-height: 60px
+		border-bottom: 1px dashed #bcbcbc  
+		border-top: 1px dashed #bcbcbc  
+		+clr
+		span
+			font-size: 15px
+			+fm
+		&.is-active
+			background: #f2f2f2 
+		&__left
+			float: left
+		&__right
+			float: right
+		img
+			vertical-align: middle
+		strong
+			font-weight: normal

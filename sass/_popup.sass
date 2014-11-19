@@ -148,7 +148,11 @@
 .cart-place
 	padding-left: 30px
 	+clr
-	width: 280px
+	width: 280px 
+	&_width
+		width: 100%
+		padding-right: 30px
+		+box-sizing(border-box)
 .cart-place__img
 	float: left
 	margin: 0 20px 10px 0
@@ -156,7 +160,8 @@
 	width: 90px
 	img
 		max-width: 100%
-.cart-place__info
+.cart-place__info,
+.cart-place__left
 	overflow: hidden
 	a
 		font-size: 21px
@@ -164,7 +169,17 @@
 	span
 		display: block
 		+fi
-		color: $gray 
+		color: $gray
+.cart-place__left
+	float: left
+.cart-place__right
+	float: right 
+.cart-place__status
+	.fa
+		margin-top: 3px
+	.fa, div
+		display: inline-block
+		vertical-align: top
 .cart-place__add
 	clear: both
 	overflow: hidden
@@ -199,6 +214,25 @@
 	background: $light 
 	.cart-item__cell-2
 		padding-top: 9px
+.cart-item_checkout
+	.cart-item__cell-1
+		padding-left: 30px
+		width: 205px
+	.cart-item__cell-2
+		width: 300px
+		.choose
+			margin: 0 0 0 10px
+		.choose,
+		a
+			display: inline-block
+			vertical-align: middle
+		img
+			max-width: 80px
+	.cart-item__cell-3
+		width: 85px
+		padding-top: 24px
+	.cart-item__cell-4
+		padding-top: 24px
 .cart-item__cell
 	float: left
 	+box
@@ -217,8 +251,9 @@
 		+fm
 		color: $dark
 	div
-		margin-top: 8px
+		margin: 0 0 10px
 		color: $gray 
+		+fi
 	.link-action
 		color: #da2400
 		font-size: 13px
@@ -236,7 +271,17 @@
 	.fa
 		background: none
 		font-size: 18px
-		
+.cart-item__cell-4
+	float: right
+	padding: 12px 47px 0 0 
+	.fa
+		background: none
+		font-size: 18px
+.cart-item_action
+	background: #f2f2f2
+	padding: 17px 50px 17px 40px
+	border-style: solid
+	+justify
 .popup__bottom
 	padding: 22px 30px 
 	background: #fff	

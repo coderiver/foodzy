@@ -100,7 +100,7 @@
 .btn
 	display: inline-block
 	padding: 9px 17px 
-	border-radius: 16px
+	border-radius: 20px
 	background: $red
 	color: #fff
 	font-size: 13px
@@ -111,6 +111,10 @@
 	&:active
 		position: relative
 		top: 1px 
+	&:disabled
+		pointer-events: none
+	.fa
+		margin-left: 5px
 .btn_width
 	padding: 9px 67px 
 .btn_detail
@@ -341,12 +345,14 @@
 .radio_bold
 	+fm
 	font-size: 15px  
+.radio_bolder
+	+fb
 .rate
 	position: relative
 	height: 8px
 	overflow: hidden
 	border-radius: 10px
-	background: $red 
+	background: $red
 	span
 		position: absolute
 		left: 0
@@ -514,3 +520,34 @@
 	.fa
 		font-size: 75px
 		color: $gray  
+		
+.modal
+	position: fixed
+	padding: 20px 
+	width: 250px
+	margin-left: 15px
+	display: none
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.51)
+	background: #fff 
+	&:before
+		content: ""
+		position: absolute
+		left: -14px
+		top: 50%
+		margin-top: -7px
+		+s(arr3) 
+	ul
+		margin-bottom: 15px
+		li
+			margin-bottom: 5px
+			+clr
+			span
+				float: right
+	&_step
+		top: 140px
+	.is-red
+		color: $red 
+	&__price
+		margin-bottom: 5px
+		font-size: 18px
+		+fb

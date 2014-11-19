@@ -1,0 +1,986 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>cart checkout</title>
+	<meta name="viewport">
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out">
+	<header class="header js-full-cart">
+		<div class="header__top">
+			<div class="l-center">
+				<div class="header__user">
+					<div class="extend-item js-extend-item">
+						<a href="#" class="extend-item__link js-extend-item-link">Афанасий никитин <i class="fa fa-sort-desc"></i></a>
+						<ul class="extend-item__list js-extend-item-list">
+							<li>
+								<a href="#">
+									<span class="extend-item__icon">
+										<span class="badge badge_bonus"><i class="fa fa-star"></i></span>
+									</span>
+									<span class="extend-item__text">
+										У вас 44 бонусных пункта <span>как использовать бонусы?</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="extend-item__icon">
+										<i class="fa fa-tags"></i>
+									</span>
+									<span class="extend-item__text">Мои заказы</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="extend-item__icon">
+										<i class="fa fa-cog"></i>
+									</span>
+									<span class="extend-item__text">Настройки аккаунта</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header__login">
+					<a href="#">Выйти <i class="fa fa-sign-out"></i></a>
+				</div>
+				<div class="header__lang">
+					<div class="extend-item js-extend-item">
+						<a href="#" class="extend-item__link js-extend-item-link">По-русски <i class="fa fa-sort-desc"></i></a>
+						<ul class="extend-item__list js-extend-item-list">
+							<li><a href="#">По-русски</a></li>
+							<li><a href="#">По-русски</a></li>
+							<li><a href="#">По-русски</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="header__main">
+			<div class="l-center">
+				<a href="#" class="header__logo">
+					<strong>foodzy</strong>
+					система доставки
+				</a>
+				<div class="header__city">
+					<a href="#" class="header__city-btn">
+						<span>ваш город: </span>
+						<i class="fa fa-location-arrow"></i>
+					</a>		
+					<div class="header__input">
+						<input type="text" placeholder="Выберите город">
+					</div>
+				</div>
+				<div class="header__search">	
+					<div class="header__input">
+						<input type="text" placeholder="блюдо или ресторан...">
+						<button class="fa fa-search"></button>
+					</div>
+				</div>
+				<div class="header__cart">
+					<a href="#" class="cart-btn">
+						<span class="cart-btn__icon">
+							<i class="fa fa-shopping-cart"></i>
+						</span>
+						<span class="cart-btn__in">
+							<span>Корзина </span>
+							26,50 €
+						</span>
+						<span class="cart-btn__text">Оформить заказ</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="l-center">
+		<div class="l-cols-2 box">
+			<div class="l-col1">
+				<div class="step js-step js-step-target" style="display:block">
+					<div class="cart is-inactive js-removeable">
+						<div class="cart-place cart-place_width">
+							<div class="cart-place__left">
+								<a class="cart-place__name" href="#">
+									Texas Burger
+								</a>
+								<span>мексиканская кухня</span>
+							</div>
+							<div class="cart-place__right">
+								<div class="cart-place__status">
+									<i class="fa fa-clock-o"></i>
+									<div>Ресторан сейчас закрыт. <br>
+									Возможет предварительный заказ</div>
+								</div>
+							</div>
+						</div>
+						<div class="cart-item cart-item_checkout js-removeable">
+							<div class="cart-item__cell cart-item__cell-1">
+								<a href="#">Бургер с ялопене</a>
+								<div>Вес: 350 г.</div>
+								<ul>
+									<li>Сыр (+0,49 €)</li>
+									<li>Яйцо (+0,49 €)</li>
+									<li>Огурец (+0,49 €)</li>
+									<li>Кетчуп (+0,49 €)</li>
+								</ul>
+							</div>
+							<div class="cart-item__cell cart-item__cell-2">
+								<a href="#">
+									<img src="img/item1.png" alt="img" width="80">
+								</a>
+								<div class="choose js-choose" data-max-number="50">
+									<div class="choose__main"><span class="js-choose-digit">1</span> шт.</div>
+									<input type="hidden" value="1">
+									<button class="fa fa-plus-circle js-plus"></button>
+				                    <button class="fa fa-minus-circle js-minus"></button>
+				                </div>
+				               <!--  <span>Добавки: 2,4 €</span> -->
+							</div>
+							<div class="cart-item__cell cart-item__cell-3">
+								18,6 €
+							</div>
+							<div class="cart-item__cell cart-item__cell-4">
+								<button class="fa fa-times js-remove-key"></button>
+							</div>
+						</div>
+						<div class="cart-item cart-item_checkout js-removeable">
+							<div class="cart-item__cell cart-item__cell-1">
+								<a href="#">Врап с копченой курицей и луком</a>
+								<div>Вес: 350 г.</div>
+							</div>
+							<div class="cart-item__cell cart-item__cell-2">
+								<a href="#">
+									<img src="img/item1.png" alt="img" width="80">
+								</a>
+								<div class="choose js-choose" data-max-number="50">
+									<div class="choose__main"><span class="js-choose-digit">1</span> шт.</div>
+									<input type="hidden" value="1">
+									<button class="fa fa-plus-circle js-plus"></button>
+				                    <button class="fa fa-minus-circle js-minus"></button>
+				                </div>
+				               <!--  <span>Добавки: 2,4 €</span> -->
+							</div>
+							<div class="cart-item__cell cart-item__cell-3">
+								18,6 €
+							</div>
+							<div class="cart-item__cell cart-item__cell-4">
+								<button class="fa fa-times js-remove-key"></button>
+							</div>
+						</div>
+						<div class="cart-item cart-item_action">
+							<button type="button" class="btn btn_width btn_big js-next-step" disabled>Оформить заказ <i class="fa fa-arrow-right"></i></button>
+							<a href="#" class="link-action js-remove-key">Удалить заказ</a>
+						</div>
+					</div>
+					<div class="message message_center">
+						<div>Вы являетесь зарегистрированным пользователем Foodzy? <a href="#">Войдите</a> или <a href="#">зарегистрируйтесь</a>.</div>
+					</div>
+				</div>
+				<div class="step js-step" style="display:block">
+					<div class="cart js-removeable">
+						<div class="cart-place cart-place_width">
+							<div class="cart-place__info">
+								<a class="carr-place__name" href="#">
+									Crab's Burger
+								</a>
+								<span>америкаснкая кухня, мексиканская кухня</span>
+							</div>
+						</div> 
+						<div class="cart-item cart-item_checkout js-removeable">
+							<div class="cart-item__cell cart-item__cell-1">
+								<a href="#">Бруклин</a>
+								<div>Вес: 350 г.</div>
+							</div>
+							<div class="cart-item__cell cart-item__cell-2">
+								<a href="#">
+									<img src="img/item1.png" alt="img" width="80">
+								</a>
+								<div class="choose js-choose" data-max-number="50">
+									<div class="choose__main"><span class="js-choose-digit">1</span> шт.</div>
+									<input type="hidden" value="1">
+									<button class="fa fa-plus-circle js-plus"></button>
+				                    <button class="fa fa-minus-circle js-minus"></button>
+				                </div>
+				               <!--  <span>Добавки: 2,4 €</span> -->
+							</div>
+							<div class="cart-item__cell cart-item__cell-3">
+								18,6 €
+							</div>
+							<div class="cart-item__cell cart-item__cell-4">
+								<button class="fa fa-times js-remove-key"></button>
+							</div>
+						</div>
+						<div class="cart-item cart-item_checkout js-removeable">
+							<div class="cart-item__cell cart-item__cell-1">
+								<a href="#">Дядя Том</a>
+								<div>Вес: 350 г.</div>
+							</div>
+							<div class="cart-item__cell cart-item__cell-2">
+								<a href="#">
+									<img src="img/item1.png" alt="img" width="80">
+								</a>
+								<div class="choose js-choose" data-max-number="50">
+									<div class="choose__main"><span class="js-choose-digit">1</span> шт.</div>
+									<input type="hidden" value="1">
+									<button class="fa fa-plus-circle js-plus"></button>
+				                    <button class="fa fa-minus-circle js-minus"></button>
+				                </div>
+				               <!--  <span>Добавки: 2,4 €</span> -->
+							</div>
+							<div class="cart-item__cell cart-item__cell-3">
+								18,6 €
+							</div>
+							<div class="cart-item__cell cart-item__cell-4">
+								<button class="fa fa-times js-remove-key"></button>
+							</div>
+						</div>
+						<div class="cart-item cart-item_action">
+							<button type="button" class="btn btn_width btn_big js-next-step">Оформить заказ <i class="fa fa-arrow-right"></i></button>
+							<a href="#" class="link-action js-remove-key">Удалить заказ</a>
+						</div>
+					</div>
+				</div>
+				<div class="step js-step">
+					<div class="delivery">
+						<div class="title title_h1">Данные доставки</div>
+						<div class="cart-item">
+							<div class="cart-item__cell">
+								<div class="radio-wrap">
+									<label class="radio radio_bold">
+										<input type="radio" name="name4" checked="">
+										<span>
+											<i class="fa fa-truck"></i>
+											Доставка 
+										</span>
+									</label>
+								</div>
+								<div class="radio-group">
+									<div class="radio-wrap">
+										<label class="radio">
+											<input type="radio" name="name5" checked="">
+											<span>
+												Как можно быстрее
+											</span>
+										</label>
+									</div>
+									<div class="radio-wrap">
+										<label class="radio">
+											<input type="radio" name="name5">
+											<span>
+												Определенное время:
+											</span>
+										</label>
+									</div>
+									<div class="radio-group__in">
+										<a href="#" class="link-action">
+											<span>20.05.2014</span> 
+											<i class="fa fa-angle-down"></i>
+										</a>
+										<div class="select select_inline js-select">
+											<select>
+												<option value="15:00">15:00</option>
+												<option value="16:00">16:00</option>
+												<option value="17:00">17:00</option>
+											</select>
+											<a href="#" class="link-action">
+												<span class="js-select-text">15:00</span>
+												<i class="fa fa-angle-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cart-item__cell">
+								<div class="radio-wrap">
+									<label class="radio radio_bold">
+										<input type="radio" name="name4">
+										<span>
+											<i class="fa fa-male"></i>
+											Takeaway
+										</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="input-group input-group_with-title">
+							<div class="input-group__title is-big-title">Проверьте правильность данных и подтвердите заказ</div>
+						</div>
+						<div class="input-group">
+							<div class="input-wrap">
+								<input type="tel" class="input" placeholder="номер телефона" value="+372 55 678 987">
+							</div>
+							<div class="input-wrap">	
+								<div class="input-select input-select_width select js-select">
+									<input type="text" class="input js-select-input" readonly="" placeholder="Выбрать сохраненный адрес...">
+									<i class="fa fa-caret-down"></i>
+									<select>
+										<option value="Киев">Киев</option>
+										<option value="Харьков">Харьков</option>
+										<option value="Севастополь">Севастополь</option>
+									</select>
+								</div>
+							</div>
+							<div class="input-wrap input-wrap_with-label">
+								<div class="input-wrap__label">или добавьте новый адрес доставки:</div>	
+								<input type="text" class="input" placeholder="адрес доставки">
+							</div>
+							<div class="input-wrap input-wrap_with-label">
+								<div class="checkbox-wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" checked="">
+										<em class="fa fa-check"></em>
+										<span class="checkbox__text">
+											Сохранить эти данные в моих настройках, чтобы использовать в других заказах
+										</span>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="delivery__title">Стоимость доставки на указанный адрес: 5 €</div>
+					</div>
+					<div class="cart-item cart-item_action">
+						<button type="button" class="btn btn_width btn_big js-next-step">Перейти к оплате </button>
+						<a href="#" class="link-action"><i class="fa fa-angle-double-left"></i> Редактировать заказ заказ</a>
+					</div>
+				</div>
+				<div class="step js-step">
+					<div class="message">
+						<div>В данный момент, в ресторане большое число заказов, поэтому ваш заказ может быть задержан на некоторое время (до 5 часов).</div>
+						<label class="radio radio_bolder js-radio-show" data-hidden="js-hidden-pay">
+							<input type="radio" name="namepay" checked>
+							<span>Ок, я согласен. Буду ждать!</span>
+						</label>
+						<label class="radio radio_bolder js-radio-hide" data-hidden="js-hidden-pay">
+							<input type="radio" name="namepay">
+							<span>Сохранить заказ и оформить позже</span>
+						</label> 
+					</div>
+					<div class="delivery js-hidden-pay">
+						<div class="title title_h1">Оплата</div>
+						<div class="delivery__title">Выберите подходящий способ оплаты:</div>
+						<ul class="payment js-radio-group">
+							<li>
+								<label class="radio js-radio is-active">
+									<strong class="radio__left">
+										<input type="radio" name="payment" checked>
+										<span>Swedbank</span>
+									</strong>
+									<strong class="radio__right"><img src="img/logo1.png" alt="img"></strong>
+								</label>
+							</li>
+							<li>
+								<label class="radio js-radio">
+									<strong class="radio__left">
+										<input type="radio" name="payment">
+										<span>SEB</span>
+									</strong>
+									<strong class="radio__right"><img src="img/logo2.png" alt="img"></strong>
+								</label>
+							</li>
+							<li>
+								<label class="radio js-radio">
+									<strong class="radio__left">
+										<input type="radio" name="payment">
+										<span>PayPal</span>
+									</strong>
+									<strong class="radio__right"><img src="img/logo3.png" alt="img"></strong>
+								</label>
+							</li>
+							<li>
+								<label class="radio js-radio">
+									<strong class="radio__left">
+										<input type="radio" name="payment">
+										<span>Кредитная карта</span>
+									</strong>
+									<strong class="radio__right"><img src="img/logo4.png" alt="img"></strong>
+								</label>
+							</li>
+						</ul>	
+					</div>
+					<div class="cart-item cart-item_action">
+						<button type="submit" class="btn btn_width btn_big">Оплатить заказ </button>
+						<a href="#" class="link-action"><i class="fa fa-angle-double-left"></i> Редактировать заказ заказ</a>
+					</div>
+				</div>
+				<div class="modal modal_step js-modal-step">
+					<ul>
+						<li>Минимальная стоимость заказа:<span>4 €</span></li>
+						<li class="is-red">Для заказа не хватает:<span>50 €</span></li>
+						<li>Сумма заказа:<span>64 €</span></li>
+						<li>Стоимость доставки:<span>2 €</span></li>
+					</ul>
+					<div class="modal__price">Итого: 69,5 €</div>
+					<div class="bonus">
+						<span class="badge badge_bonus">
+							<i class="fa fa-star"></i>
+						</span>
+						<span>Вы зарабатываете 69 <a href="#">бонусов <i class="fa fa-question-circle"></i></a></span>
+					</div>
+				</div>
+			</div>
+			<div class="l-col2">
+			</div>
+		</div>
+	</div>
+	<div class="push"></div> 
+	<div class="item-popup item-popup_simple js-item-popup js-item-popup-1">
+		<div class="item">
+			<div class="item__in">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item1.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="choose js-choose" data-max-number="50">
+						<div class="choose__main"><span class="js-choose-digit">1</span> шт.</div>
+						<input type="hidden" value="1">
+						<button class="fa fa-plus-circle js-plus"></button>
+	                    <button class="fa fa-minus-circle js-minus"></button>
+	                </div>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+						<a class="btn-order-bonus" href="#">
+							купить за 90 баллов
+						</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<button class="btn-close js-item-popup-close"></button>
+	</div>
+	<div class="item-popup item-popup_width js-item-popup js-item-popup-2">
+		<div class="item">
+			<div class="item__in">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item2.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="choose js-choose" data-max-number="50">
+						<div class="choose__main"><span class="js-choose-digit">1</span> шт.</div>
+						<input type="hidden" value="1">
+						<button class="fa fa-plus-circle js-plus"></button>
+	                    <button class="fa fa-minus-circle js-minus"></button>
+	                </div>
+	                <div class="item__add-info">Добавки: 2,4 €</div>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+						<a class="btn-order-bonus" href="#">
+							купить за 90 баллов
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item-same">
+			<div class="title">Сопутствующие блюда:</div>
+			<div class="item">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item4.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item5.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="btn-close js-item-popup-close"></button>
+	</div>
+	<div class="item-popup item-popup_width js-item-popup js-item-popup-3">
+		<div class="item">
+			<div class="item__in">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item2.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="choose js-choose" data-max-number="50">
+						<div class="choose__main"><span class="js-choose-digit">1</span> шт.</div>
+						<input type="hidden" value="1">
+						<button class="fa fa-plus-circle js-plus"></button>
+	                    <button class="fa fa-minus-circle js-minus"></button>
+	                </div>
+	                <div class="item__add-info">Добавки: 2,4 €</div>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+						<a class="btn-order-bonus" href="#">
+							купить за 90 баллов
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item-opt">
+			<div class="item-opt__categ">Выберите булочку:</div>
+			<div class="item-opt__list">
+				<div class="item-opt__cols">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1" checked>
+							<span>Белая булочка</span> 
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Белая буолчка с кунжутом</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Чиабатта с оливками</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Чиабатта ржаная</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Чиабатта с паприкой</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Чиабатта классическая</span>
+						</label>
+					</div>
+				</div>
+				<div class="item-opt__categ">Добавки:</div>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox" checked>
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с плесенью
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с дырками
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox" checked>
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Жареный панированый лук
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Бекон 
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Зелень
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Салат
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с плесенью
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с дырками
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Жареный панированый лук
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Бекон 
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Зелень
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Салат
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+			</div>
+		</div>
+		<button class="btn-close js-item-popup-close"></button>
+	</div>
+	<div class="item-popup item-popup_width item_height js-item-popup js-item-popup-4">
+		<div class="item">
+			<div class="item__in">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item4.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="choose js-choose" data-max-number="50">
+						<div class="choose__main"><span class="js-choose-digit">1</span> шт.</div>
+						<input type="hidden" value="1">
+						<button class="fa fa-plus-circle js-plus"></button>
+	                    <button class="fa fa-minus-circle js-minus"></button>
+	                </div>
+	                <div class="item__add-info">Добавки: 2,4 €</div>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+						<a class="btn-order-bonus" href="#">
+							купить за 90 баллов
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item-opt">
+			<div class="item-opt__categ">Выберите булочку:</div>
+			<div class="item-opt__list">
+				<div class="item-opt__cols">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2" checked>
+							<span>Белая булочка</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Белая буолчка с кунжутом</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Чиабатта с оливками</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Чиабатта ржаная</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Чиабатта с паприкой</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Чиабатта классическая</span>
+						</label>
+					</div>
+				</div>
+				<div class="item-opt__categ">Добавки:</div>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox" checked>
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с плесенью
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с дырками
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox" checked>
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Жареный панированый лук
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Бекон 
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Зелень
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Салат
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с плесенью
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Сыр с дырками
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Жареный панированый лук
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Бекон 
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Зелень
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+				<label class="checkbox checkbox_extend">
+					<input class="checkbox__input" type="checkbox">
+					<em class="fa fa-check"></em>
+					<span class="checkbox__text">
+						Салат
+					</span>
+					<div class="checkbox__add">(+0,20 €)</div>
+				</label>
+			</div>
+		</div>
+		<div class="item-same-extend">
+			<div class="title">Сопутствующие блюда:</div>
+			<div class="item">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item4.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item5.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item__main">
+					<a href="#" class="item__img">
+						<img src="img/item6.png" alt="img">
+					</a>
+					<strong class="item__name">Бруклин</strong>
+					<span class="item__meta">Вес: 350 г.</span>
+					<div class="item__price">
+						<a class="btn-order" href="#">
+							<div href="#" class="btn-order__main">
+								<span class="btn-order__price">9 €</span>
+								<span class="btn-order__text">Заказать</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="btn-close js-item-popup-close"></button>
+	</div>
+</div>
+<!-- END out-->
+<footer class="footer">
+	<div class="l-center">
+		<div class="footer__top">
+			<div class="footer__feedback">
+				<div class="footer__feedback-title">Поддержка</div>
+				<ul>
+					<li>Вопросы и ответы</li>
+					<li>+372 66 777 888</li>
+					<li>+372 66 999 262</li>
+					<li><a href="mailto:info@fudzy.ee">info@fudzy.ee</a></li>
+				</ul>
+			</div>
+			<div class="footer__nav footer__col">
+				<ul>
+					<li><a href="#">Условия использования сайта</a></li>
+					<li><a href="#">Ресторанам</a></li>
+					<li><a href="#">Агентам</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="footer__about footer__col">
+				fudzy— это сервис, объединивший сотни служб доставки пиццы, суши, еды и продуктов в Единую Систему Заказов. <br>
+				Цель проекта — обеспечить своим пользователям наилучшие условия для быстрого, удобного и выгодного осуществления заказов.
+				<div class="footer__soc">
+					<a href="#">
+						<i class="fa fa-facebook"></i>
+						<span>Facebook</span>
+					</a>
+					<a href="#">
+						<i class="fa fa-instagram"></i>
+						<span>Instagram</span>
+					</a>
+					<a href="#">
+						<i class="fa fa-comments"></i>
+						<span>Блог</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer__meta"><span>© fudzy 2014</span> Designed by <a href="#">Aprol Designs</a></div>
+	</div>
+</footer>
+<div class="js-hidden js-hidden-address" hidden>
+	<div class="input-wrap input-wrap_with-del js-removeable">
+		<input type="text" class="input" placeholder="Например: Masina 22, Tallinn, Estonia">
+		<button class="btn-del js-remove-btn"><i class="fa fa-times-circle"></i></button>
+	</div>
+</div>
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html> 
