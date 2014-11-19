@@ -144,24 +144,29 @@ a
 			right: -500px
 +keyframes(anim1)
 	0
-		background: #fcfcfc
-		+box-shadow(0 1px 9px rgba(0,0,0,.5)) 
+		background: #e9e9e9
+		+box-shadow(0 1px 3px rgba(0,0,0,.71))
+		color: #4c4c4c
 	25%
-		background: #fff
-		+box-shadow(0 1px 15px rgba(0,0,0,.5)) 
+		background: $red
+		+box-shadow(0 1px 10px rgba(0,0,0,.5)) 
+		color: #fff
 	50%
-		background: #fcfcfc
-		+box-shadow(0 1px 9px rgba(0,0,0,.5)) 
+		background: #e9e9e9
+		+box-shadow(0 1px 3px rgba(0,0,0,.71))
+		color: #4c4c4c
 	75%
-		background: #fff
-		+box-shadow(0 1px 15px rgba(0,0,0,.5)) 
+		background: $red
+		+box-shadow(0 1px 10px rgba(0,0,0,.5)) 
+		color: #fff
 	100%
-		background: #fcfcfc
-		+box-shadow(0 1px 9px rgba(0,0,0,.5)) 
+		background: #e9e9e9
+		+box-shadow(0 1px 3px rgba(0,0,0,.71))
+		color: #4c4c4c
 .header
 	position: relative
 	&.has-order-animation
-		.header__main
+		.cart-btn
 			+animation(anim1 .5s linear 2)
 
 .header__top
@@ -302,6 +307,7 @@ a
 	background: #e9e9e9
 	border-radius: 20px
 	overflow: hidden
+	color: #4c4c4c
 	+box
 	+box-shadow(0 1px 3px rgba(0,0,0,.71))
 	+tr(background .2s linear)
@@ -330,7 +336,6 @@ a
 	display: inline-block
 	vertical-align: middle
 	line-height: 1.2
-	color: #4c4c4c
 	font-size: 13px
 	text-shadow: 0 1px 0 #fff
 	span

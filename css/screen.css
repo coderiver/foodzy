@@ -63,33 +63,33 @@ a { color: #da2400; text-decoration: none; }
 .subtitle span:before { left: -500px; }
 .subtitle span:after { right: -500px; }
 
-@-moz-keyframes anim1 { 0 { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
-  25% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
-  50% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
-  75% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
-  100% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); } }
-@-webkit-keyframes anim1 { 0 { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
-  25% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
-  50% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
-  75% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
-  100% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); } }
-@-o-keyframes anim1 { 0 { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
-  25% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
-  50% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
-  75% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
-  100% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); } }
-@-ms-keyframes anim1 { 0 { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
-  25% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
-  50% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
-  75% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
-  100% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); } }
-@keyframes anim1 { 0 { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
-  25% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
-  50% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
-  75% { background: white; -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
-  100% { background: #fcfcfc; -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); } }
+@-moz-keyframes anim1 { 0 { background: #e9e9e9; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); color: #4c4c4c; }
+  25% { background: #da2400; -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); color: white; }
+  50% { background: #e9e9e9; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); color: #4c4c4c; }
+  75% { background: #da2400; -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); color: white; }
+  100% { background: #e9e9e9; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); color: #4c4c4c; } }
+@-webkit-keyframes anim1 { 0 { background: #e9e9e9; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); color: #4c4c4c; }
+  25% { background: #da2400; -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); color: white; }
+  50% { background: #e9e9e9; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); color: #4c4c4c; }
+  75% { background: #da2400; -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); color: white; }
+  100% { background: #e9e9e9; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); color: #4c4c4c; } }
+@-o-keyframes anim1 { 0 { background: #e9e9e9; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); color: #4c4c4c; }
+  25% { background: #da2400; -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); color: white; }
+  50% { background: #e9e9e9; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); color: #4c4c4c; }
+  75% { background: #da2400; -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); color: white; }
+  100% { background: #e9e9e9; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); color: #4c4c4c; } }
+@-ms-keyframes anim1 { 0 { background: #e9e9e9; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); color: #4c4c4c; }
+  25% { background: #da2400; -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); color: white; }
+  50% { background: #e9e9e9; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); color: #4c4c4c; }
+  75% { background: #da2400; -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); color: white; }
+  100% { background: #e9e9e9; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); color: #4c4c4c; } }
+@keyframes anim1 { 0 { background: #e9e9e9; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); color: #4c4c4c; }
+  25% { background: #da2400; -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); color: white; }
+  50% { background: #e9e9e9; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); color: #4c4c4c; }
+  75% { background: #da2400; -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); color: white; }
+  100% { background: #e9e9e9; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); color: #4c4c4c; } }
 .header { position: relative; }
-.header.has-order-animation .header__main { -webkit-animation: anim1 0.5s linear 2; -moz-animation: anim1 0.5s linear 2; -ms-animation: anim1 0.5s linear 2; -o-animation: anim1 0.5s linear 2; animation: anim1 0.5s linear 2; }
+.header.has-order-animation .cart-btn { -webkit-animation: anim1 0.5s linear 2; -moz-animation: anim1 0.5s linear 2; -ms-animation: anim1 0.5s linear 2; -o-animation: anim1 0.5s linear 2; animation: anim1 0.5s linear 2; }
 
 .header__top { *zoom: 1; text-align: right; background: #3d3d3d url(../img/dark-bg.png) 0 0 repeat; }
 .header__top:after { content: " "; display: table; clear: both; }
@@ -138,7 +138,7 @@ a { color: #da2400; text-decoration: none; }
 
 .header__cart { float: right; margin: 10px 2px 0 0; border-left: 1px solid #d7d7d7; padding: 8px 0 8px 18px; }
 
-.cart-btn { position: relative; display: block; padding-left: 60px; width: 135px; height: 40px; line-height: 38px; background: #e9e9e9; border-radius: 20px; overflow: hidden; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear; -webkit-transition: background 0.2s linear; transition: background 0.2s linear; }
+.cart-btn { position: relative; display: block; padding-left: 60px; width: 135px; height: 40px; line-height: 38px; background: #e9e9e9; border-radius: 20px; overflow: hidden; color: #4c4c4c; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.71); -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear; -webkit-transition: background 0.2s linear; transition: background 0.2s linear; }
 .cart-btn:hover { background: #d7d7d7; }
 .cart-btn:hover .cart-btn__icon { background: #a51b00; }
 .cart-btn:active { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
@@ -146,7 +146,7 @@ a { color: #da2400; text-decoration: none; }
 .cart-btn__icon { position: absolute; top: 0; left: 0; height: 100%; z-index: 2; width: 47px; text-align: center; background: #da2400; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; -moz-box-shadow: 1px 0 0 #f3f3f3; -webkit-box-shadow: 1px 0 0 #f3f3f3; box-shadow: 1px 0 0 #f3f3f3; }
 .cart-btn__icon .fa { color: white; font-size: 1.7em; vertical-align: middle; }
 
-.cart-btn__in { display: inline-block; vertical-align: middle; line-height: 1.2; color: #4c4c4c; font-size: 13px; text-shadow: 0 1px 0 white; }
+.cart-btn__in { display: inline-block; vertical-align: middle; line-height: 1.2; font-size: 13px; text-shadow: 0 1px 0 white; }
 .cart-btn__in span { font-family: "roboto-bold", Arial, sans-serif; display: block; }
 
 .cart-btn__text { display: none; color: white; font-family: "roboto-bold", Arial, sans-serif; font-size: 13px; }
