@@ -220,6 +220,7 @@ a { color: #da2400; text-decoration: none; }
 .btn:active { position: relative; top: 1px; }
 .btn:disabled { pointer-events: none; }
 .btn .fa { margin-left: 5px; }
+.btn.is-liquid { width: 100%; display: block; text-align: center; }
 
 .btn_width { padding: 9px 67px; }
 
@@ -816,7 +817,16 @@ a { color: #da2400; text-decoration: none; }
 
 .popup__close { position: absolute; top: 17px; right: 17px; background: url('../img/icons-s7a9966c3cb.png') 0 -70px no-repeat; width: 18px; height: 19px; }
 
-.popup_reg .popup__footer { padding-top: 0; }
+.popup_reg { width: 584px; }
+.popup_reg .popup__left { width: 354px; border-style: dashed; }
+.popup_reg .btn-wrap { padding: 0 15px; margin-bottom: 60px; }
+.popup_reg .popup__body .btn { margin-top: 17px; }
+.popup_reg .popup__right { text-align: center; }
+.popup_reg .popup__right .title { font-size: 20px; }
+.popup_reg .benefit { float: none; margin: 0 0 35px; width: 100%; text-align: left; color: #5b5b5b; text-shadow: 0 1px 0 white; }
+.popup_reg .benefit__img { width: 40px; margin-right: 10px; text-align: center; }
+.popup_reg .benefit .fa { font-size: 40px; }
+.popup_reg .benefit .fa-envelope-o { font-size: 32px; }
 
 .popup_login { width: 353px; padding: 35px 23px 30px; }
 .popup_login .title { margin-bottom: 23px; }
