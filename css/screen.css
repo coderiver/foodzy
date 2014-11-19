@@ -818,6 +818,13 @@ a { color: #da2400; text-decoration: none; }
 
 .popup_reg .popup__footer { padding-top: 0; }
 
+.popup_login { width: 353px; padding: 35px 23px 30px; }
+.popup_login .title { margin-bottom: 23px; }
+.popup_login .input { background: white; }
+.popup_login .btn-wrap { margin-bottom: 37px; }
+.popup_login .btn_width { padding: 9px 53px; }
+.popup_login .checkbox-wrap { margin: 0; padding: 6px 20px 0; }
+
 .popup__head { position: relative; border-bottom: 1px solid #d7d7d7; padding: 33px 40px 17px; background: white; }
 .popup__head .link-prev { position: absolute; left: 40px; top: 46px; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
 .popup__head .link-prev:hover { color: #a51b00; }
