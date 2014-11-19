@@ -745,16 +745,13 @@
 	li
 		overflow: hidden
 		display: block
-		margin-bottom: -1px
 		border-bottom: 1px dashed #bcbcbc  
+		&:first-child
+			border-top: 1px dashed #bcbcbc  
 	.radio
 		padding: 0 30px 
 		position: relative
 		display: block
-		height: 60px
-		line-height: 60px
-		
-		border-top: 1px dashed #bcbcbc  
 		+clr
 		span
 			font-size: 15px
@@ -763,8 +760,12 @@
 			background: #f2f2f2 
 		&__left
 			float: left
+			height: 60px
+			line-height: 60px
 		&__right
 			float: right
+			height: 60px
+			line-height: 60px
 		img
 			vertical-align: middle
 		strong

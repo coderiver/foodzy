@@ -696,13 +696,14 @@ a { color: #da2400; text-decoration: none; }
 .message_center div { display: inline-block; vertical-align: middle; line-height: 1.2; margin: 0; }
 
 .payment { width: 420px; margin: 18px auto 26px; }
-.payment li { overflow: hidden; display: block; margin-bottom: -1px; border-bottom: 1px dashed #bcbcbc; }
-.payment .radio { padding: 0 30px; position: relative; display: block; height: 60px; line-height: 60px; border-top: 1px dashed #bcbcbc; *zoom: 1; }
+.payment li { overflow: hidden; display: block; border-bottom: 1px dashed #bcbcbc; }
+.payment li:first-child { border-top: 1px dashed #bcbcbc; }
+.payment .radio { padding: 0 30px; position: relative; display: block; *zoom: 1; }
 .payment .radio:after { content: " "; display: table; clear: both; }
 .payment .radio span { font-size: 15px; font-family: "roboto-medium", Arial, sans-serif; }
 .payment .radio.is-active { background: #f2f2f2; }
-.payment .radio__left { float: left; }
-.payment .radio__right { float: right; }
+.payment .radio__left { float: left; height: 60px; line-height: 60px; }
+.payment .radio__right { float: right; height: 60px; line-height: 60px; }
 .payment .radio img { vertical-align: middle; }
 .payment .radio strong { font-weight: normal; }
 
