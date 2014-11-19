@@ -614,7 +614,7 @@ head.ready(function() {
 		setTimeout(function() {
 			$(".header").removeClass("has-order-animation");
         }, 1000);
-		return false;
+		//return false;
 	});
 
 	$(".js-next-step").on("click", function(){

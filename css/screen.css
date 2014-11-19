@@ -143,7 +143,7 @@ a { color: #da2400; text-decoration: none; }
 .cart-btn:hover .cart-btn__icon { background: #a51b00; }
 .cart-btn:active { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 
-.cart-btn__icon { position: absolute; top: 0; left: 0; bottom: 0; width: 47px; text-align: center; background: #da2400; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; -moz-box-shadow: 1px 0 0 #f3f3f3; -webkit-box-shadow: 1px 0 0 #f3f3f3; box-shadow: 1px 0 0 #f3f3f3; }
+.cart-btn__icon { position: absolute; top: 0; left: 0; height: 100%; z-index: 2; width: 47px; text-align: center; background: #da2400; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; -moz-box-shadow: 1px 0 0 #f3f3f3; -webkit-box-shadow: 1px 0 0 #f3f3f3; box-shadow: 1px 0 0 #f3f3f3; }
 .cart-btn__icon .fa { color: white; font-size: 1.7em; vertical-align: middle; }
 
 .cart-btn__in { display: inline-block; vertical-align: middle; line-height: 1.2; color: #4c4c4c; font-size: 13px; text-shadow: 0 1px 0 white; }
