@@ -523,6 +523,8 @@
 		
 .modal
 	position: absolute
+	top: 86px
+	left: 100%
 	padding: 20px 
 	width: 250px
 	margin-left: 15px
@@ -542,15 +544,15 @@
 			+clr
 			span
 				float: right
-	&_step
-		top: 86px
-		left: 100%
-	&.is-fixed
-		top: 100px
-		position: fixed
 	.is-red
 		color: $red 
 	&__price
 		margin-bottom: 5px
 		font-size: 18px
-		+fb
+		+fb 
+.has-modal
+	.modal
+		&.is-fixed
+			z-index: 2
+			top: 100px
+			position: fixed

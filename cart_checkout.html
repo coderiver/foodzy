@@ -103,7 +103,7 @@
 		<div class="l-cols-2 box">
 			<div class="l-col1">
 				<div class="step js-step js-step-target" style="display:block">
-					<div class="cart js-removeable">
+					<div class="cart js-cart js-removeable">
 						<div class="cart-place cart-place_width">
 							<div class="cart-place__info">
 								<a class="carr-place__name" href="#">
@@ -161,13 +161,26 @@
 							</div>
 						</div>
 						<div class="cart-item cart-item_action">
-							<button type="button" class="btn btn_width btn_big js-next-step">Оформить заказ <i class="fa fa-arrow-right"></i></button>
+							<button type="button" class="btn btn_width btn_big js-next-step js-to-order">Оформить заказ <i class="fa fa-arrow-right"></i></button>
 							<a href="#" class="link-action js-remove-key">Удалить заказ</a>
 						</div>
+						<div class="modal js-modal js-modal1">
+							<ul>
+								<li>Минимальная стоимость заказа:<span>4 €</span></li>
+								<li>Сумма заказа:<span>64 €</span></li>
+								<li>Стоимость доставки:<span>2 €</span></li>
+							</ul>
+							<div class="modal__price">Итого: 69,5 €</div>
+							<div class="bonus">
+								<span class="badge badge_bonus">
+									<i class="fa fa-star"></i>
+								</span>
+								<span>Вы зарабатываете 69 <a href="#">бонусов <i class="fa fa-question-circle"></i></a></span>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="step js-step" style="display:block">
-					<div class="cart is-inactive js-removeable">
+
+					<div class="cart js-cart is-inactive js-removeable">
 						<div class="cart-place cart-place_width">
 							<div class="cart-place__left">
 								<a class="cart-place__name" href="#">
@@ -238,15 +251,30 @@
 							</div>
 						</div>
 						<div class="cart-item cart-item_action">
-							<button type="button" class="btn btn_width btn_big js-next-step" disabled>Оформить заказ <i class="fa fa-arrow-right"></i></button>
+							<button type="button" class="btn btn_width btn_big js-next-step js-to-order" disabled>Оформить заказ <i class="fa fa-arrow-right"></i></button>
 							<a href="#" class="link-action js-remove-key">Удалить заказ</a>
 						</div>
-					</div>
-					<div class="message message_center">
-						<div>Вы являетесь зарегистрированным пользователем Foodzy? <a href="#">Войдите</a> или <a href="#">зарегистрируйтесь</a>.</div>
+						<div class="modal js-modal js-modal2">
+							<ul>
+								<li>Минимальная стоимость заказа:<span>4 €</span></li>
+								<li class="is-red">Для заказа не хватает:<span>50 €</span></li>
+								<li>Сумма заказа:<span>64 €</span></li>
+								<li>Стоимость доставки:<span>2 €</span></li>
+							</ul>
+							<div class="modal__price">Итого: 69,5 €</div>
+							<div class="bonus">
+								<span class="badge badge_bonus">
+									<i class="fa fa-star"></i>
+								</span>
+								<span>Вы зарабатываете 69 <a href="#">бонусов <i class="fa fa-question-circle"></i></a></span>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="step js-step">
+					<div class="message message_center">
+						<div>Вы являетесь зарегистрированным пользователем Foodzy? <a href="#">Войдите</a> или <a href="#">зарегистрируйтесь</a>.</div>
+					</div>
 					<div class="delivery">
 						<div class="title title_h1">Данные доставки</div>
 						<div class="cart-item">
@@ -407,21 +435,6 @@
 					<div class="cart-item cart-item_action">
 						<button type="submit" class="btn btn_width btn_big">Оплатить заказ </button>
 						<a href="#" class="link-action"><i class="fa fa-angle-double-left"></i> Редактировать заказ заказ</a>
-					</div>
-				</div>
-				<div class="modal modal_step js-modal-step">
-					<ul>
-						<li>Минимальная стоимость заказа:<span>4 €</span></li>
-						<li class="is-red">Для заказа не хватает:<span>50 €</span></li>
-						<li>Сумма заказа:<span>64 €</span></li>
-						<li>Стоимость доставки:<span>2 €</span></li>
-					</ul>
-					<div class="modal__price">Итого: 69,5 €</div>
-					<div class="bonus">
-						<span class="badge badge_bonus">
-							<i class="fa fa-star"></i>
-						</span>
-						<span>Вы зарабатываете 69 <a href="#">бонусов <i class="fa fa-question-circle"></i></a></span>
 					</div>
 				</div>
 			</div>

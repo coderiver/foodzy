@@ -610,26 +610,30 @@ head.ready(function() {
 
 	$(".js-next-step").on("click", function(){
 		if (!$(this).is(":disabled")) {
+			
 			$(this).parents(".js-step").next().slideDown();
-			$(".js-modal-step").fadeIn(500);
 			$('html, body').animate({
 	            scrollTop: $(this).parents(".js-step").next().offset().top - 79
 	        }, 500);
 		}
 	});
+	$(".js-to-order").on("click", function(){
+		$(".js-cart").removeClass("has-modal");
+		$(this).parents(".js-cart").addClass("has-modal");
+	});
 
 	function modalWindow() {
 		
 		if ($(window).scrollTop() > 116) {
-			$(".js-modal-step").addClass("is-fixed");
+			$(".has-modal .js-modal").addClass("is-fixed");
 			var left = $(".js-step-target").offset().left + $(".js-step-target").outerWidth();
-			$(".js-modal-step").css({
+			$(".has-modal .js-modal").css({
 				left: left
 			});
 		}
 		else {
-			$(".js-modal-step").removeClass("is-fixed");
-			$(".js-modal-step").css({
+			$(".has-modal .js-modal").removeClass("is-fixed");
+			$(".has-modal .js-modal").css({
 				left: "100%"
 			});
 		}
