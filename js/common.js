@@ -619,14 +619,26 @@ head.ready(function() {
 	});
 
 	function modalWindow() {
-		var left = $(".js-step-target").offset().left + $(".js-step-target").outerWidth();
-		$(".js-modal-step").css({
-			left: left
-		});
+		
+		if ($(window).scrollTop() > 116) {
+			$(".js-modal-step").addClass("is-fixed");
+			var left = $(".js-step-target").offset().left + $(".js-step-target").outerWidth();
+			$(".js-modal-step").css({
+				left: left
+			});
+		}
+		else {
+			$(".js-modal-step").removeClass("is-fixed");
+			$(".js-modal-step").css({
+				left: "100%"
+			});
+		}
 	}
 	modalWindow();
 	$(window).resize(function(){
 		modalWindow();
 	});
-
+	$(window).scroll(function(){
+		modalWindow();
+	});
 });

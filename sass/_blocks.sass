@@ -522,11 +522,10 @@
 		color: $gray  
 		
 .modal
-	position: fixed
+	position: absolute
 	padding: 20px 
 	width: 250px
 	margin-left: 15px
-	display: none
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.51)
 	background: #fff 
 	&:before
@@ -544,7 +543,11 @@
 			span
 				float: right
 	&_step
-		top: 140px
+		top: 86px
+		left: 100%
+	&.is-fixed
+		top: 86px
+		position: fixed
 	.is-red
 		color: $red 
 	&__price
