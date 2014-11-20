@@ -591,7 +591,12 @@ head.ready(function() {
 		});
 	}
 	showDatePicker();
-
+	$(".js-date-from .fa").on("click",function(){
+		$(this).parent().find(".input").focus();
+	});
+	$(".js-date-to .fa").on("click",function(){
+		$(this).parent().find(".input").focus();
+	});
 	$(".js-radio input").on("change", function(){
 		$(this).parents(".js-radio-group").find(".js-radio").removeClass("is-active");
 		$(this).parents(".js-radio").addClass("is-active");
