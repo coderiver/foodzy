@@ -77,6 +77,7 @@ head.ready(function() {
 			 	top: top
 			});
 		}
+		$(".js-item-popup").fadeOut(200);
 		$("."+popup).fadeIn(200);
 		event.stopPropagation();
 		return false;

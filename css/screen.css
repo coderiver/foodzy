@@ -542,7 +542,7 @@ a { color: #da2400; text-decoration: none; }
 .tab-content .title { margin: 13px 0; }
 .tab-content .article { margin-bottom: 25px; border-bottom: 1px dashed #d7d7d7; padding: 0 20px 5px; }
 
-.items-wrap { *zoom: 1; padding: 8px; }
+.items-wrap { *zoom: 1; padding: 8px 7px; }
 .items-wrap:after { content: " "; display: table; clear: both; }
 .items-wrap .item:nth-child(3n+3):hover .item__in { right: 0; left: auto; }
 .items-wrap .item:nth-child(3n+3):hover .item__main { position: relative; left: 234px; }
